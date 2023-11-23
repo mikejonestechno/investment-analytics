@@ -3,5 +3,4 @@ Dockerfile*
 *.csv
 *.Identifier
 *-checkpoint.ipynb
-*.md
 *.ps1
