@@ -18,6 +18,8 @@ The data for interest rates will be downloaded to `.\notebooks\data\f5-data.csv`
 
 ## International Index Data
 
-The S&P 500 (SPX) data can be manually downloaded from https://www.nasdaq.com/market-activity/index/spx/historical.
+The S&P 500 (SPX) daily price data can be manually downloaded from https://www.nasdaq.com/market-activity/index/spx/historical.
 
 Select the max (10 year) date range and save the file as `.\notebooks\data\spx_HistoricalData.csv`.
+
+The S&P 500 (SPX) monthly price data from 1959 can be downloaded from [expired link].
