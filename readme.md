@@ -15,6 +15,7 @@ Code Quality automatically scanned and published on SonarCloud.
 The interest rates and inflation rates are obtained from https://www.rba.gov.au/statistics.
 
 The data for interest rates will be downloaded to `.\notebooks\data\f5-data.csv`.
+The data for inflation rates will be downloaded to `.\notebooks\data\g1-data.csv`.
 
 ## International Index Data
 
