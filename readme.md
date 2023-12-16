@@ -10,6 +10,12 @@ These experimental jupyter notebooks plot inflation, interest rate and SPX 500 i
 
 Code Quality automatically scanned and published on SonarCloud.
 
+## Example
+
+[Inflation and Interest Rates](notebooks/finance/inflation-and-interest-rates.ipynb) chart from Jupyter notebook. 
+
+[![Inflation and Interest Rates](inflation-and-interest-rates.png)](notebooks/finance/inflation-and-interest-rates.ipynb)
+
 ## Australian Index Data
 
 The interest rates and inflation rates are obtained from https://www.rba.gov.au/statistics.
