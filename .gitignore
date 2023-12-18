@@ -3,3 +3,4 @@ source
 *.Identifier
 *-checkpoint.ipynb
 *.ps1
+!tsla_*Target.csv

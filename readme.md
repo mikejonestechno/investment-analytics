@@ -16,6 +16,11 @@ Code Quality automatically scanned and published on SonarCloud. Although SonarQu
 
 [![Inflation and Interest Rates](inflation-and-interest-rates.png)](notebooks/finance/inflation-and-interest-rates.ipynb)
 
+[TSLA Prices](notebooks/finance/inflation-and-interest-rates.ipynb) chart with ArkInvest four year targets from Jupyter notebook. 
+
+[![TSLA Prices](tsla-prices.png)](notebooks/finance/tsla-prices.ipynb)
+
+
 ## Australian Index Data
 
 The interest rates and inflation rates are obtained from https://www.rba.gov.au/statistics.
