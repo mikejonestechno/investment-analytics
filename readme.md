@@ -10,7 +10,11 @@ These experimental jupyter notebooks plot inflation, interest rate and SPX 500 i
 
 Code Quality automatically scanned and published on SonarCloud. Although SonarQube can scan python files for code quality, it does not currently support python code in Jupyter notebook files.
 
-## Example
+### Disclaimer
+
+Not financial advice: All content of this repository is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.
+
+## Examples
 
 [Inflation and Interest Rates](notebooks/finance/inflation-and-interest-rates.ipynb) chart from Jupyter notebook. 
 
