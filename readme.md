@@ -40,3 +40,7 @@ The S&P 500 (SPX) daily price data can be manually downloaded from https://www.n
 Select the max (10 year) date range and save the file as `.\notebooks\data\spx_HistoricalData.csv`.
 
 The S&P 500 (SPX) monthly price data from 1959 can be downloaded from [expired link].
+
+Historical prices (adjusted for splits and dividend and/or capital gain distributions) obtained from https://finance.yahoo.com/quote/TSLA/history.
+
+The data will be downloaded to `.\notebooks\data\tsla_HistoricalData.csv`.
