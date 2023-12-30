@@ -16,13 +16,13 @@ Not financial advice: All content of this repository is for educational purposes
 
 ## Examples
 
-[Inflation and Interest Rates](notebooks/finance/inflation-and-interest-rates.ipynb) chart from Jupyter notebook. 
+[Inflation and Interest Rates](notebooks/inflation-and-interest-rates.ipynb) chart from Jupyter notebook. 
 
-[![Inflation and Interest Rates](inflation-and-interest-rates.png)](notebooks/finance/inflation-and-interest-rates.ipynb)
+[![Inflation and Interest Rates](inflation-and-interest-rates.png)](notebooks/inflation-and-interest-rates.ipynb)
 
-[TSLA Prices](notebooks/finance/inflation-and-interest-rates.ipynb) chart with ArkInvest four year targets from Jupyter notebook. 
+[TSLA Prices](notebooks/inflation-and-interest-rates.ipynb) chart with ArkInvest four year targets from Jupyter notebook. 
 
-[![TSLA Prices](tsla-prices.png)](notebooks/finance/tsla-prices.ipynb)
+[![TSLA Prices](tsla-prices.png)](notebooks/tsla-prices.ipynb)
 
 
 ## Australian Index Data
