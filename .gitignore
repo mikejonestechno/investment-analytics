@@ -2,5 +2,4 @@ source
 *.csv
 *.Identifier
 *-checkpoint.ipynb
-*.ps1
-!tsla_*Target.csv
+__pycache__/
