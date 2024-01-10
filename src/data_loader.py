@@ -4,6 +4,17 @@ import pandas as pd
 import urllib.request
 
 def load_data(csv_url, local_file, max_age_days):
+    """
+    Load data from a CSV file.
+
+    Parameters:
+    csv_url (str): The URL of the CSV file to download.
+    local_file (str): The local file path to save the downloaded CSV file.
+    max_age_days (int): The maximum age of the local file in days. If the local file is older than this, it will be re-downloaded.
+
+    Returns:
+    pandas.DataFrame: The loaded data as a pandas DataFrame.
+    """
     max_age = datetime.timedelta(days=max_age_days)
     today = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
     if os.path.exists(local_file) and today - datetime.datetime.fromtimestamp(os.path.getmtime(local_file)) <= max_age:
