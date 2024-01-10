@@ -48,11 +48,17 @@ jobs:
 
   sonarcloud:
     name: SonarCloud
+    needs: test
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - name: Download test results
+        uses: actions/download-artifact@v2
+        with:
+          name: test-results
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
