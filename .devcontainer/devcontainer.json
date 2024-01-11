@@ -15,6 +15,10 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"jupyter.vscode-jupyter",
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"github.vscode-pull-request-github",
 				"github.copilot",
 				"SonarSource.sonarlint-vscode"
 			]
