@@ -1,3 +1,4 @@
 pytest-bdd
 pytest-cov
+pytest-mock
 pandas

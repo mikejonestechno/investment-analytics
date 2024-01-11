@@ -6,7 +6,7 @@
 
 These experimental jupyter notebooks plot inflation, interest rate and SPX 500 index to help visualize investment and retirement portfolios.
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mikejonestechno_investment-analytics&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mikejonestechno_investment-analytics) 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mikejonestechno_investment-analytics&metric=alert_status)](https://sonarcloud.io/summary/overall?id=mikejonestechno_investment-analytics) 
 
 Code Quality automatically scanned and published on SonarCloud. Although SonarQube can scan python files for code quality, it does not currently support python code in Jupyter notebook files.
 
