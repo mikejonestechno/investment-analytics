@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: 3.8
+        python-version: 3.11
         cache: 'pip'
 
     - name: Install dependencies
@@ -35,7 +35,7 @@ jobs:
       if: always()
       with:
         name: test-results
-        path: *.xml
+        path: "*.xml"
 
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2
