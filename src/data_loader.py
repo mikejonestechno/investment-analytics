@@ -3,7 +3,7 @@ import datetime
 import pandas as pd
 import urllib.request
 
-def load_data(csv_url, local_file, max_age_days):
+def load_data(csv_url, local_file, max_age_days, skip_rows=0):
     """
     Load data from a CSV file.
 
@@ -22,5 +22,5 @@ def load_data(csv_url, local_file, max_age_days):
     else:
         print('Downloading file')
         urllib.request.urlretrieve(csv_url, local_file)
-    df = pd.read_csv(local_file, encoding='cp1252')
+    df = pd.read_csv(local_file, encoding='cp1252', skiprows=skip_rows)
     return df
