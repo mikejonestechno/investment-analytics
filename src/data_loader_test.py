@@ -1,7 +1,9 @@
+from math import exp
 import os
 import datetime
+from pandas import Timestamp
 from pytest_bdd import scenarios, given, when, then, parsers
-from data_loader import load_data
+from data_loader import load_data, get_last_publish_date
 from tempfile import NamedTemporaryFile
 import csv
 
@@ -60,11 +62,11 @@ def new_file_is_not_downloaded(call_load_data):
 
 @when(parsers.re('today is (?P<date>.+)'), target_fixture="today")
 def today_is(date):
-    today = datetime.datetime.now()
+    today = datetime.datetime.strptime(date, '%d %b %Y')
     return today
 
 @then(parsers.re('last_publish date is (?P<date>.+)'))
-def last_publish_date_is_dec_31(today):
-    print(today)
-    publish_date = '2023-12-31' # call last_publish_date function
-    assert publish_date == '2023-12-31'
+def last_publish_date_is(date, today):
+    publish_date = get_last_publish_date(today)
+    expected_publish_date = Timestamp(date)
+    assert publish_date == expected_publish_date
