@@ -3,6 +3,7 @@
         "connectionId": "mikejonestechno",
         "projectKey": "mikejonestechno_investment-analytics"
     },
+    "sonarlint.pathToNodeExecutable": "/usr/local/share/nvm/versions/node/v20.11.0/bin/node",
     "python.pythonPath": "/opt/conda/env/bin/python",
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,

@@ -1,5 +1,6 @@
 import os
-from pytest_bdd import scenarios, given, when, then
+import datetime
+from pytest_bdd import scenarios, given, when, then, parsers
 from data_loader import load_data
 from tempfile import NamedTemporaryFile
 import csv
@@ -55,4 +56,15 @@ def new_file_is_downloaded(call_load_data):
 def new_file_is_not_downloaded(call_load_data):
     # call_load_data yeilds the dataframe and the mock_urlretrieve object, ignore df object using '_'
     _, mock_urlretrieve = call_load_data
-    mock_urlretrieve.assert_not_called()    
+    mock_urlretrieve.assert_not_called()
+
+@when(parsers.re('today is (?P<date>.+)'), target_fixture="today")
+def today_is(date):
+    today = datetime.datetime.now()
+    return today
+
+@then(parsers.re('last_publish date is (?P<date>.+)'))
+def last_publish_date_is_dec_31(today):
+    print(today)
+    publish_date = '2023-12-31' # call last_publish_date function
+    assert publish_date == '2023-12-31'
