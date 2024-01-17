@@ -16,8 +16,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-toolsai.jupyter",
-				"ms-python.vscode-pylance",
 				"ms-python.python",
+				"ms-python.vscode-pylance",
 				"github.vscode-pull-request-github",
 				"github.copilot",
 				"SonarSource.sonarlint-vscode"
