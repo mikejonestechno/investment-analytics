@@ -3,6 +3,7 @@
         "connectionId": "mikejonestechno",
         "projectKey": "mikejonestechno_investment-analytics"
     },
+    "python.pythonPath": "/opt/conda/env/bin/python",
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
     "python.testing.unittestArgs": [
