@@ -1,14 +1,12 @@
-# Investment Analytics
-
 This project was created to provide some guidelines and forecasts for the following questions:
 
 - How much do I need to retire? 
 - How much will inflation or interest rates affect my retirement portfolio, both before and during retirement? 
 - How much do I need in my investment portfolio today in order to have acrued enough to retire in the future? 
 
-## Australia Data
+## Made in Australia
 
-This project plots inflation, interest rates and the SPX 500 index to help visualize investment and retirement portfolios for people in Australia.
+This project plots inflation and interest rates from the Reserve Bank of Australia with the SPX 500 index to help visualize investment and retirement portfolios for people living in Australia.
 
 🚧 This experimental project is still in development.
 
