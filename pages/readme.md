@@ -2,7 +2,7 @@ This project was created to provide some guidelines and forecasts for the follow
 
 - How much do I need to retire? 
 - How much will inflation or interest rates affect my retirement portfolio, both before and during retirement? 
-- How much do I need in my investment portfolio today in order to have acrued enough to retire in the future? 
+- How much do I need in my investment portfolio today in order to have accrued enough to retire in the future? 
 
 ## Made in Australia
 

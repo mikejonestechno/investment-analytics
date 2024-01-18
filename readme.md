@@ -18,7 +18,7 @@ Not financial advice: All content of this repository is for educational purposes
 
 1. [Inflation and Interest Rates](notebooks/inflation-and-interest-rates.ipynb) chart from Jupyter notebook. 
 
-[![Inflation and Interest Rates](inflation-and-interest-rates.png)](notebooks/inflation-and-interest-rates.ipynb)
+[![Inflation and Interest Rates](pages/images/inflation-and-interest-rates.png)](notebooks/inflation-and-interest-rates.ipynb)
 
 2. [TSLA Prices](notebooks/inflation-and-interest-rates.ipynb) chart with ArkInvest four year targets from Jupyter notebook. 
 
