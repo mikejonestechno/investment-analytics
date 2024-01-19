@@ -10,7 +10,7 @@ Since the mid 1990s inflation has been reasonably stable, staying close to the R
 
 ## Chart Data
 
-See Jupyter Notebook [inflation-and-interest-rates.ipynb](https://github.com/mikejonestechno/investment-analytics/notebooks/inflation-and-interest-rates.ipynb).
+See Jupyter Notebook [inflation-and-interest-rates.ipynb](https://github.com/mikejonestechno/investment-analytics/blob/main/notebooks/inflation-and-interest-rates.ipynb).
 
 ### Disclaimer
 

@@ -14,7 +14,7 @@ The Year over Year annual price change helps visualize potential investment retu
 
 ## Chart Data
 
-See Jupyter Notebook [spx-prices.ipynb](https://github.com/mikejonestechno/investment-analytics/notebooks/spx-prices.ipynb).
+See Jupyter Notebook [spx-prices.ipynb](https://github.com/mikejonestechno/investment-analytics/blob/main/notebooks/spx-prices.ipynb).
 
 ### Disclaimer
 
