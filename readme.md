@@ -17,9 +17,9 @@ View all the charts in this data-analytics project at
 
 ### Examples
 
-1. [Inflation and Interest Rates](pages/inflation-and-interest-rates.md) chart from Jupyter notebook. 
+1. [Inflation and Interest Rates](https://mikejonestechno.github.io/investment-analytics/inflation-and-interest-rates.html) chart from Jupyter notebook. 
 
-[![Inflation and Interest Rates](pages/images/inflation-and-interest-rates.png)](pages/inflation-and-interest-rates.md)
+[![Inflation and Interest Rates](pages/images/inflation-and-interest-rates.png)](https://mikejonestechno.github.io/investment-analytics/inflation-and-interest-rates.html)
 
 2. [TSLA Prices](notebooks/inflation-and-interest-rates.ipynb) chart with ArkInvest four year targets from Jupyter notebook. 
 
