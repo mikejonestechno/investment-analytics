@@ -25,6 +25,9 @@ View all the charts in this data-analytics project at
 
 <img src="/tsla-prices.png" alt="TSLA prices" width="200"/>
 
+View all the charts in this data-analytics project at 
+[https://mikejonestechno.github.io/investment-analytics/](https://mikejonestechno.github.io/investment-analytics/)
+
 ### Disclaimer
 
 Not financial advice: All content of this repository is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.
