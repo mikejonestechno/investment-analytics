@@ -4,7 +4,7 @@ The Consumer Price Index that the Reserve Bank of Australia use to index inflati
 
 Since the mid 1990s inflation has been reasonably stable, staying close to the RBA target inflation rate of 2 to 3 percent for over twenty five years.
 
-> The data suggests that forecasts of invesments should have reasonable confidence using a baseline inflation of 2% to 3% with some uncertainty or risk that inflation could peak higher.
+> The data suggests reasonable confidence using a baseline inflation of 2% to 3% with some uncertainty or risk that inflation could peak higher.
 
 ![](images/inflation-and-interest-rates.png)
 
