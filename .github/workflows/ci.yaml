@@ -7,8 +7,7 @@ on:
       - 'pages/**'      
   pull_request:
     types: [opened, synchronize, reopened]
-    paths-ignore:
-      - 'pages/**'      
+    # due to the branch protection rule, the PR must be triggered even if only pages are changed
 jobs:
   test:
     name: Unit Test
