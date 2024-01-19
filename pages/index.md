@@ -12,6 +12,10 @@ This project was created to provide some guidelines and forecasts for the follow
 
 [![](images/spx-yoy.png)](spx.html)
 
+## [Tesla (TSLA)](tsla.md)
+
+[![](images/tsla-yoy.png)](tsla.html)
+
 ## Made in Australia
 
 This project plots inflation and interest rates from the Reserve Bank of Australia with the SPX 500 index to help visualize investment and retirement portfolios for people living in Australia.
