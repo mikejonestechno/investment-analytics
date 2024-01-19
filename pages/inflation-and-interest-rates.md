@@ -8,6 +8,10 @@ Since the mid 1990s inflation has been reasonably stable, staying close to the R
 
 ![](images/inflation-and-interest-rates.png)
 
-## Disclaimer
+## Chart Data
+
+See Jupyter Notebook [inflation-and-interest-rates.ipynb](../notebooks/inflation-and-interest-rates.ipynb).
+
+### Disclaimer
 
 Not financial advice: All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.
