@@ -6,11 +6,11 @@ This project was created to provide some guidelines and forecasts for the follow
 
 ## [Inflation and Interest Rates](inflation-and-interest-rates.md)
 
-[![](images/inflation-and-interest-rates.png)](inflation-and-interest-rates.md)
+[![](images/inflation-and-interest-rates.png)](inflation-and-interest-rates.html)
 
 ## [S&P 500 Index](spx.md)
 
-[![](images/spx-yoy.png)](spx.md)
+[![](images/spx-yoy.png)](spx.html)
 
 ## Made in Australia
 
