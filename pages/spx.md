@@ -1,10 +1,7 @@
 ---
 layout: page
-title: S&P 500
+title: S&P 500 Index
 ---
-
-# S&P 500 Index
-
 The S&P 500 Index from Standard & Poor's is a market-capitalization-weighted index of 500 leading publicly traded companies in the US. 
 
 The S&P 500 is widely considered one of the best gauges of overall stock market performance because of its depth and diversity, and because it tracks the top performing companies by market capitalization.
@@ -20,7 +17,3 @@ The Year over Year annual price change helps visualize potential investment retu
 ## Chart Data
 
 See Jupyter Notebook [spx-prices.ipynb](https://github.com/mikejonestechno/investment-analytics/blob/main/notebooks/spx-prices.ipynb).
-
-### Disclaimer
-
-Not financial advice: All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.
