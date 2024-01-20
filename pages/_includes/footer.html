@@ -4,7 +4,6 @@
     <div class="wrapper">
   
       <div class="footer-col-wrapper">
-        <div class="footer-col">
           <!--p class="feed-subscribe">
             <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
               <svg class="svg-icon orange">
@@ -13,6 +12,7 @@
             </a>
           </p-->
         {%- if site.author %}
+        <div class="footer-col">        
           <ul class="contact-list">
             {% if site.author.name -%}
               <li class="p-name">{{ site.author.name | escape }}</li>
@@ -21,11 +21,16 @@
               <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
             {%- endif %}
           </ul>
-        {%- endif %}
         </div>
+        {%- endif %}
         <div class="footer-col">
           <p>{{ site.description | escape }}</p>
         </div>
+        {% if site.footer -%}
+        <div class="footer-col">
+            <p>{{ site.footer | escape }}</p>
+        </div>
+        {%- endif %}
       </div>
   
       <div class="social-links">
