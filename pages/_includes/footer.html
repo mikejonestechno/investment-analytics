@@ -28,9 +28,9 @@
         <div class="footer-col">
           <p>{{ site.description | escape }}</p>
         </div>
-        {% if site.footer -%}
+        {% if site.content.footer -%}
         <div class="footer-col">
-            <p>{{ site.content.footer }}</p>
+            <p>{{ site.content.footer | markdownify }}</p>
         </div>
         {%- endif %}
       </div>
