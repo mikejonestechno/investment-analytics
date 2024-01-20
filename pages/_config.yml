@@ -17,6 +17,10 @@ plugins:
 header_pages:
   - retirement-planning.md
 
+footer: |
+  ⚠ <em>Disclaimer: Not financial advice. All content is for educational purposes only. 
+  No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.</em>
+
 minima:
   skin: dark
   date_format: "%d %b %Y"
@@ -25,6 +29,4 @@ minima:
     - { platform: github, user_url: "https://github.com/mikejonestechno" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/mikejonestechno/" }
     - { platform: youtube, user_url: "https://www.youtube.com/@MikeJonesTechno" }
-    # Requires custom wordpress svg icon centered on viewbox "0 0 16 16"
-    #- { platform: microdotblog, user_url: "https://mikejonestechno.wordpress.com/" }
     - { platform: wordpress, user_url: "https://mikejonestechno.wordpress.com/" }
