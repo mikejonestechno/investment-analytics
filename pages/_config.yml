@@ -1,7 +1,8 @@
 title: Investment Analytics
 description: An experimental project for investment and retirement data analytics.
-author:
-  name: mikejonestechno
+# Author will be used in meta tags and page footers
+# author:
+#   name: mikejonestechno
 
 #theme: jekyll-theme-primer
 #theme: minima
@@ -9,6 +10,7 @@ remote_theme: jekyll/minima
 
 plugins:
   - jekyll-seo-tag
+  # minima theme was designed with jekyll-feed to create rss feed of blog posts
   #- jekyll-feed
   # NOTE: add custom _includes/footer.html to remove the rss 'subscribe' link
   
@@ -19,4 +21,8 @@ minima:
   skin: dark
   date_format: "%d %b %Y"
   social_links:
+    - { platform: x, user_url: "https://x.com/mikejonestechno" }
     - { platform: github, user_url: "https://github.com/mikejonestechno" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/mikejonestechno/" }
+    - { platform: youtube, user_url: "https://www.youtube.com/@MikeJonesTechno" }
+    - { platform: wordpress, user_url: "https://mikejonestechno.wordpress.com/" }
