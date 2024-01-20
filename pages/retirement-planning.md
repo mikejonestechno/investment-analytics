@@ -1,5 +1,7 @@
-# Retirement Planning
-
+---
+layout: page
+title: Retirement Planning
+---
 The Association of Superannuation Funds of Australia Limited ASFA is the largest policy, research and advocacy body for the superanuation (pension) industry; a non-profit advisor to the Australian government.
 
 ASFA have published a "standard" listing of how much money is required each year for a "comfortable" retirement. The figures are based on their original 2018 research data (subsequently adjusted for inflation each quarter).

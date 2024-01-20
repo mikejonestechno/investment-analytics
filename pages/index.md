@@ -16,7 +16,3 @@ This project was created to provide some guidelines and forecasts for the follow
 This project plots inflation and interest rates from the Reserve Bank of Australia with the SPX 500 index to help visualize investment and retirement portfolios for people living in Australia.
 
 🚧 This experimental project is still in development.
-
-### Disclaimer
-
-Not financial advice: All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.
