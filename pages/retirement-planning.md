@@ -36,10 +36,10 @@ The models assume you own your own home so take any additional mortgage expenses
 ## Misleading Data
 
 > ⚠ WARNING: CHOICE say the ASFA Retirement Standard is misleading.
-
+>
 >"The expert view is that these standards may be misleading (too high). The Productivity Commission said these standards equate to a retirement income that is 'more than many people spend _before_ retirement', and that they are "no more than an arbitrary benchmark that should be ignored in policymaking".
-
-Source: [CHOICE: How much do you really need to retire?](https://www.choice.com.au/money/financial-planning-and-investing/superannuation/articles/our-new-retirement-standards)
+>
+> Source: [CHOICE: How much do you really need to retire?](https://www.choice.com.au/money/financial-planning-and-investing/superannuation/articles/our-new-retirement-standards)
 
 ### My Take
 
