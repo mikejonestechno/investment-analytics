@@ -1,8 +1,17 @@
 title: Investment Analytics
 description: An experimental project for investment and retirement data analytics.
+author:
+  name: Mike Jones
+
 #theme: jekyll-theme-primer
-theme: minima
+#theme: minima
+remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-seo-tag
 
 minima:
+  skin: dark
+  date_format: "%d %b %Y"
   social_links:
     - { platform: github, user_url: "https://github.com/mikejonestechno" }
