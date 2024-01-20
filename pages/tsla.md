@@ -1,5 +1,7 @@
-# Tesla (TSLA)
-
+---
+layout: page
+title: Tesla (TSLA)
+---
 Tesla's IPO on the NASDAQ was on 29 June 2010. The shares were priced at $17 finishing the day at $23.89; split adjusted to current (2023) price is $1.59.
 
 The Model S was launched in June 2012 and Tesla had a significant spike in 2013 (up 600% year over year) as the company reported their first ever profitable quarter after ten years in the car industry.
@@ -19,7 +21,3 @@ With significant variation, some periods Tesla price "only" increases around 10%
 ## Chart Data
 
 See Jupyter Notebook [spx-prices.ipynb](https://github.com/mikejonestechno/investment-analytics/blob/main/notebooks/spx-prices.ipynb).
-
-### Disclaimer
-
-Not financial advice: All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.
