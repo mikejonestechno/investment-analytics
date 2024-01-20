@@ -24,9 +24,8 @@ kramdown:
 content:
   footer: |
     ⚠ **Disclaimer**: _Not financial advice_. All content is for educational purposes only. 
-    No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.
-
-#    {: .notice--warning}
+    No warranty or guarantee or forward looking statements of fit for purpose, etc;     
+    do your own research.
 
 minima:
   skin: dark

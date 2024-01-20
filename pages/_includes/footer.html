@@ -30,7 +30,7 @@
         </div>
         {% if site.content.footer -%}
         <div class="footer-col">
-            <p>{{ site.content.footer | markdownify }}</p>
+            {{ site.content.footer | markdownify }}
         </div>
         {%- endif %}
       </div>
