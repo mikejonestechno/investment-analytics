@@ -17,9 +17,14 @@ plugins:
 header_pages:
   - retirement-planning.md
 
+# kramdown adds support for markdown extensions like 'notice' blocks.
+kramdown:
+  parse_block_html: true
+
 footer: |
-  ⚠ <em>Disclaimer: Not financial advice. All content is for educational purposes only. 
-  No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc.</em>
+  ⚠ _**Disclaimer**: Not financial advice. All content is for educational purposes only. 
+  No warranty or guarantee or forward looking statements of fit for purpose; do your own research, etc._
+  {: .notice--warning}
 
 minima:
   skin: dark
