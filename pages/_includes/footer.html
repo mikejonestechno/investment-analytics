@@ -4,13 +4,15 @@
     <div class="wrapper">
   
       <div class="footer-col-wrapper">
-          <!--p class="feed-subscribe">
+        {%- if site.subscribe %}
+          <p class="feed-subscribe">
             <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
               <svg class="svg-icon orange">
                 <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
               </svg><span>Subscribe</span>
             </a>
-          </p-->
+          </p>
+        {%- endif %}
         {%- if site.author %}
         <div class="footer-col">        
           <ul class="contact-list">
@@ -28,7 +30,7 @@
         </div>
         {% if site.footer -%}
         <div class="footer-col">
-            <p>{{ site.footer | escape }}</p>
+            <p>{{ site.footer }}</p>
         </div>
         {%- endif %}
       </div>
