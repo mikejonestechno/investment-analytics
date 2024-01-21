@@ -14,7 +14,7 @@ The share price is far from a straight line - or any regular curve. Plotting the
 
 The logarithmic scale shows the price was slightly increasing from IPO in 2010 to 2013 before a sudden 5x jump from $2 to $10 (split adjusted) in 2013. 
 
-The jump was likely attributed to the Model S launch in 2012 and the first quarter of profit since the company was founded. The jump was followed by a further 5x growth in the five year period between 2014 and 2019, before another sudden 10x jump from $20 to $200 (split adjusted) in 2020.
+The jump was likely attributed to the Model S launch in 2012 and the first quarter of profit since the company was founded. The jump was followed by strong 2x growth in the five year period between 2014 and 2019, before another sudden 10x jump from $20 to $200 (split adjusted) in 2020.
 
 The second jump is likely attibuted to the Model 3 production ramp, and the final validation of Tesla as a profitable auto maker at scale, although at this price Tesla exceeds the market capitalization of the top eight global auto makers... combined.
 
