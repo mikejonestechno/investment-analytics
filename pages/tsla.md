@@ -34,9 +34,9 @@ Over a five year time horizon the YoY annual price change is between -13% and 17
 
 Over the last ten years the variation is considerably narrower:
 
-25th percentile YoY change is -9.46%
-50th percentile YoY change is 19.03%
-75th percentile YoY change is 78.69%
+- 25th percentile YoY change is -9.46%
+- 50th percentile YoY change is 19.03%
+- 75th percentile YoY change is 78.69%
 
 > ℹ The data suggests a reasonable "conservative" baseline of 20% over a multi-decade time horizon, with some uncertainty or risk that the price can go significantly higher or lower for short periods of time. Note this does not take inflation into consideration.
 
