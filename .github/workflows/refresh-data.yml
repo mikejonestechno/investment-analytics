@@ -36,27 +36,11 @@ jobs:
         pip install jekyllnb
 
     - name: Notebooks to Jekyl Markdown
-      run: jupyter jekyllnb --site-dir pages --page-dir notebooks --image-dir _pages/images --no-auto-folder notebooks/spx-and-tsla.ipynb
-      #run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
-        # for notebook in notebooks/inflation.ipynb; do
-        #  jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug "$notebook"
-        # done        
-
-    - name: Upload for Debugging
-      uses: actions/upload-artifact@v4
-      with:
-        name: notebooks
-        path: pages
+      # Dont put pages in subdir because jekllnb hardcoded permalink to "/"
+      # Unless we add a custom jekyll json to each notebook
+      run: jupyter jekyllnb --site-dir pages --image-dir images --no-auto-folder notebooks/spx-and-tsla.ipynb
+      # Perhaps I can just use nbconvert with first markdown cell contains the frontmatter
 
     - name: Commit changes
       uses: actions-x/commit@v6        
 
-    # this action was designed to push commits to the gh-pages branch which would then be served by GitHub Pages
-    # i want to push the files in pages to the main branch to trigger the GitHub Pages deployment
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      if: false
-      with:
-        branch: main
-        folder: pages
-        dry-run: ${{ github.event.inputs.dry-run }}
