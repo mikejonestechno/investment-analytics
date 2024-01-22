@@ -27,7 +27,7 @@ jobs:
         pip install -r src/requirements.txt
         pip install jekyllnb
 
-    - name: Convert notebooks to Markdown
+    - name: Notebooks to Jekyl Markdown
       run: jupyter jekyllnb --site-dir pages --page-dir pages/_pages --image-dir _pages/images --no-auto-folder notebooks/inflation.ipynb
       #run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
         # for notebook in notebooks/inflation.ipynb; do
@@ -39,3 +39,9 @@ jobs:
       with:
         name: notebooks
         path: pages
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: pages
+        dry-run: true
