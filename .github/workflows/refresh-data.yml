@@ -48,10 +48,14 @@ jobs:
         name: notebooks
         path: pages
 
+    - name: Commit changes
+      uses: actions-x/commit@v6        
+
     # this action was designed to push commits to the gh-pages branch which would then be served by GitHub Pages
     # i want to push the files in pages to the main branch to trigger the GitHub Pages deployment
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
+      if: false
       with:
         branch: main
         folder: pages
