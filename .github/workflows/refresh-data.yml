@@ -6,6 +6,12 @@ on:
     # - cron:  '0 21 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      dry-run:
+        description: 'Dry Run'
+        type: boolean
+        required: false
+        default: true
 
 jobs:
   run-notebooks:
@@ -16,7 +22,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
         cache: 'pip'
@@ -25,11 +31,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r src/requirements.txt
-        pip install notebook
-        pip install nbconvert
+        pip install jekyllnb
 
-    - name: Convert notebooks to Markdown
-      run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
+    - name: Notebooks to Jekyl Markdown
+      run: jupyter jekyllnb --site-dir pages --page-dir _pages --image-dir _pages/images --no-auto-folder notebooks/spx-and-tsla.ipynb
+      #run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
         # for notebook in notebooks/inflation.ipynb; do
         #  jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug "$notebook"
         # done        
@@ -38,4 +44,13 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: notebooks
-        path: pages/notebooks/
+        path: pages
+
+    # this action was designed to push commits to the gh-pages branch which would then be served by GitHub Pages
+    # i want to push the files in pages to the main branch to trigger the GitHub Pages deployment
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: main
+        folder: pages
+        dry-run: ${{ github.event.inputs.dry-run }}
