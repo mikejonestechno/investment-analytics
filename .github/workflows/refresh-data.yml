@@ -6,6 +6,11 @@ on:
     # - cron:  '0 21 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      dry-run:
+        description: 'Dry Run'
+        required: false
+        default: 'true'
 
 jobs:
   run-notebooks:
@@ -16,7 +21,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
         cache: 'pip'
@@ -28,7 +33,7 @@ jobs:
         pip install jekyllnb
 
     - name: Notebooks to Jekyl Markdown
-      run: jupyter jekyllnb --site-dir pages --page-dir pages/_pages --image-dir _pages/images --no-auto-folder notebooks/spx-and-tsla.ipynb
+      run: jupyter jekyllnb --site-dir pages --page-dir _pages --image-dir _pages/images --no-auto-folder notebooks/spx-and-tsla.ipynb
       #run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
         # for notebook in notebooks/inflation.ipynb; do
         #  jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug "$notebook"
@@ -47,4 +52,4 @@ jobs:
       with:
         branch: main
         folder: pages
-        dry-run: true
+        dry-run: ${{ github.event.inputs.dry-run }}
