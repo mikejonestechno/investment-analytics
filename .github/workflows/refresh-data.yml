@@ -36,7 +36,7 @@ jobs:
         pip install jekyllnb
 
     - name: Notebooks to Jekyl Markdown
-      run: jupyter jekyllnb --site-dir pages --page-dir _pages --image-dir _pages/images --no-auto-folder notebooks/spx-and-tsla.ipynb
+      run: jupyter jekyllnb --site-dir pages --page-dir notebooks --image-dir _pages/images --no-auto-folder notebooks/spx-and-tsla.ipynb
       #run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
         # for notebook in notebooks/inflation.ipynb; do
         #  jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug "$notebook"
