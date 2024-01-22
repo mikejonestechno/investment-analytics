@@ -38,7 +38,7 @@ jobs:
     - name: Notebooks to Jekyl Markdown
       # Dont put pages in subdir because jekllnb hardcoded permalink to "/"
       # Unless we add a custom jekyll json to each notebook
-      run: jupyter jekyllnb --site-dir pages --page-dir notebooks --image-dir images --no-auto-folder notebooks/spx-and-tsla.ipynb
+      run: jupyter jekyllnb --site-dir pages --image-dir images --no-auto-folder notebooks/spx-and-tsla.ipynb
       # Perhaps I can just use nbconvert with first markdown cell contains the frontmatter
 
     - name: Commit changes
