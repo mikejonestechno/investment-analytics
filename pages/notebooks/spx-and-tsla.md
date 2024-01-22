@@ -4,6 +4,11 @@ title: spx-and-tsla
 permalink: /spx-and-tsla
 ---
 
+---
+layout: page
+title: S&P500 and Tesla
+---
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -408,4 +413,4 @@ legend.get_frame().set_alpha(0.98)
 plt.show()
 ```
 
-![png]({{ site.baseurl }}/_pages/images/spx-and-tsla_9_0.png){: .center-image }
+![png]({{ site.baseurl }}/_pages/images/spx-and-tsla_10_0.png){: .center-image }
