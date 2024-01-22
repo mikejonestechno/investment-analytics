@@ -2,9 +2,7 @@ name: CI
 on:
   push:
     branches:
-      - main
-    paths-ignore:
-      - 'pages/**'      
+      - main  
   pull_request:
     types: [opened, synchronize, reopened]
     # due to the branch protection rule, the PR must be triggered even if only pages are changed
