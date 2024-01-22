@@ -9,8 +9,9 @@ on:
     inputs:
       dry-run:
         description: 'Dry Run'
+        type: boolean
         required: false
-        default: 'true'
+        default: true
 
 jobs:
   run-notebooks:
