@@ -1,4 +1,4 @@
-name: Run Jupyter Notebooks
+name: Publish Jupyter Notebooks
 
 on:
   #schedule:
@@ -12,6 +12,8 @@ on:
         type: boolean
         required: false
         default: true
+permissions:
+  contents: write    
 
 jobs:
   run-notebooks:
