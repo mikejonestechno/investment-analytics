@@ -29,7 +29,13 @@ jobs:
         pip install nbconvert
 
     - name: Convert notebooks to Markdown
-      run: |
-        for notebook in notebooks/*.ipynb; do
-          jupyter nbconvert --to markdown "$notebook" --output-dir="./pages/notebooks" --debug
-        done        
+      run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
+        # for notebook in notebooks/inflation.ipynb; do
+        #  jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug "$notebook"
+        # done        
+
+    - name: Upload for Debugging
+      uses: actions/upload-artifact@v4
+      with:
+        name: notebooks
+        path: pages/notebooks/
