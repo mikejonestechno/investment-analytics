@@ -25,11 +25,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r src/requirements.txt
-        pip install notebook
-        pip install nbconvert
+        pip install jekyllnb
 
     - name: Convert notebooks to Markdown
-      run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
+      run: jupyter jekyllnb --site-dir pages --page-dir pages/_pages --image-dir _pages/images --no-auto-folder notebooks/inflation.ipynb
+      #run: jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug notebooks/inflation.ipynb        
         # for notebook in notebooks/inflation.ipynb; do
         #  jupyter nbconvert --to=markdown --output-dir="./pages/notebooks" --debug "$notebook"
         # done        
@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: notebooks
-        path: pages/notebooks/
+        path: pages
