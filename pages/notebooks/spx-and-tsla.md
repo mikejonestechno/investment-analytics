@@ -413,4 +413,4 @@ legend.get_frame().set_alpha(0.98)
 plt.show()
 ```
 
-![png]({{ site.baseurl }}/_pages/images/spx-and-tsla_10_0.png){: .center-image }
+![png]({{ site.baseurl }}/images/spx-and-tsla_10_0.png){: .center-image }
