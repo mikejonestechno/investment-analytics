@@ -3,7 +3,9 @@ layout: page
 title: S&P500 and Tesla
 ---
 
-# SPX 500
+## SPX 500
+
+This notebook imports SPX historical data from csv - rather than magic importing the dataframe from memory.
 
 
 

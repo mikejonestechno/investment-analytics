@@ -47,6 +47,6 @@ jobs:
       run: jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown notebooks/spx-and-tsla.ipynb
 
     - name: Commit changes
-      uses: actions-x/commit@v6        
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
         branch: ${{ github.head_ref }}
