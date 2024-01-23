@@ -1,49 +1,10 @@
 ---
 layout: page
-title: spx-and-tsla
-permalink: /spx-and-tsla
----
-
----
-layout: page
 title: S&P500 and Tesla
 ---
 
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-import os
-import datetime
-start_date = pd.to_datetime('2011-01-01')
-end_date = pd.to_datetime('2025-01-01')
-```
-
 # SPX 500
 
-```python
-# S&P 500 SPX monthly index from 1959
-#csv_file = 'https://finance.yahoo.com/quote/%5EGSPC/history?period1=1262304000&period2=1702771200&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true'
-# extracted table to html file
-html_file = '../data/temp.html'
-local_file = '../data/spx_HistoricalData2010.csv'
-#max_age = datetime.timedelta(days=7)
-#if not os.path.exists(local_file) or datetime.datetime.now() - datetime.datetime.fromtimestamp(os.path.getmtime(local_file)) > max_age:
-#    import urllib.request
-#    urllib.request.urlretrieve(csv_file, local_file)
-#dfSpx = pd.read_csv(local_file, encoding='cp1252')    
-dfSpx = pd.read_html(html_file, encoding='cp1252')[0] 
-dfSpx.to_csv(local_file, index=False)
-dfSpx = dfSpx.drop(dfSpx.index[-1]) # drop the last row of disclaimers
-```
-
-```python
-dfSpx.rename(columns={'Adj Close**': 'Price'}, inplace=True)
-dfSpx['Price'] = pd.to_numeric(dfSpx['Price'], errors='coerce')
-dfSpx['Date'] = pd.to_datetime(dfSpx['Date'], format='%b %d, %Y')
-dfSpx.set_index('Date', inplace=True)
-dfSpx.sort_values(by='Date', ascending=True, inplace=True)
-dfSpx.head()
-```
 
 
 
@@ -133,12 +94,7 @@ dfSpx.head()
 </div>
 
 
-```python
-dfSpx['YoY Change'] = dfSpx['Price'].pct_change(periods=252) *100
-dfSpx['3 Yr Rolling Avg'] = dfSpx['YoY Change'].rolling(window=(252*3), min_periods=1).mean()
-dfSpx = dfSpx.loc[dfSpx.index >= start_date]
-dfSpx.tail()
-```
+
 
 
 
@@ -242,26 +198,9 @@ dfSpx.tail()
 </div>
 
 
+
 # TSLA
 
-```python
-# Daily TSLA index for 10 years from 2013
-# https://www.nasdaq.com/market-activity/index/tsla/historical  < NO! DOES NOT INC SPLIT ADJUSTED CLOSE! USE YAHOO!
-# https://finance.yahoo.com/quote/TSLA/history?period1=1277769600&period2=1701907200&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true
-# Select max date range and download csv file
-csv_file = '../data/tsla_HistoricalData.csv'
-dfTsla = pd.read_csv(csv_file, encoding='cp1252', usecols=['Date', 'Adj Close'])
-
-```
-
-```python
-#dfTsla.rename(columns={'Price': 'Pre-split Price'}, inplace=True)
-dfTsla.rename(columns={'Adj Close': 'Price'}, inplace=True)
-dfTsla['Date'] = pd.to_datetime(dfTsla['Date'])
-dfTsla.set_index('Date', inplace=True)
-dfTsla.sort_values(by='Date', ascending=True, inplace=True)
-dfTsla.head()
-```
 
 
 
@@ -316,13 +255,7 @@ dfTsla.head()
 </div>
 
 
-```python
-# weekly change Year over Year
-dfTsla['YoY Change'] = dfTsla['Price'].pct_change(periods=252) * 100
-dfTsla['3 Yr Rolling Avg'] = dfTsla['YoY Change'].rolling(window=(252*3)).mean()
-dfTsla = dfTsla.loc[dfTsla.index >= start_date]
-dfTsla.head()
-```
+
 
 
 
@@ -391,26 +324,9 @@ dfTsla.head()
 </div>
 
 
-```python
-plt.figure(figsize=(10, 6))
-colors = list(plt.rcParams['axes.prop_cycle'])
-plt.plot(dfTsla.index, dfTsla['YoY Change'], label='TSLA YOY', color=colors[1]['color'], alpha=0.1)
-plt.plot(dfTsla.index, dfTsla['3 Yr Rolling Avg'], label='TSLA 3 Yr Rolling Average', color=colors[1]['color'])
-plt.plot(dfSpx.index, dfSpx['YoY Change'], label='SPX YOY', color=colors[0]['color'], alpha=0.1)
-plt.plot(dfSpx.index, dfSpx['3 Yr Rolling Avg'], label='SPX 3 Yr Rolling Average', color=colors[0]['color'])
-plt.xlabel('Date')
-plt.ylabel('Annual % Change')
-plt.suptitle('www.nasdaq.com/market-activity')
-plt.title('YoY Annual Price Change (excludes dividend yield and inflation)')
-plt.grid(True)
-plt.yticks(range(-100, 1000, 100))
-plt.ylim(bottom=-100, top=1000)
-plt.xlim(left=start_date, right=end_date)
-#plt.axhline(y=0, color='darkred')  # Add horizontal line at y=0
-legend = plt.legend(loc='best')
-legend.get_frame().set_facecolor('white')
-legend.get_frame().set_alpha(0.98)
-plt.show()
-```
 
-![png]({{ site.baseurl }}/images/spx-and-tsla_10_0.png){: .center-image }
+
+    
+![png](images/spx-and-tsla_10_0.png)
+    
+
