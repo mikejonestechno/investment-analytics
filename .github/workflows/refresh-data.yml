@@ -48,3 +48,5 @@ jobs:
 
     - name: Commit changes
       uses: actions-x/commit@v6        
+      with:
+        branch: ${{ github.head_ref }}
