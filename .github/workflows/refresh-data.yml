@@ -44,7 +44,7 @@ jobs:
         pip install -r src/requirements.txt  
 
     - name: Notebooks to Jekyl Markdown
-      run: jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown notebooks/spx-and-tsla.ipynb
+      run: jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown notebooks/*.ipynb
 
     - name: Commit changes
       uses: actions-x/commit@v6        
