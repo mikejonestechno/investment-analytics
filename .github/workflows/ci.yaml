@@ -2,10 +2,14 @@ name: CI
 on:
   push:
     branches:
-      - main  
+      - main 
+    paths:
+      - 'src/**'
   pull_request:
     types: [opened, synchronize, reopened]
-    # due to the branch protection rule, the PR must be triggered even if only pages are changed
+    paths:
+      - 'src/**'
+      
 jobs:
   test:
     name: Unit Test
@@ -47,7 +51,7 @@ jobs:
   sonarcloud:
     name: SonarCloud
     needs: test
-    if: always()
+    if: success() || cancelled()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
