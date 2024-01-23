@@ -32,14 +32,10 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r src/requirements.txt
-        pip install jekyllnb
+        pip install -r src/requirements.txt  
 
     - name: Notebooks to Jekyl Markdown
-      # Dont put pages in subdir because jekllnb hardcoded permalink to "/"
-      # Unless we add a custom jekyll json to each notebook
-      run: jupyter jekyllnb --site-dir pages --image-dir images --no-auto-folder --MarkdownExporter.exclude_code_cell=True notebooks/spx-and-tsla.ipynb
-      # Perhaps I can just use nbconvert with first markdown cell contains the frontmatter
+      run: jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown notebooks/spx-and-tsla.ipynb
 
     - name: Commit changes
       uses: actions-x/commit@v6        
