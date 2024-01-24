@@ -1,4 +1,6 @@
 pandas
+pyarrow
+pickleshare
 matplotlib
 numpy
 pytest-bdd
