@@ -1,4 +1,6 @@
 pandas
+matplotlib
+numpy
 pytest-bdd
 pytest-cov
 pytest-mock
