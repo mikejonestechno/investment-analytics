@@ -3,10 +3,17 @@ layout: page
 title: Inflation
 ---
 
-    Data from 2023Q4 not yet published...
-    Use last published data from 2023Q3
-    publish_date: 2023-10-31 00:00:00 was 84 days ago.
-    Using local file
+    /tmp/ipykernel_2149/1253525750.py:4: DeprecationWarning: 
+    Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+    (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+    but was not found to be installed on your system.
+    If this would cause problems for you,
+    please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+            
+      import pandas as pd
+
+
+    publish_date: 2023-10-31 00:00:00 was 85 days ago.
 
 
 The Consumer Price Index that the Reserve Bank of Australia use to index inflation rocketed through the roof in the 1970s peaking at 18% in 1975. 
@@ -40,19 +47,14 @@ The chart shows inflation stayed close to the RBA target inflation rate of 2 to 
 > ℹ The data suggests reasonable confidence using a baseline inflation of 2% to 2.5% with some uncertainty or risk that inflation could peak higher.
 
 
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    Cell In[1], line 2
-          1 # Rolling average chart
-    ----> 2 plt.figure(figsize=(10, 6))
-          3 plt.plot(df_inflation.index, df_inflation['GCPIAGYP'], label='Annual CPI Rate', color=colors[1]['color'], alpha=0.1)
-          4 quantile_label = str(int(quantile_lower*100)) + 'th and ' + str(int(quantile_upper*100)) + 'th Percentiles'
-
-
-    NameError: name 'plt' is not defined
+    
+![png](images/inflation2_10_0.png)
+    
 
 
     Stored 'df_inflation' (DataFrame)
+
+
+    /opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/IPython/extensions/storemagic.py:229: UserWarning: using autorestore/df_inflation requires you to install the `pickleshare` library.
+      db[ 'autorestore/' + arg ] = obj
 

@@ -5,3 +5,5 @@ c.MarkdownExporter.exclude_input=True
 c.FilesWriter.build_directory='pages'
 # output subdir for image files
 c.NbConvertApp.output_files_dir='images'
+c.Preprocessor.enabled=True
+c.ExecutePreprocessor.enabled=True
