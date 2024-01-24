@@ -47,7 +47,10 @@ jobs:
         jupyter kernelspec list 
 
     - name: Notebooks to Jekyl Markdown
-      run: jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown notebooks/*.ipynb
+      # run standalone notebooks first, then combo notebooks that share data using magic store
+      run: |
+        find notebooks -name "*.ipynb" -not -name "*-and-*" -exec jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown {} \;
+        find notebooks -name "*-and-*.ipynb" -exec jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown {} \;
 
     - name: Commit changes
       uses: stefanzweifel/git-auto-commit-action@v5
