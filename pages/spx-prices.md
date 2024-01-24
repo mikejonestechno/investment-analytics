@@ -1,4 +1,11 @@
-    Using local file
+    /tmp/ipykernel_2206/1462922772.py:5: DeprecationWarning: 
+    Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+    (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+    but was not found to be installed on your system.
+    If this would cause problems for you,
+    please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+            
+      import pandas as pd
 
 
 
@@ -111,7 +118,7 @@
     Over the last 30 years
     25th percentile YoY change is 1.29%
     50th percentile YoY change is 11.49%
-    75th percentile YoY change is 19.49%
+    75th percentile YoY change is 19.52%
 
 
 

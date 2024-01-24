@@ -1,5 +1,11 @@
-    publish_date: 2024-01-08 08:18:58.701469 was 10 days ago.
-    Using local file
+    /tmp/ipykernel_2093/3712782146.py:3: DeprecationWarning: 
+    Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+    (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+    but was not found to be installed on your system.
+    If this would cause problems for you,
+    please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+            
+      import pandas as pd
 
 
 
@@ -425,4 +431,8 @@
 
 
     Stored 'df_interest' (DataFrame)
+
+
+    /opt/hostedtoolcache/Python/3.11.7/x64/lib/python3.11/site-packages/IPython/extensions/storemagic.py:229: UserWarning: using autorestore/df_interest requires you to install the `pickleshare` library.
+      db[ 'autorestore/' + arg ] = obj
 
