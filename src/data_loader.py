@@ -3,8 +3,6 @@ import datetime
 import pandas as pd
 import urllib.request
 
-from yfinance import download
-
 def load_data(csv_url, local_file, max_age_days, skip_rows=0):
     """
     Load data from a CSV file.
