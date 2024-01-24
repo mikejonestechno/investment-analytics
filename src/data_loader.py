@@ -3,6 +3,8 @@ import datetime
 import pandas as pd
 import urllib.request
 
+from yfinance import download
+
 def load_data(csv_url, local_file, max_age_days, skip_rows=0):
     """
     Load data from a CSV file.
@@ -17,10 +19,13 @@ def load_data(csv_url, local_file, max_age_days, skip_rows=0):
     """
     max_age = datetime.timedelta(days=max_age_days)
     today = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    download = False
     if os.path.exists(local_file) and today - datetime.datetime.fromtimestamp(os.path.getmtime(local_file)) <= max_age:
-        print('Using local file')
+        download = False
+        #print('Using local file')
     else:
-        print('Downloading file')
+        download = True
+        #print('Downloading file')
         urllib.request.urlretrieve(csv_url, local_file)
     df = pd.read_csv(local_file, encoding='cp1252', skiprows=skip_rows)
     return df
@@ -54,9 +59,9 @@ def get_last_publish_date(date=None):
     current_quarter = pd.Period(date, freq='Q')
     publish_date = get_quarter_publish_date(current_quarter)
     if (get_quarter_publish_date(current_quarter) > date):
-        print("Data from " + str(current_quarter - 1) + " not yet published...")
-        print("Use last published data from " + str(current_quarter - 2) )
+        #print("Data from " + str(current_quarter - 1) + " not yet published...")
+        #print("Use last published data from " + str(current_quarter - 2) )
         publish_date = get_quarter_publish_date(current_quarter - 1)
-    else:
-        print("Data from " + str(current_quarter - 1) + " has been published...")
+    #else:
+        #print("Data from " + str(current_quarter - 1) + " has been published...")
     return publish_date
