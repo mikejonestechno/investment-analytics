@@ -11,7 +11,7 @@ title: Inflation
 
 The Consumer Price Index that the Reserve Bank of Australia use to index inflation rocketed through the roof in the 1970s peaking at 18% in 1975. 
 
-Since the mid 1990s inflation stablized, slightly trending down until the sharp rise in 2021.
+Inflation stablized through the late 1990s, trending slightly down until the sharp rise in 2021.
 
 
     
@@ -19,7 +19,7 @@ Since the mid 1990s inflation stablized, slightly trending down until the sharp 
     
 
 
-Plotting the 25th and 75th percentile over multi-year time horizon helps visualize long term trends, and shows inflation stayed close to the RBA target inflation rate of 2 to 3 percent for over twenty five years.
+Calculating the 25th and 75th percentile over multi-year time horizon helps visualize long term trends.
 
 
 
@@ -35,12 +35,23 @@ Over the last 30 years:
 
 
 
+The chart shows inflation stayed close to the RBA target inflation rate of 2 to 3 percent for over twenty five years.
+
 > ℹ The data suggests reasonable confidence using a baseline inflation of 2% to 2.5% with some uncertainty or risk that inflation could peak higher.
 
 
-    
-![png](images/inflation2_10_0.png)
-    
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[1], line 2
+          1 # Rolling average chart
+    ----> 2 plt.figure(figsize=(10, 6))
+          3 plt.plot(df_inflation.index, df_inflation['GCPIAGYP'], label='Annual CPI Rate', color=colors[1]['color'], alpha=0.1)
+          4 quantile_label = str(int(quantile_lower*100)) + 'th and ' + str(int(quantile_upper*100)) + 'th Percentiles'
+
+
+    NameError: name 'plt' is not defined
 
 
     Stored 'df_inflation' (DataFrame)
