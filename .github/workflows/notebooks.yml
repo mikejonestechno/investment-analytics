@@ -1,21 +1,25 @@
 name: Notebook Pages
 
-# On schedule run the notebooks to refresh the data and generate pages
+# On schedule run the notebooks on a 'data-refresh' branch and generate pages
+# then raise PR to merge changes to main.
+
 # If src or notebooks are updated, run the notebooks to generate pages
 # If project or execution time grows then change flow to 
 # only run the notebooks that changed or if their associated data has changed.
+
+# If pages changed, run 
 
 on:
   #schedule:
     # Runs at 21:00 UTC every day
     # - cron:  '0 21 * * *'
-    #paths:
-    #  - 'notebooks/**'
 
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
-      - 'notebooks/**'    
+      - 'notebooks/**'
+      - 'src/*.py'
+      - '!src/*_test.py'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -51,13 +55,22 @@ jobs:
         python -m ipykernel install --user --name python3
         jupyter kernelspec list 
 
-    - name: Notebooks to Jekyl Markdown
+    - name: Cache Data
+      uses: actions/cache@v4
+      with:
+        path: data/**
+        key: notebooks-data-${{ hashFiles('data/**') }}
+        restore-keys: notebooks-data-
+
+    - name: Update Pages
       # run standalone notebooks first, then combo notebooks that share data using magic store
       run: |
+        ls -al data
         find notebooks -name "*.ipynb" -not -name "*-and-*" -exec jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown {} \;
         find notebooks -name "*-and-*.ipynb" -exec jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown {} \;
 
     - name: Commit changes
+      # need to commit changes to pages in PR and merge to main branch to trigger deployment
       uses: stefanzweifel/git-auto-commit-action@v5
       if: github.event_name == 'pull_request'
       with:
