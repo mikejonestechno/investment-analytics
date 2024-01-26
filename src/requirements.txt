@@ -1,4 +1,6 @@
 pandas ~= 2.1
+# bottleneck is dependency of pandas
+bottleneck ~=1.3.6
 # pyarrow will become a dependency from pandas 3.0
 pyarrow
 pickleshare
