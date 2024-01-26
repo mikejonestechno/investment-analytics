@@ -1,4 +1,9 @@
-name: Publish Jupyter Notebooks
+name: Notebook Pages
+
+# On schedule run the notebooks to refresh the data and generate pages
+# If src or notebooks are updated, run the notebooks to generate pages
+# If project or execution time grows then change flow to 
+# only run the notebooks that changed or if their associated data has changed.
 
 on:
   #schedule:
@@ -54,5 +59,6 @@ jobs:
 
     - name: Commit changes
       uses: stefanzweifel/git-auto-commit-action@v5
+      if: github.event_name == 'pull_request'
       with:
         branch: ${{ github.head_ref }}
