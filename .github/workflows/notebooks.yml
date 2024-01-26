@@ -14,6 +14,13 @@ on:
     # Runs at 21:00 UTC every day
     # - cron:  '0 21 * * *'
 
+  # Have to run notebooks on main branch to refresh data cache
+  push:
+    branches:
+      - main
+    paths:
+      - 'notebooks/**'
+
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
@@ -70,7 +77,7 @@ jobs:
         find notebooks -name "*-and-*.ipynb" -exec jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown {} \;
 
     - name: Commit changes
-      # need to commit changes to pages in PR and merge to main branch to trigger deployment
+      if: github.ref != 'refs/heads/main'
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         branch: ${{ github.head_ref }}
