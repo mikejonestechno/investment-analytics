@@ -1,4 +1,5 @@
-pandas
+pandas ~= 2.1
+# pyarrow will become a dependency from pandas 3.0
 pyarrow
 pickleshare
 matplotlib
