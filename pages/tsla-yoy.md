@@ -386,13 +386,17 @@
 
 
 
+
     /tmp/ipykernel_1936/3440364386.py:58: SettingWithCopyWarning: 
+
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       rolling_forecast['BearChange'] = rolling_forecast['Bear'].pct_change() * 100 # change since previous row
+
     /tmp/ipykernel_1936/3440364386.py:61: SettingWithCopyWarning: 
+
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     

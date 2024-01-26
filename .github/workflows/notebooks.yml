@@ -73,9 +73,9 @@ jobs:
       # run standalone notebooks first, then combo notebooks that share data using magic store
       # TODO - fail the workflow if any notebooks fail to execute
       run: |
-        ls -al data
-        find notebooks -name "*.ipynb" -not -name "*-and-*" -exec jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown {} \;
-        find notebooks -name "*-and-*.ipynb" -exec jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown {} \;
+        set -e
+        find notebooks -name "*.ipynb" -not -name "*-and-*" | xargs jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown
+        find notebooks -name "*-and-*.ipynb" | xargs jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown
 
     - name: Commit changes
       if: github.ref != 'refs/heads/main'
