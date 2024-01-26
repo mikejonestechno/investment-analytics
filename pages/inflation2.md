@@ -3,16 +3,15 @@ layout: page
 title: Inflation
 ---
 
-    publish_date: 2023-10-31 00:00:00 was 87 days ago.
+The Consumer Price Index that the Reserve Bank of Australia use to index inflation is published quarterly, one month after the end of each quarter.
 
+Inflation rocketed through the roof in the 1970s peaking at 18% in 1975. 
 
-The Consumer Price Index that the Reserve Bank of Australia use to index inflation rocketed through the roof in the 1970s peaking at 18% in 1975. 
-
-Inflation stablized through the late 1990s, trending slightly down until the sharp rise in 2021.
+Inflation remained highly volatile but eventually stabilized through the 1990s, then trends slightly down until the sharp rise in 2021.
 
 
     
-![png](images/inflation2_6_0.png)
+![png](images/inflation2_7_0.png)
     
 
 
@@ -38,9 +37,6 @@ The chart shows inflation stayed close to the RBA target inflation rate of 2 to 
 
 
     
-![png](images/inflation2_10_0.png)
+![png](images/inflation2_11_0.png)
     
-
-
-    Stored 'df_inflation' (DataFrame)
 

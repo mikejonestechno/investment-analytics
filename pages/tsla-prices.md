@@ -24,7 +24,7 @@ Over the last 10 years the median change is 19.03%:
     
 
 
-    /tmp/ipykernel_2001/113867765.py:10: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+    /tmp/ipykernel_1968/113867765.py:10: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
       dfTargets = dfTargets.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 
 
