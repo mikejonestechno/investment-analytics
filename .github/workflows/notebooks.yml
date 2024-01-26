@@ -72,6 +72,5 @@ jobs:
     - name: Commit changes
       # need to commit changes to pages in PR and merge to main branch to trigger deployment
       uses: stefanzweifel/git-auto-commit-action@v5
-      if: github.event_name == 'pull_request'
       with:
         branch: ${{ github.head_ref }}
