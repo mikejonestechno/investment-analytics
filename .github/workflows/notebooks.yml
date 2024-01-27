@@ -14,7 +14,7 @@ on:
     # Runs at 21:00 UTC every day
     # - cron:  '0 21 * * *'
 
-  # Have to run notebooks on main branch to refresh data cache
+  # Have to run notebooks on main branch to refresh cache data
   push:
     branches:
       - main
@@ -69,7 +69,7 @@ jobs:
         key: notebooks-data-${{ hashFiles('data/**') }}
         restore-keys: notebooks-data-
 
-    - name: Update Pages
+    - name: Run Notebooks
       # run standalone notebooks first, then combo notebooks that share data using magic store
       run: |
         set -e
