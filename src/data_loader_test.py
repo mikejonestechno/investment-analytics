@@ -65,8 +65,8 @@ def today_is(date):
     today = datetime.datetime.strptime(date, '%d %b %Y')
     return today
 
-@then(parsers.re('last_publish date is (?P<date>.+)'))
-def last_publish_date_is(date, today):
+@then(parsers.re('last_publish date is (?P<expected_date>.+)'))
+def last_publish_date_is(expected_date, today):
     publish_date = get_last_publish_date(today)
-    expected_publish_date = Timestamp(date)
+    expected_publish_date = Timestamp(expected_date)
     assert publish_date == expected_publish_date
