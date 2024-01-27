@@ -14,7 +14,7 @@ on:
     # Runs at 21:00 UTC every day
     # - cron:  '0 21 * * *'
 
-  # Have to run notebooks on main branch to refresh data cache
+  # Have to run notebooks on main branch to refresh cache data
   push:
     branches:
       - main
@@ -60,7 +60,7 @@ jobs:
         pip install -r src/requirements.txt 
         pip install ipykernel
         python -m ipykernel install --user --name python3
-        jupyter kernelspec list 
+        jupyter kernelspec list
 
     - name: Cache Data
       uses: actions/cache@v4
@@ -69,13 +69,19 @@ jobs:
         key: notebooks-data-${{ hashFiles('data/**') }}
         restore-keys: notebooks-data-
 
-    - name: Update Pages
+    - name: Run Notebooks
       # run standalone notebooks first, then combo notebooks that share data using magic store
-      # TODO - fail the workflow if any notebooks fail to execute
       run: |
         set -e
         find notebooks -name "*.ipynb" -not -name "*-and-*" | xargs jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown
         find notebooks -name "*-and-*.ipynb" | xargs jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown
+
+    - name: Hash Data
+      # Update hash of data files so we force new cache when data changes
+      run: |
+        set -e
+        find data -type f -not -name "hash.*" | sort -n | xargs md5sum > data/hash.txt
+        cat data/hash.txt
 
     - name: Commit changes
       if: github.ref != 'refs/heads/main'
