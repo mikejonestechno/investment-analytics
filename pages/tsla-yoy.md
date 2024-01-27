@@ -88,11 +88,6 @@
   </thead>
   <tbody>
     <tr>
-      <th>2024-01-19</th>
-      <td>212.190002</td>
-      <td>64.769377</td>
-    </tr>
-    <tr>
       <th>2024-01-22</th>
       <td>208.800003</td>
       <td>64.189672</td>
@@ -111,6 +106,11 @@
       <th>2024-01-25</th>
       <td>182.630005</td>
       <td>26.923349</td>
+    </tr>
+    <tr>
+      <th>2024-01-26</th>
+      <td>183.250000</td>
+      <td>26.878079</td>
     </tr>
   </tbody>
 </table>
@@ -158,12 +158,6 @@
   </thead>
   <tbody>
     <tr>
-      <th>2024-01-19</th>
-      <td>212.190002</td>
-      <td>64.769377</td>
-      <td>77.874346</td>
-    </tr>
-    <tr>
       <th>2024-01-22</th>
       <td>208.800003</td>
       <td>64.189672</td>
@@ -187,6 +181,12 @@
       <td>26.923349</td>
       <td>74.576156</td>
     </tr>
+    <tr>
+      <th>2024-01-26</th>
+      <td>183.250000</td>
+      <td>26.878079</td>
+      <td>73.712612</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -199,19 +199,19 @@
     
 
 
-    /tmp/ipykernel_1936/1678989774.py:10: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+    /tmp/ipykernel_1931/1678989774.py:10: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
       dfTargets = dfTargets.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 
 
-    /tmp/ipykernel_1936/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_1931/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BearChange'] = subgroup['Bear'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1936/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_1931/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BearChange'] = subgroup['Bear'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1936/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_1931/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BearChange'] = subgroup['Bear'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1936/3110887510.py:10: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_1931/3110887510.py:10: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BaseChange'] = subgroup['Base'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1936/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_1931/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BearChange'] = subgroup['Bear'].pct_change() * 100 # change since previous row
 
 
@@ -386,17 +386,13 @@
 
 
 
-
-    /tmp/ipykernel_1936/3440364386.py:58: SettingWithCopyWarning: 
-
+    /tmp/ipykernel_1931/3440364386.py:58: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       rolling_forecast['BearChange'] = rolling_forecast['Bear'].pct_change() * 100 # change since previous row
-
-    /tmp/ipykernel_1936/3440364386.py:61: SettingWithCopyWarning: 
-
+    /tmp/ipykernel_1931/3440364386.py:61: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
