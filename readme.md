@@ -34,14 +34,16 @@ Not financial advice: All content of this repository is for educational purposes
 
 ## Australian Index Data
 
-The interest rates and inflation rates are obtained from https://www.rba.gov.au/statistics.
+The interest rates and inflation rates are obtained from [https://www.rba.gov.au/statistics/tables/](https://www.rba.gov.au/statistics/tables/).
 
-The data for interest rates will be downloaded to `.\notebooks\data\f5-data.csv`.
+The data for interest rates will be downloaded to `.\data\f5-data.csv`.
 
-The data for inflation rates will be downloaded to `.\notebooks\data\g1-data.csv`.
+The data for inflation rates will be downloaded to `.\data\g1-data.csv`.
+
+The notebooks automatically download new data after expected data publishing schedules and GitHub actions cache the data between runs.
 
 ## International Index Data
 
-Historical prices (adjusted for splits and dividend and/or capital gain distributions) obtained from https://finance.yahoo.com/quote/TSLA/history.
+Historical prices (adjusted for splits and dividend and/or capital gain distributions) obtained from [https://finance.yahoo.com/quote/TSLA/history](https://finance.yahoo.com/quote/TSLA/history).
 
-The data will be downloaded to `.\notebooks\data\tsla_HistoricalData.csv`.
+The data will be downloaded to `.\data\tsla_HistoricalData.csv`.
