@@ -15,34 +15,35 @@ Inflation remained highly volatile but eventually stabilized through the 1990s a
     
 
 
-Calculating the 25th and 75th percentile over multi-year time horizon helps visualize long term trends.
 
 
+Calculating the 25th and 75th percentile over a 10 year time horizon helps visualize the lower and upper long term trends.
 
-Over the last 10 years the median change is 1.9%:
-- 25th percentile YoY change is 1.5%
-- 50th percentile YoY change is 1.9%
-- 75th percentile YoY change is 3.0%
+Over the last 10 years the median (50th percetile) change is 1.90%.
 
-Over the last 30 years:
-- 25th percentile YoY change is 1.7%
-- 50th percentile YoY change is 2.4%
-- 75th percentile YoY change is 3.12%
+Over the last 30 years the median (50th percetile) change is 2.40%.
+
+| years |25 | 50 | 75 |
+|---:|---:|---:|---:|
+| 1 | 5.85 | 6.50 | 7.20 |
+| 10 | 1.50 | 1.90 | 3.00 |
+| 30 | 1.70 | 2.40 | 3.12 |
+
 
 
 
 The chart shows inflation stayed close to the RBA target inflation rate of 2 to 3 percent for over twenty five years.
 
+
+    
+![png](images/inflation_13_0.png)
+    
+
+
+
+    
+![png](images/inflation_15_0.png)
+    
+
+
 > ℹ The data suggests reasonable confidence using a baseline inflation of 2% to 2.5% with some uncertainty or risk that inflation could peak higher.
-
-
-    
-![png](images/inflation_11_0.png)
-    
-
-
-
-    
-![png](images/inflation_12_0.png)
-    
-

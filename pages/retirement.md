@@ -28,4 +28,6 @@ How much would I need from age 50 to 100?
     
 
 
-This model excludes inflation, the true funds required would be much higher.
+This model excludes inflation, the true funds required would be much higher as expenses increase over time.
+
+This model also assumes a cash fund that excludes interest, yield or appreciation. The funds required would go further if the fund earnt value over time.
