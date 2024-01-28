@@ -36,7 +36,7 @@ The chart shows inflation stayed close to the RBA target inflation rate of 2 to 
 
 
     
-![png](images/inflation_13_0.png)
+![png](images/inflation_14_0.png)
     
 
 
