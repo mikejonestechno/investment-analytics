@@ -1,5 +1,6 @@
 ca10881ca952ecd529731c70c242d249  data/f5-data.csv
 389a362b4121153b73d38f4eb2cd3daa  data/g1-data.csv
+00398d06c2901f2d636f097d1fdf411c  data/inflation_percentiles.md
 2c77cff3343291aeac76707826ecdb4d  data/spx_HistoricalData.csv
 e76599958b58f6c5d6ed7656d5236fdf  data/tsla_HistoricalData.csv
 afe6474cc29cba71307e82729f1923b6  data/tsla_PriceTarget_InvestAnswers.md
