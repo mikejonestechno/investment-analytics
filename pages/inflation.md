@@ -23,11 +23,13 @@ Over the last 10 years the median (50th percetile) change is 1.90%.
 
 Over the last 30 years the median (50th percetile) change is 2.40%.
 
-| years |25 | 50 | 75 |
-|---:|---:|---:|---:|
-| 1 | 5.85 | 6.50 | 7.20 |
-| 10 | 1.50 | 1.90 | 3.00 |
-| 30 | 1.70 | 2.40 | 3.12 |
+| Years |   25 |   50 |   75 |
+|-------|-----:|-----:|-----:|
+| 1     | 5.85 | 6.50 | 7.20 |
+| 10    | 1.50 | 1.90 | 3.00 |
+| 30    | 1.70 | 2.40 | 3.12 |
+
+
 
 
 
@@ -35,14 +37,22 @@ Over the last 30 years the median (50th percetile) change is 2.40%.
 The chart shows inflation stayed close to the RBA target inflation rate of 2 to 3 percent for over twenty five years.
 
 
+
+
     
-![png](images/inflation_14_0.png)
+![png](images/inflation_13_1.png)
     
 
 
 
+
+Same data plotted from 1995.
+
+
+
+
     
-![png](images/inflation_15_0.png)
+![png](images/inflation_14_1.png)
     
 
 
