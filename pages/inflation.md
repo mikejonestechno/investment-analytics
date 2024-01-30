@@ -7,7 +7,7 @@ The Consumer Price Index that the Reserve Bank of Australia use to index inflati
 
 Inflation rocketed through the roof in the 1970s peaking at 18% in 1975. 
 
-Inflation remained highly volatile but eventually stabilized through the 1990s, and was trending slightly down until the spike back up to 8% at the end of 2022.
+Inflation remained highly volatile but eventually stabilized through the 1990s, and was trending slightly down through the 2000s until the spike back up to 8% at the end of 2022.
 
 
     
@@ -17,7 +17,7 @@ Inflation remained highly volatile but eventually stabilized through the 1990s, 
 
 
 
-Calculating the 25th and 75th percentile over a 10 year time horizon helps visualize the lower and upper long term trends.
+Calculating the 25th and 75th percentile over a 10 year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
 
 
 
