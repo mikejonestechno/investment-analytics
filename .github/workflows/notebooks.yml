@@ -73,8 +73,8 @@ jobs:
       # run standalone notebooks first, then combo notebooks that share data using magic store
       run: |
         set -e
-        find notebooks -name "*.ipynb" -not -name "*-and-*" | xargs jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown
-        find notebooks -name "*-and-*.ipynb" | xargs jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown
+        find notebooks -name "*.ipynb" -not -name "*-and-*" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
+        find notebooks -name "*-and-*.ipynb" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
 
     - name: Hash Data
       # Update hash of data files so we force new cache when data changes
