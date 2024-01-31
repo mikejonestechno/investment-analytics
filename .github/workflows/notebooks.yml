@@ -73,6 +73,7 @@ jobs:
       # run standalone notebooks first, then combo notebooks that share data using magic store
       run: |
         set -e
+        echo "$(nproc) processors"
         find notebooks -name "*.ipynb" -not -name "*-and-*" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
         find notebooks -name "*-and-*.ipynb" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
 
