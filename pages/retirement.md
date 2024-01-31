@@ -15,7 +15,8 @@ This data model is based on annual retirement expense data from the [Association
 
 | Lifestyle | Modest | Comfortable | Four-star | Luxury | Opulent |
 |-----------|--:|--:|--:|--:|--:|
-| Expenses  | $45,000| $70,000| $90,000| $140,000| $230,000 |
+| Annual    | $45,000| $70,000| $90,000| $140,000| $230,000 |
+| Monthly   | $3,800| $5,800| $7,500| $11,700| $19,200 |
 
 
 
