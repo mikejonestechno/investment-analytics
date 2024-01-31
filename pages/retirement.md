@@ -21,7 +21,7 @@ This data model is based on annual retirement expense data from the [Association
 
 
 
-The chart below shows the retirement fund required for up to 51 years of retirement:
+The chart below shows the retirement fund required for up to 50 years of retirement:
 
 
 
