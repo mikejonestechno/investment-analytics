@@ -1,115 +1,69 @@
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+---
+layout: page
+title: S&P 500
+permalink: spx
+---
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+The S&P 500 Index from Standard & Poor's is a market-capitalization-weighted index tracking the 500 largest publicly traded companies in the US. 
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Open</th>
-      <th>High</th>
-      <th>Low</th>
-      <th>Close</th>
-      <th>Adj Close</th>
-      <th>Volume</th>
-    </tr>
-    <tr>
-      <th>Date</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1960-01-04</th>
-      <td>59.910000</td>
-      <td>59.910000</td>
-      <td>59.910000</td>
-      <td>59.910000</td>
-      <td>59.910000</td>
-      <td>3990000</td>
-    </tr>
-    <tr>
-      <th>1960-01-05</th>
-      <td>60.389999</td>
-      <td>60.389999</td>
-      <td>60.389999</td>
-      <td>60.389999</td>
-      <td>60.389999</td>
-      <td>3710000</td>
-    </tr>
-    <tr>
-      <th>1960-01-06</th>
-      <td>60.130001</td>
-      <td>60.130001</td>
-      <td>60.130001</td>
-      <td>60.130001</td>
-      <td>60.130001</td>
-      <td>3730000</td>
-    </tr>
-    <tr>
-      <th>1960-01-07</th>
-      <td>59.689999</td>
-      <td>59.689999</td>
-      <td>59.689999</td>
-      <td>59.689999</td>
-      <td>59.689999</td>
-      <td>3310000</td>
-    </tr>
-    <tr>
-      <th>1960-01-08</th>
-      <td>59.500000</td>
-      <td>59.500000</td>
-      <td>59.500000</td>
-      <td>59.500000</td>
-      <td>59.500000</td>
-      <td>3290000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-    
-![png](images/spx-prices_4_0.png)
-    
-
-
-
-    
-![png](images/spx-prices_5_0.png)
-    
-
-
-    Over the last 10 years
-    25th percentile YoY change is 2.67%
-    50th percentile YoY change is 12.34%
-    75th percentile YoY change is 17.39%
-    
-    Over the last 30 years
-    25th percentile YoY change is 1.29%
-    50th percentile YoY change is 11.5%
-    75th percentile YoY change is 19.54%
-
+The S&P 500 is widely considered one of the best gauges of overall stock market performance because of its depth and diversity, and because it tracks the top performing companies by market capitalization.
 
 
     
 ![png](images/spx-prices_7_0.png)
+    
+
+
+The compound annual growth over time appears to be an exponential curve. Plotting the same data with a logarithmic y-axis scale helps visualize the bursts of growth in earlier years that would otherwise be hidden by the volatility of spikes in later years.
+
+
+    
+![png](images/spx-prices_9_0.png)
+    
+
+
+The logarithmic scale shows a period of volatility between 1965 and 1980 where the price was flat, trending very slightly up.
+
+The sudden almost 45' angle from 1980 shows significant growth, climbing 10x over 20 years, from $100 in 1980 to over $1,000 in the year 2000. 
+
+The S&P 500 hit a ten year period of volatility between 2000 and 2010 which wiped out almost 1/2 of the value at the lowest point.
+
+Another 45' climb over the next 15 years resulted in another 5x from $1,000 in 2010 to $5,000 around 2025.
+
+The logarithmic scale shows the S&P 500 has consistent multi-year periods of high growth performance (with flat sideways trends through periods of high volatility).
+
+
+
+
+Calculating the 25th and 75th percentile over a multi-year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
+
+
+
+
+
+Over the last 10 years the median (50th percetile) change is 12.34%.
+
+Over the last 30 years the median (50th percetile) change is 11.50%.
+
+| Years | 25th percentile | 50th percentile | 75th percentile |
+|-------|-----:|-----:|-----:|
+| 1     | -4.76 | 11.72 | 15.91 |
+| 10    | 2.67 | 12.34 | 17.39 |
+| 30    | 1.29 | 11.50 | 19.54 |
+
+
+
+
+
+    
+![png](images/spx-prices_16_0.png)
+    
+
+
+> ℹ Given the multi-decade history, the data suggests high confidence using a baseline stock market performance of 12% with some uncertainty or risk that stocks can go up or down for several years at a time. Note this does not take inflation into consideration.
+
+
+    
+![png](images/spx-prices_18_0.png)
     
 
