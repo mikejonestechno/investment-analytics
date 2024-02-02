@@ -3,6 +3,10 @@
 {
 	"name": "investment-analytics",
 	"runArgs": ["--name", "investment-analytics"],
+	// set environment variable for timezone
+	"remoteEnv": {
+		"TZ": "Australia/Sydney"
+	},
 	"build": { 
 		"context": "..",
 		"dockerfile": "Dockerfile"
