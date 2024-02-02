@@ -57,9 +57,5 @@ def get_last_publish_date(date=None):
     current_quarter = pd.Period(date, freq='Q')
     publish_date = get_quarter_publish_date(current_quarter)
     if (get_quarter_publish_date(current_quarter) > date):
-        #print("Data from " + str(current_quarter - 1) + " not yet published...")
-        #print("Use last published data from " + str(current_quarter - 2) )
         publish_date = get_quarter_publish_date(current_quarter - 1)
-    #else:
-        #print("Data from " + str(current_quarter - 1) + " has been published...")
     return publish_date

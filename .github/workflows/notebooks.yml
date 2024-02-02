@@ -43,6 +43,8 @@ permissions:
 jobs:
   run-notebooks:
     runs-on: ubuntu-latest
+    env: # timestamp matching for AU data files
+      TZ: 'Australia/Sydney'      
 
     steps:
     - name: Checkout
