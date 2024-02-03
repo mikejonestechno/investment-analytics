@@ -39,7 +39,7 @@ def get_quarter_publish_date(quarter):
     Returns:
     - pd.Timestamp: The publish date of the given quarter.
     """
-    publish_date = quarter.start_time + pd.offsets.MonthEnd(1)
+    publish_date = quarter.start_time + pd.DateOffset(months=1)
     return publish_date
 
 def get_last_publish_date(date=None):
@@ -54,8 +54,8 @@ def get_last_publish_date(date=None):
     """
     if date is None:
         date = pd.Timestamp.now()
-    current_quarter = pd.Period(date, freq='Q')
-    publish_date = get_quarter_publish_date(current_quarter)
-    if (get_quarter_publish_date(current_quarter) > date):
-        publish_date = get_quarter_publish_date(current_quarter - 1)
+    quarter = pd.Period(date, freq='Q')
+    publish_date = get_quarter_publish_date(quarter)
+    if (publish_date > date):
+        publish_date = get_quarter_publish_date(quarter - 1)
     return publish_date
