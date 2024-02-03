@@ -28,6 +28,30 @@ def load_data(csv_url, local_file, max_age_days, skip_rows=0):
     df = pd.read_csv(local_file, encoding='cp1252', skiprows=skip_rows)
     return df
 
+"""
+If local_file is older than specifed date, then download to latest_file.
+
+Sometimes the data is still old e.g. downloaded early before last publish date.
+So only replace the local_file if the latest_file actually has newer data.
+
+If latest_file hash is different to local_file then replace the local_file.
+"""
+def is_file_cache_stale(local_file):
+    """
+    is local_file hash different to the cached file hash.txt?
+    """
+
+def is_file_stale(local_file, date):
+    """
+    is local_file older than the specified date?
+    """
+
+def update_file(local_file, csv_url):
+    """
+    Download the latest data to a temporary file and replace the local_file if the data is newer.
+    """
+
+
 def get_quarter_publish_date(quarter):
     """
     This function returns the publish date of a given quarter.
@@ -39,7 +63,7 @@ def get_quarter_publish_date(quarter):
     Returns:
     - pd.Timestamp: The publish date of the given quarter.
     """
-    publish_date = quarter.start_time + pd.offsets.MonthEnd(1)
+    publish_date = quarter.start_time + pd.DateOffset(months=1)
     return publish_date
 
 def get_last_publish_date(date=None):
@@ -54,8 +78,13 @@ def get_last_publish_date(date=None):
     """
     if date is None:
         date = pd.Timestamp.now()
-    current_quarter = pd.Period(date, freq='Q')
-    publish_date = get_quarter_publish_date(current_quarter)
-    if (get_quarter_publish_date(current_quarter) > date):
-        publish_date = get_quarter_publish_date(current_quarter - 1)
+    quarter = pd.Period(date, freq='Q')
+    publish_date = get_quarter_publish_date(quarter)
+    if (publish_date > date):
+        publish_date = get_quarter_publish_date(quarter - 1)
     return publish_date
+
+""" 
+NOTE that data may be published on the last or second last Wednesday before that month end
+so I could look to get new data between the early publish date and the last publish date.
+"""
