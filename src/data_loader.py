@@ -36,6 +36,10 @@ So only replace the local_file if the latest_file actually has newer data.
 
 If latest_file hash is different to local_file then replace the local_file.
 """
+def is_file_cache_stale(local_file):
+    """
+    is local_file hash different to the cached file hash.txt?
+    """
 
 def is_file_stale(local_file, date):
     """
