@@ -4,3 +4,4 @@ source
 *-checkpoint.ipynb
 __pycache__/
 .coverage
+*.tmp
