@@ -13,6 +13,7 @@ plugins:
   # minima theme was designed with jekyll-feed to create rss feed of blog posts
   #- jekyll-feed
   # NOTE: add custom _includes/footer.html to remove the rss 'subscribe' link
+  - jekyll-redirect-from
   
 header_pages:
   - retirement-planning.md
