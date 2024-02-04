@@ -39,7 +39,7 @@ So only replace the local_file if the latest_file actually has newer data.
 If latest_file hash is different to local_file then replace the local_file.
 """
 
-def load_csv_data(local_file, csv_url, publish_date):
+def load_csv_data(local_file, csv_url, publish_date, skip_rows=0):
     """
     Loads CSV data from a local file or updates it from a given URL if the file is stale.
 
@@ -53,7 +53,7 @@ def load_csv_data(local_file, csv_url, publish_date):
     """
     if is_file_stale(local_file, publish_date):
         update_file(local_file, csv_url)
-    return load_csv_file(local_file)
+    return load_csv_file(local_file, skip_rows)
 
 def load_csv_file(local_file, skip_rows=0):
     """
