@@ -11,10 +11,10 @@
 
 
 
-Over the last 10 years the median change is 18.82%:
+Over the last 10 years the median change is 18.75%:
 - 25th percentile YoY change is -9.46%
-- 50th percentile YoY change is 18.82%
-- 75th percentile YoY change is 77.23%
+- 50th percentile YoY change is 18.75%
+- 75th percentile YoY change is 77.21%
 
 
 
@@ -24,7 +24,7 @@ Over the last 10 years the median change is 18.82%:
     
 
 
-    /tmp/ipykernel_1962/113867765.py:10: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
+    /tmp/ipykernel_2050/113867765.py:10: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
       dfTargets = dfTargets.applymap(lambda x: x.strip() if isinstance(x, str) else x)
 
 
