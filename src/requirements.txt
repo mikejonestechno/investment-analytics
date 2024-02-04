@@ -11,3 +11,4 @@ pytest-cov ~= 4.1
 pytest-mock ~= 3.12
 nbconvert ~= 7.7
 ipykernel ~= 6.25
+hashlib ~= 2.4

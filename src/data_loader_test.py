@@ -1,14 +1,21 @@
+from genericpath import exists
 from math import exp
 import os
 import datetime
+from threading import local
 from pandas import Timestamp
+import pytest
 from pytest_bdd import scenarios, given, when, then, parsers
-from data_loader import load_data, get_last_publish_date
+from data_loader import load_data, get_last_publish_date, is_file_stale
 from tempfile import NamedTemporaryFile
 import csv
 
 # Define the scenario
 scenarios('data_loader.feature')
+
+@pytest.fixture
+def publish_date():
+    return None
 
 # Define the given step
 @given('the local file does not exist', target_fixture="local_file_path")
@@ -70,3 +77,18 @@ def last_publish_date_is(expected_date, today):
     publish_date = get_last_publish_date(today)
     expected_publish_date = Timestamp(expected_date)
     assert publish_date == expected_publish_date
+
+@then(parsers.parse('is_file_stale returns {expected}'))
+def is_file_stale_returns_expected(expected, local_file_path, publish_date):
+    expected = expected == 'True'
+    assert is_file_stale(local_file_path, publish_date) == expected
+
+
+@given(parsers.parse('local file is {older} than given date'), target_fixture="publish_date")
+def local_file_is_older_than_given_date(older):
+    older = older == 'older'
+    if older: # the file will be older than this date
+        publish_date = datetime.datetime(2040, 1, 1)
+    else: # the file will be newer than this date
+        publish_date = datetime.datetime(2020, 1, 1)
+    return publish_date
