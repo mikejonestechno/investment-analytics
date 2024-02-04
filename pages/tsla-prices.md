@@ -24,10 +24,6 @@ Over the last 10 years the median change is 18.75%:
     
 
 
-    /tmp/ipykernel_2048/113867765.py:10: FutureWarning: DataFrame.applymap has been deprecated. Use DataFrame.map instead.
-      dfTargets = dfTargets.applymap(lambda x: x.strip() if isinstance(x, str) else x)
-
-
     InvestA uses mediumseagreen
     JStephenson uses olivedrab
     RandyKirk uses green

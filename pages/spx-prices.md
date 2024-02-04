@@ -2,13 +2,13 @@
 layout: page
 title: S&P 500
 # override link to avoid '&' char in the url
-permalink: spx
-redirect_from: "/spx.md"
+#permalink: spx
+#redirect_from: "/spx.md"
 ---
 
 The S&P 500 Index from Standard & Poor's is a market-capitalization-weighted index tracking the 500 largest publicly traded companies in the US. 
 
-The S&P 500 is widely considered one of the best gauges of overall stock market performance because of its depth and diversity, and because it tracks the top performing companies by market capitalization.
+The S&P 500 is widely considered one of the best gauges of overall stock market performance because of its depth and diversity, tracking the top performing companies by market capitalization.
 
 
     

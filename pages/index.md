@@ -9,7 +9,7 @@ This project was created to provide some guidelines and forecasts for the follow
 - [Retirement Planning](retirement-planning.md)
 - [Inflation](inflation.md)
 - [Inflation and Interest Rates](inflation-and-interest-rates.md)
-- [S&P 500 Index](spx.md)
+- [S&P 500 Index](spx-prices.md)
 - [Tesla (TSLA)](tsla.md)
 
 ## Made in Australia
