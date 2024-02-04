@@ -1,14 +1,12 @@
-from genericpath import exists
-from math import exp
-import os
 import datetime
-from threading import local
+import csv
 from pandas import Timestamp
+
 import pytest
 from pytest_bdd import scenarios, given, when, then, parsers
+
 from data_loader import load_data, get_last_publish_date, is_file_stale
-from tempfile import NamedTemporaryFile
-import csv
+
 
 # Define the scenario
 scenarios('data_loader.feature')

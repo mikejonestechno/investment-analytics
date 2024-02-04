@@ -1,34 +1,17 @@
 import os
 import datetime
-from threading import local
-import pandas as pd
+
 import urllib.request
 import hashlib
 
+import pandas as pd
+
 def load_data(csv_url, local_file, max_age_days, skip_rows=0):
     """
-    Load data from a CSV file.
-
-    Parameters:
-    csv_url (str): The URL of the CSV file to download.
-    local_file (str): The local file path to save the downloaded CSV file.
-    max_age_days (int): The maximum age of the local file in days. If the local file is older than this, it will be re-downloaded.
-
-    Returns:
-    pandas.DataFrame: The loaded data as a pandas DataFrame.
+    Load data from a CSV file, refresh if older than max_age_days.
     """
-    max_age = datetime.timedelta(days=max_age_days)
-    today = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-    download = False
-    if os.path.exists(local_file) and today - datetime.datetime.fromtimestamp(os.path.getmtime(local_file)) <= max_age:
-        download = False
-        #print('Using local file')
-    else:
-        download = True
-        #print('Downloading file')
-        urllib.request.urlretrieve(csv_url, local_file)
-    df = pd.read_csv(local_file, encoding='cp1252', skiprows=skip_rows)
-    return df
+    publish_date = datetime.datetime.now() - datetime.timedelta(days=max_age_days)
+    return load_csv_data(local_file, csv_url, publish_date, skip_rows)
 
 """
 If local_file is older than specifed date, then download to latest_file.
@@ -119,10 +102,10 @@ def update_file(local_file, csv_url):
 
     Returns:
         None
-    """
+    """    
     temp_file = local_file + '.tmp'
-    urllib.request.urlretrieve(csv_url, temp_file)    
-    if get_file_hash(temp_file) != get_file_hash(local_file):
+    urllib.request.urlretrieve(csv_url, temp_file) 
+    if (not os.path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
         os.replace(temp_file, local_file)
 
 def get_quarter_publish_date(quarter):
