@@ -199,15 +199,15 @@
     
 
 
-    /tmp/ipykernel_1951/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_2033/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BearChange'] = subgroup['Bear'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1951/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_2033/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BearChange'] = subgroup['Bear'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1951/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_2033/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BearChange'] = subgroup['Bear'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1951/3110887510.py:10: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_2033/3110887510.py:10: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BaseChange'] = subgroup['Base'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1951/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
+    /tmp/ipykernel_2033/3110887510.py:11: FutureWarning: The default fill_method='pad' in Series.pct_change is deprecated and will be removed in a future version. Either fill in any non-leading NA values prior to calling pct_change or specify 'fill_method=None' to not fill NA values.
       subgroup['BearChange'] = subgroup['Bear'].pct_change() * 100 # change since previous row
 
 
@@ -382,13 +382,13 @@
 
 
 
-    /tmp/ipykernel_1951/3440364386.py:58: SettingWithCopyWarning: 
+    /tmp/ipykernel_2033/3440364386.py:58: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       rolling_forecast['BearChange'] = rolling_forecast['Bear'].pct_change() * 100 # change since previous row
-    /tmp/ipykernel_1951/3440364386.py:61: SettingWithCopyWarning: 
+    /tmp/ipykernel_2033/3440364386.py:61: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
