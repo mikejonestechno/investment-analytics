@@ -1,9 +1,6 @@
 ---
 layout: page
 title: S&P 500
-# override link to avoid '&' char in the url
-#permalink: spx
-#redirect_from: "/spx.md"
 ---
 
 The S&P 500 Index from Standard & Poor's is a market-capitalization-weighted index tracking the 500 largest publicly traded companies in the US. 
@@ -12,7 +9,7 @@ The S&P 500 is widely considered one of the best gauges of overall stock market 
 
 
     
-![png](images/spx-prices_7_0.png)
+![png](images/spx-prices_6_0.png)
     
 
 
@@ -20,7 +17,7 @@ The compound annual growth over time appears to be an exponential curve. Plottin
 
 
     
-![png](images/spx-prices_9_0.png)
+![png](images/spx-prices_8_0.png)
     
 
 
@@ -58,7 +55,7 @@ Over the last 30 years the median (50th percetile) change is 11.51%.
 
 
     
-![png](images/spx-prices_16_0.png)
+![png](images/spx-prices_15_0.png)
     
 
 
@@ -66,6 +63,6 @@ Over the last 30 years the median (50th percetile) change is 11.51%.
 
 
     
-![png](images/spx-prices_18_0.png)
+![png](images/spx-prices_17_0.png)
     
 
