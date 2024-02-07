@@ -47,32 +47,38 @@ Australian superannuation fund performance has been analysed by [superguide.com.
 
 The median performing 'growth' risk funds should at least be able to match the baseline performance of the S&P 500 index. High performing funds and those with a 'high growth' risk portfolio should be expected to out-perform the S&P 500 index by selecting a subset of high performing companies, and investing in a small set of high growth, high risk stocks.
 
-> ℹ Over a 30 year time period the S&P 500 index has a median increase of around 12% per year.
+> ℹ Over a 30 year time period the S&P 500 index has a median increase of 12% per year.
 
 
 
-Lets start an example with a retirement fund yield or appreciation of 10% per year.
+### Example
+                 
+Assume a retirement fund with a simple yield or appreciation of 10% per year.
 
 A retirement fund of $700,000 will increase by $70,000 per year, 
-enough to cover the comfortable lifestyle annual expenses of $70,000 per year.
+enough to cover the comfortable lifestyle annual expenses of $70,000 per year, every year.
 
-A retirement fund slightly less than $700,000 will decrease in value over time and eventually reach zero.
+A retirement fund slightly less than $700,000 will gradually decrease in value over time and eventually reach zero.
 
 
+
+### Base Case
 
 
     
-![png](images/retirement_14_0.png)
+![png](images/retirement_15_0.png)
     
 
 
 Superanuation fund performance can fluctuate year to year with international ecomonic trends and stock market volatility. A fund that has consistently better or worse performance over a multi-year period will have significant impact - if consistently sustained over that long time period.
 
+## Bull Case
+
 A fund of $700,000 with a base return of 10% could support a comfortable retirement for 50 years. A high performing fund with a consistent return of 18% could could jump two lifestyle levels and support a near-luxury retirement for 50 years.
 
 
     
-![png](images/retirement_16_0.png)
+![png](images/retirement_18_0.png)
     
 
 
@@ -82,7 +88,7 @@ These expenses still do not take inflation into consideration, however the fund 
 
 
     
-![png](images/retirement_19_0.png)
+![png](images/retirement_21_0.png)
     
 
 
@@ -105,6 +111,6 @@ These expenses still do not take inflation into consideration, however the fund 
 
 
     
-![png](images/retirement_25_0.png)
+![png](images/retirement_27_0.png)
     
 

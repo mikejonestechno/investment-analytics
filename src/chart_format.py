@@ -17,9 +17,11 @@ class Chart:
         plt.figure(figsize=(10, 6))
         plt.title(self.chart_title)
         if self.chart_source:
-            plt.figtext(1, 0.01, self.chart_source, ha="right", fontsize=8)
+            plt.figtext(1, 0.04, self.chart_source, ha="right", fontsize=8)
             plt.subplots_adjust(right=1)  # Reset right boundary of the subplots after adding figtext
         plt.grid(True)
+
+        plt.figtext(1.01, 0.15, 'mikejonestechno', ha="right", fontsize=8, rotation=-90)
 
         colors = list(plt.rcParams['axes.prop_cycle'])
 
