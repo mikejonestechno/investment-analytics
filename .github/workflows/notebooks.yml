@@ -83,7 +83,7 @@ jobs:
       # Update hash of data files so we force new cache when data changes
       run: |
         set -e
-        find data -type f -not -name "hash.*" | sort -n | xargs md5sum > data/hash.txt
+        find data -type f \( -name "*.csv" -o -name "*.md" \) | sort -n | xargs md5sum > data/hash.txt
         cat data/hash.txt
 
     - name: Commit changes
