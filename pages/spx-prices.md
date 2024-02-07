@@ -9,7 +9,7 @@ The S&P 500 is widely considered one of the best gauges of overall stock market 
 
 
     
-![png](images/spx-prices_6_0.png)
+![png](images/spx-prices_5_0.png)
     
 
 
@@ -17,7 +17,7 @@ The compound annual growth over time appears to be an exponential curve. Plottin
 
 
     
-![png](images/spx-prices_8_0.png)
+![png](images/spx-prices_7_0.png)
     
 
 
@@ -55,7 +55,7 @@ Over the last 30 years the median (50th percetile) change is 11.52%.
 
 
     
-![png](images/spx-prices_15_0.png)
+![png](images/spx-prices_14_0.png)
     
 
 
@@ -63,6 +63,6 @@ Over the last 30 years the median (50th percetile) change is 11.52%.
 
 
     
-![png](images/spx-prices_17_0.png)
+![png](images/spx-prices_16_0.png)
     
 
