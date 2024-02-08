@@ -1,4 +1,4 @@
-ca10881ca952ecd529731c70c242d249  data/f5-data.csv
+39a6574daa50af2e01c78bddae21992c  data/f5-data.csv
 2e70c3c8918b48469bb1fbe8abc7faad  data/g1-data.csv
 a331781fba726eecafa1ecee4c9e311e  data/inflation_percentiles.md
 662a689061f2ff9d238f4550d16bfd38  data/spx_HistoricalData.csv
