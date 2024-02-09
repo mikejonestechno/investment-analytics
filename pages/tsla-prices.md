@@ -54,7 +54,7 @@ Over the last 10 years the median (50th percetile) change is 18.75%.
 
 
     
-![png](images/tsla-prices_14_0.png)
+![png](images/tsla-prices_13_0.png)
     
 
 
@@ -62,6 +62,6 @@ Over the last 10 years the median (50th percetile) change is 18.75%.
 
 
     
-![png](images/tsla-prices_16_0.png)
+![png](images/tsla-prices_15_0.png)
     
 
