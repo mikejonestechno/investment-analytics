@@ -23,7 +23,7 @@ The compound annual growth over time appears to be an exponential curve. Plottin
 
 The logarithmic scale shows a period of volatility between 1965 and 1980 where the price was flat, trending very slightly up.
 
-The sudden almost 45' angle from 1980 shows significant growth, climbing 10x over 20 years, from $100 in 1980 to over $1,000 in the year 2000. 
+The sudden almost 45' angle from 1980 indicates significant growth, climbing 10x over 20 years, from $100 in 1980 to over $1,000 in the year 2000. 
 
 The S&P 500 hit a ten year period of volatility between 2000 and 2010 which wiped out almost 1/2 of the value at the lowest point.
 
@@ -48,6 +48,7 @@ Over the last 30 years the median (50th percetile) change is 11.52%.
 |-------|-----:|-----:|-----:|
 | 1     | -0.31 | 12.13 | 16.43 |
 | 10    | 2.67 | 12.34 | 17.39 |
+| 20    | 2.84 | 11.06 | 16.99 |
 | 30    | 1.29 | 11.52 | 19.55 |
 
 
@@ -59,7 +60,7 @@ Over the last 30 years the median (50th percetile) change is 11.52%.
     
 
 
-> ℹ Given the multi-decade history, the data suggests high confidence using a baseline stock market performance of 12% with some uncertainty or risk that stocks can go up or down for several years at a time. Note this does not take inflation into consideration.
+> ℹ Given the multi-decade history, the data suggests high confidence using a baseline stock market performance of 11.5% with some uncertainty or risk that stocks can go up or down for several years at a time. Note this does not take inflation into consideration.
 
 
     
