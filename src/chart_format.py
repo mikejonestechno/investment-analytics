@@ -99,11 +99,12 @@ class StandardChart(BaseChart):
         return plt, colors
 
 class PercentileChart(StandardChart):
-    def __init__(self, percentiles, multi_year, color_index, *args, **kwargs):
+    def __init__(self, percentiles, multi_year, color_index, legend_location='best', *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.percentiles = percentiles
         self.multi_year = multi_year
         self.color_index = color_index
+        self.legend_location = legend_location
 
     def plot_percentiles(self, df: pd.DataFrame):
         plt, colors = self.base_chart(df)
@@ -120,7 +121,6 @@ class PercentileChart(StandardChart):
             else:
                 label = None
             plt.plot(df.index, df[f'rolling_{self.multi_year}_years_{percentile}'], color=colors[self.color_index]['color'], linestyle=linestyle, alpha=alpha, label=label)
-
-        #legend = plt.legend(loc=legend_location)
-        plt.legend().get_frame().set_alpha(0.98)
+        legend = plt.legend(loc=self.legend_location)
+        legend.get_frame().set_alpha(0.98)
         plt.show()    
