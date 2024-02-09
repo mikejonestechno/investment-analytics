@@ -16,7 +16,9 @@ These two components help resolve the original question:
 
 ## Retirement Expenses
 
-This data model is based on annual retirement expense data from the [Association of Superannuation Funds of Australia](retirement-planning.md). Expenses are plotted for different 'lifestyle' scenarios:
+The Australian government has published a personalized [retirement planner calculator](https://moneysmart.gov.au/retirement-income/retirement-planner) that can help estimate retirement expenses. 
+
+Given everyones personal financial situation is different, this data model is based on generalized retirement expense data from the [Association of Superannuation Funds of Australia](retirement-planning.md). Expenses are plotted for different 'lifestyle' scenarios:
 
 
 | Lifestyle | Modest | Comfortable | Four-star | Luxury | Opulent |
