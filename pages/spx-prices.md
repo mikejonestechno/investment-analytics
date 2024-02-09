@@ -56,7 +56,7 @@ Over the last 30 years the median (50th percetile) change is 11.52%.
 
 
     
-![png](images/spx-prices_14_0.png)
+![png](images/spx-prices_13_0.png)
     
 
 
@@ -64,6 +64,6 @@ Over the last 30 years the median (50th percetile) change is 11.52%.
 
 
     
-![png](images/spx-prices_16_0.png)
+![png](images/spx-prices_15_0.png)
     
 
