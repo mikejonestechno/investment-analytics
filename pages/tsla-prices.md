@@ -58,7 +58,7 @@ Over the last 10 years the median (50th percetile) change is 18.75%.
     
 
 
-> ℹ Given the multi-decade history, the data suggests high confidence using a baseline stock market performance of 11.5% with some uncertainty or risk that stocks can go up or down for several years at a time. Note this does not take inflation into consideration.
+> ℹ Given the relatively short history, the data suggests reasonable confidence using a baseline long term performance of 18.75% with some uncertainty or risk that TSLA may have bursts of extreme growth with periods of volatility for several years at a time. Note this does not take inflation into consideration.
 
 
     
