@@ -33,10 +33,10 @@ class BaseChart:
         ax = plt.gca()  # Get the current Axes instance
         if self.start_year == None:
             self.start_year = (df.index[0].year // self.x_ticks) * self.x_ticks
-        left_limit = pd.to_datetime(f'{self.start_year}-01-01')
+        self.left_limit = pd.to_datetime(f'{self.start_year}-01-01')
         end_year = (df.index[-1].year // self.x_ticks) * self.x_ticks + self.x_ticks
-        right_limit = pd.to_datetime(f'{end_year}-01-01')
-        plt.xlim(left=left_limit, right=right_limit)    
+        self.right_limit = pd.to_datetime(f'{end_year}-01-01')
+        plt.xlim(left=self.left_limit, right=self.right_limit)    
         ax.xaxis.set_major_locator(mdates.YearLocator(self.x_ticks))  # Set major ticks every x years
         ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))  # Format major ticks as years
         figtext_adjust = 0
@@ -86,13 +86,15 @@ class StandardChart(BaseChart):
         plt, colors = super().base_chart(df)
         
         """ Standard y-axis chart """
-        if self.bottom_limit == None:
-            if df[self.data_column].min() > 0:
+        """ default top and bottom to min/max of data in the plot not min/max of entire dataframe """
+        df_plot = df[df.index > self.left_limit]
+        if self.bottom_limit == None:            
+            if df_plot[self.data_column].min() > 0:
                 self.bottom_limit = 0
             else:
-                self.bottom_limit = (df[self.data_column].min() // self.y_ticks) * self.y_ticks    
+                self.bottom_limit = (df_plot[self.data_column].min() // self.y_ticks) * self.y_ticks    
         if self.top_limit == None:
-            self.top_limit = (df[self.data_column].max() // self.y_ticks) * self.y_ticks + self.y_ticks
+            self.top_limit = (df_plot[self.data_column].max() // self.y_ticks) * self.y_ticks + self.y_ticks
         plt.yticks(np.arange(self.bottom_limit, self.top_limit + 1, self.y_ticks))
         plt.ylim(self.bottom_limit, self.top_limit)
 
@@ -123,4 +125,4 @@ class PercentileChart(StandardChart):
             plt.plot(df.index, df[f'rolling_{self.multi_year}_years_{percentile}'], color=colors[self.color_index]['color'], linestyle=linestyle, alpha=alpha, label=label)
         legend = plt.legend(loc=self.legend_location)
         legend.get_frame().set_alpha(0.98)
-        plt.show()    
+        return plt  

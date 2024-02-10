@@ -11,7 +11,7 @@ Inflation remained highly volatile but eventually stabilized through the 1990s, 
 
 
     
-![png](images/inflation_7_0.png)
+![png](images/inflation_6_0.png)
     
 
 
@@ -23,7 +23,7 @@ Calculating the 25th and 75th percentile over a 10 year time horizon helps smoot
 
 
     
-![png](images/inflation_13_0.png)
+![png](images/inflation_12_0.png)
     
 
 
@@ -37,6 +37,7 @@ Over the last 30 years the median (50th percetile) change is 2.45%.
 |-------|-----:|-----:|-----:|
 | 1     | 5.08 | 5.70 | 6.25 |
 | 10    | 1.50 | 1.90 | 3.12 |
+| 20    | 1.77 | 2.40 | 3.15 |
 | 30    | 1.70 | 2.45 | 3.23 |
 
 
@@ -44,7 +45,7 @@ Over the last 30 years the median (50th percetile) change is 2.45%.
 
 
     
-![png](images/inflation_15_0.png)
+![png](images/inflation_14_0.png)
     
 
 
