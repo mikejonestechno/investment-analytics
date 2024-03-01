@@ -4,9 +4,8 @@ name: Deploy Pages
 
 on:
   workflow_run:
-    workflows: ["notebooks.yml"]
-    types:
-      - completed
+    workflows: ["Notebook Pages"]
+    types: [completed]
     branches: ["main"]
   #push:
   #  branches: ["main"]
