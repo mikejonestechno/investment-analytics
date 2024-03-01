@@ -13,6 +13,7 @@ class BaseChart:
                  x_label='Date', 
                  x_ticks=5,
                  start_year=None, 
+                 end_year=None,
                  data_column=''):
         self.chart_title = chart_title
         self.chart_source = chart_source
@@ -21,6 +22,7 @@ class BaseChart:
         self.x_label = x_label
         self.x_ticks = x_ticks
         self.start_year = start_year
+        self.end_year = end_year
         self.data_column = data_column
 
     def base_chart(self, df: pd.DataFrame):
@@ -34,8 +36,9 @@ class BaseChart:
         if self.start_year == None:
             self.start_year = (df.index[0].year // self.x_ticks) * self.x_ticks
         self.left_limit = pd.to_datetime(f'{self.start_year}-01-01')
-        end_year = (df.index[-1].year // self.x_ticks) * self.x_ticks + self.x_ticks
-        self.right_limit = pd.to_datetime(f'{end_year}-01-01')
+        if self.end_year == None:
+            self.end_year = (df.index[-1].year // self.x_ticks) * self.x_ticks + self.x_ticks
+        self.right_limit = pd.to_datetime(f'{self.end_year}-01-01')
         plt.xlim(left=self.left_limit, right=self.right_limit)    
         ax.xaxis.set_major_locator(mdates.YearLocator(self.x_ticks))  # Set major ticks every x years
         ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))  # Format major ticks as years
