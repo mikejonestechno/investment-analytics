@@ -3,10 +3,15 @@ name: Deploy Pages
 # If pages files change, generate and publish jekyl pages to github
 
 on:
-  push:
+  workflow_run:
+    workflows: ["notebooks.yml"]
+    types:
+      - completed
     branches: ["main"]
-    paths:
-      - 'pages/**'
+  #push:
+  #  branches: ["main"]
+  #  paths:
+  #    - 'pages/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
