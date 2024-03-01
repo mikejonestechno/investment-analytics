@@ -10,9 +10,10 @@ name: Notebook Pages
 # If pages changed, run 
 
 on:
-  #schedule:
-    # Runs at 21:00 UTC every day
-    # - cron:  '0 21 * * *'
+  schedule:
+    # Runs every thursday after extended hours
+    # entended hours 4am-8pm EST = 9am-1am UTC next day
+    - cron:  '0 1 * * 5'
 
   # Have to run notebooks on main branch to refresh cache data
   push:
