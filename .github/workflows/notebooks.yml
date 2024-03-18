@@ -81,6 +81,12 @@ jobs:
         find notebooks -name "*.ipynb" -not -name "*-and-*" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
         find notebooks -name "*-and-*.ipynb" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
 
+    - name: Upload Pages
+      uses: actions/upload-artifact@v4
+      with:
+        name: pages
+        path: pages
+
     - name: Hash Data
       # Update hash of data files so we force new cache when data changes
       run: |
