@@ -65,34 +65,10 @@
   </thead>
   <tbody>
     <tr>
-      <th>2023-08-31</th>
-      <td>Aug-2023</td>
-      <td>8.75</td>
-      <td>10.51</td>
-      <td>8.52</td>
-      <td>7.06</td>
-      <td>9.04</td>
-      <td>6.58</td>
-      <td>9.10</td>
-      <td>7.50</td>
-      <td>9.34</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
       <th>2023-09-30</th>
       <td>Sep-2023</td>
       <td>8.75</td>
-      <td>10.51</td>
+      <td>10.50</td>
       <td>8.52</td>
       <td>7.06</td>
       <td>9.04</td>
@@ -116,7 +92,7 @@
       <th>2023-10-31</th>
       <td>Oct-2023</td>
       <td>8.75</td>
-      <td>10.51</td>
+      <td>10.50</td>
       <td>8.52</td>
       <td>7.06</td>
       <td>9.04</td>
@@ -140,7 +116,7 @@
       <th>2023-11-30</th>
       <td>Nov-2023</td>
       <td>9.00</td>
-      <td>10.69</td>
+      <td>10.79</td>
       <td>8.77</td>
       <td>7.31</td>
       <td>9.29</td>
@@ -164,7 +140,7 @@
       <th>2023-12-31</th>
       <td>Dec-2023</td>
       <td>9.00</td>
-      <td>10.69</td>
+      <td>10.79</td>
       <td>8.77</td>
       <td>7.31</td>
       <td>9.29</td>
@@ -188,7 +164,31 @@
       <th>2024-01-31</th>
       <td>Jan-2024</td>
       <td>9.00</td>
-      <td>10.69</td>
+      <td>10.79</td>
+      <td>8.77</td>
+      <td>7.31</td>
+      <td>9.29</td>
+      <td>6.80</td>
+      <td>9.35</td>
+      <td>7.75</td>
+      <td>9.59</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2024-02-29</th>
+      <td>Feb-2024</td>
+      <td>9.00</td>
+      <td>10.79</td>
       <td>8.77</td>
       <td>7.31</td>
       <td>9.29</td>
@@ -291,34 +291,10 @@
   </thead>
   <tbody>
     <tr>
-      <th>2023-09-30</th>
-      <td>Sep-2023</td>
-      <td>8.75</td>
-      <td>10.51</td>
-      <td>8.52</td>
-      <td>7.06</td>
-      <td>9.04</td>
-      <td>6.56</td>
-      <td>9.10</td>
-      <td>7.50</td>
-      <td>9.34</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>5.839444</td>
-    </tr>
-    <tr>
       <th>2023-10-31</th>
       <td>Oct-2023</td>
       <td>8.75</td>
-      <td>10.51</td>
+      <td>10.50</td>
       <td>8.52</td>
       <td>7.06</td>
       <td>9.04</td>
@@ -342,7 +318,7 @@
       <th>2023-11-30</th>
       <td>Nov-2023</td>
       <td>9.00</td>
-      <td>10.69</td>
+      <td>10.79</td>
       <td>8.77</td>
       <td>7.31</td>
       <td>9.29</td>
@@ -366,7 +342,7 @@
       <th>2023-12-31</th>
       <td>Dec-2023</td>
       <td>9.00</td>
-      <td>10.69</td>
+      <td>10.79</td>
       <td>8.77</td>
       <td>7.31</td>
       <td>9.29</td>
@@ -390,7 +366,7 @@
       <th>2024-01-31</th>
       <td>Jan-2024</td>
       <td>9.00</td>
-      <td>10.69</td>
+      <td>10.79</td>
       <td>8.77</td>
       <td>7.31</td>
       <td>9.29</td>
@@ -409,6 +385,30 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>6.304722</td>
+    </tr>
+    <tr>
+      <th>2024-02-29</th>
+      <td>Feb-2024</td>
+      <td>9.00</td>
+      <td>10.79</td>
+      <td>8.77</td>
+      <td>7.31</td>
+      <td>9.29</td>
+      <td>6.80</td>
+      <td>9.35</td>
+      <td>7.75</td>
+      <td>9.59</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.422778</td>
     </tr>
   </tbody>
 </table>
