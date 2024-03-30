@@ -17,7 +17,7 @@ Inflation remained highly volatile but eventually stabilized through the 1990s, 
 
 
 
-Calculating the 25th and 75th percentile over a 10 year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
+Calculating the 25th and 75th percentile over a multi year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
 
 
 
