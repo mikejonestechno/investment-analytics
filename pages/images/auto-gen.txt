@@ -1,0 +1,1 @@
+Images auto generated from Jupiter notebooks are output to this directory.
