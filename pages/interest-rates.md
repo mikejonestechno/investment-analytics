@@ -1,421 +1,54 @@
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+---
+layout: page
+title: Interest Rates
+---
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+The Housing Loan Lending Rates are set by the Reserve Bank of Australia and published monthly within five business days after month end.
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Series ID</th>
-      <th>FILRSBVRT</th>
-      <th>FILRSBVOO</th>
-      <th>FILRHLBVS</th>
-      <th>FILRHLBVD</th>
-      <th>FILRHLBVO</th>
-      <th>FILRHL3YF</th>
-      <th>FILRHLBVSI</th>
-      <th>FILRHLBVDI</th>
-      <th>FILRHLBVDO</th>
-      <th>...</th>
-      <th>FILRSAVIIO</th>
-      <th>Unnamed: 31</th>
-      <th>Unnamed: 32</th>
-      <th>Unnamed: 33</th>
-      <th>Unnamed: 34</th>
-      <th>Unnamed: 35</th>
-      <th>Unnamed: 36</th>
-      <th>Unnamed: 37</th>
-      <th>Unnamed: 38</th>
-      <th>Unnamed: 39</th>
-    </tr>
-    <tr>
-      <th>Date</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2023-09-30</th>
-      <td>Sep-2023</td>
-      <td>8.75</td>
-      <td>10.50</td>
-      <td>8.52</td>
-      <td>7.06</td>
-      <td>9.04</td>
-      <td>6.56</td>
-      <td>9.10</td>
-      <td>7.50</td>
-      <td>9.34</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2023-10-31</th>
-      <td>Oct-2023</td>
-      <td>8.75</td>
-      <td>10.50</td>
-      <td>8.52</td>
-      <td>7.06</td>
-      <td>9.04</td>
-      <td>6.56</td>
-      <td>9.10</td>
-      <td>7.50</td>
-      <td>9.34</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2023-11-30</th>
-      <td>Nov-2023</td>
-      <td>9.00</td>
-      <td>10.79</td>
-      <td>8.77</td>
-      <td>7.31</td>
-      <td>9.29</td>
-      <td>6.80</td>
-      <td>9.35</td>
-      <td>7.75</td>
-      <td>9.59</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2023-12-31</th>
-      <td>Dec-2023</td>
-      <td>9.00</td>
-      <td>10.79</td>
-      <td>8.77</td>
-      <td>7.31</td>
-      <td>9.29</td>
-      <td>6.80</td>
-      <td>9.35</td>
-      <td>7.75</td>
-      <td>9.59</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2024-01-31</th>
-      <td>Jan-2024</td>
-      <td>9.00</td>
-      <td>10.79</td>
-      <td>8.77</td>
-      <td>7.31</td>
-      <td>9.29</td>
-      <td>6.80</td>
-      <td>9.35</td>
-      <td>7.75</td>
-      <td>9.59</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2024-02-29</th>
-      <td>Feb-2024</td>
-      <td>9.00</td>
-      <td>10.79</td>
-      <td>8.77</td>
-      <td>7.31</td>
-      <td>9.29</td>
-      <td>6.80</td>
-      <td>9.35</td>
-      <td>7.75</td>
-      <td>9.59</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-<p>6 rows × 40 columns</p>
-</div>
+Australian interest rates ramped up from 6% in 1970 to a peak 17% in 1990 before dropping sharply back down to 10% in 1992.
 
-
+Interest rates remained highly volatile but trended down to 5% in 2020 before spiking back over 8% in 2023.
 
 
     
-![png](images/interest-rates_4_0.png)
+![png](images/interest-rates_6_0.png)
     
 
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Series ID</th>
-      <th>FILRSBVRT</th>
-      <th>FILRSBVOO</th>
-      <th>FILRHLBVS</th>
-      <th>FILRHLBVD</th>
-      <th>FILRHLBVO</th>
-      <th>FILRHL3YF</th>
-      <th>FILRHLBVSI</th>
-      <th>FILRHLBVDI</th>
-      <th>FILRHLBVDO</th>
-      <th>...</th>
-      <th>Unnamed: 31</th>
-      <th>Unnamed: 32</th>
-      <th>Unnamed: 33</th>
-      <th>Unnamed: 34</th>
-      <th>Unnamed: 35</th>
-      <th>Unnamed: 36</th>
-      <th>Unnamed: 37</th>
-      <th>Unnamed: 38</th>
-      <th>Unnamed: 39</th>
-      <th>3_yr_rolling</th>
-    </tr>
-    <tr>
-      <th>Date</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2023-10-31</th>
-      <td>Oct-2023</td>
-      <td>8.75</td>
-      <td>10.50</td>
-      <td>8.52</td>
-      <td>7.06</td>
-      <td>9.04</td>
-      <td>6.56</td>
-      <td>9.10</td>
-      <td>7.50</td>
-      <td>9.34</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>5.950556</td>
-    </tr>
-    <tr>
-      <th>2023-11-30</th>
-      <td>Nov-2023</td>
-      <td>9.00</td>
-      <td>10.79</td>
-      <td>8.77</td>
-      <td>7.31</td>
-      <td>9.29</td>
-      <td>6.80</td>
-      <td>9.35</td>
-      <td>7.75</td>
-      <td>9.59</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>6.068611</td>
-    </tr>
-    <tr>
-      <th>2023-12-31</th>
-      <td>Dec-2023</td>
-      <td>9.00</td>
-      <td>10.79</td>
-      <td>8.77</td>
-      <td>7.31</td>
-      <td>9.29</td>
-      <td>6.80</td>
-      <td>9.35</td>
-      <td>7.75</td>
-      <td>9.59</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>6.186667</td>
-    </tr>
-    <tr>
-      <th>2024-01-31</th>
-      <td>Jan-2024</td>
-      <td>9.00</td>
-      <td>10.79</td>
-      <td>8.77</td>
-      <td>7.31</td>
-      <td>9.29</td>
-      <td>6.80</td>
-      <td>9.35</td>
-      <td>7.75</td>
-      <td>9.59</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>6.304722</td>
-    </tr>
-    <tr>
-      <th>2024-02-29</th>
-      <td>Feb-2024</td>
-      <td>9.00</td>
-      <td>10.79</td>
-      <td>8.77</td>
-      <td>7.31</td>
-      <td>9.29</td>
-      <td>6.80</td>
-      <td>9.35</td>
-      <td>7.75</td>
-      <td>9.59</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>6.422778</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 41 columns</p>
-</div>
+Calculating the 25th and 75th percentile over a multi year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
 
 
 
-    Stored 'df_interest' (DataFrame)
 
+    
+![png](images/interest-rates_11_0.png)
+    
+
+
+
+
+Over the last 10 years the median (50th percetile) change is 5.52%.
+
+Over the last 30 years the median (50th percetile) change is 5.28%.
+
+| Years | 25th percentile | 50th percentile | 75th percentile |
+|-------|-----:|-----:|-----:|
+| 1     | 8.77 | 8.77 | 8.77 |
+| 10    | 4.52 | 5.52 | 8.08 |
+| 20    | 4.52 | 5.22 | 5.47 |
+| 30    | 4.80 | 5.28 | 5.81 |
+
+
+
+
+
+    
+![png](images/interest-rates_13_0.png)
+    
+
+
+The chart shows interst rates have trended down from 7% to below 6%.
+
+> ℹ The data suggests reasonable confidence using a baseline interest rates around 6% with some uncertainty or risk that interest rates could peak higher.

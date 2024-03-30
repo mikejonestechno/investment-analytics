@@ -6,8 +6,6 @@ The Association of Superannuation Funds of Australia Limited ASFA is the largest
 
 ASFA have published a "standard" listing of how much money is required each year for a "comfortable" retirement. The figures are based on their original 2018 research data (subsequently adjusted for inflation each quarter).
 
-<img src="images/retirement-calculator.png" width=200 style="float: right" alt="Retirement Calculator [Sept 2022 data]"/>
-
 - [Retirement Standard - ASFA (superannuation.asn.au)](https://www.superannuation.asn.au/resources/retirement-standard#DetailedBreakdowns)
 
 - [Retirement calculator - how much will you need for retirement?](https://www.bt.com.au/personal/your-finances/retirement/retirement-calculator.html)

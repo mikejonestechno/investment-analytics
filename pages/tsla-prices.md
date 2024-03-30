@@ -23,7 +23,7 @@ The compound annual growth over time appears to be exponential growth. Plotting 
 
 The logarithmic scale shows the price was slightly increasing from IPO in 2010 to 2013 before a sudden 5x jump between 2013 and 2014 from $2 to $10 (split adjusted).
 
-The jump was likely attributed to the Model S launch in 2012 and the first quarter of profit since the company was founded in 2003. The jump was followed by strong 2x growth in the five year period between 2014 and 2019, before another sudden 10x jump between 2020 and 2012 from $20 to $200 (split adjusted).
+The jump was likely attributed to the Model S launch in 2012 and the first quarter of profit since the company was founded in 2003. The jump was followed by strong 2x growth in the five year period between 2014 and 2019, before another sudden 10x jump between 2020 and 2021 from $20 to $200 (split adjusted).
 
 The second jump is likely attibuted to the Model 3 production ramp, and the final validation of Tesla as a profitable auto maker at scale, although at this price Tesla exceeds the market capitalization of the top eight global auto makers... combined.
 
@@ -41,13 +41,13 @@ Calculating the 25th and 75th percentile over a multi-year time horizon helps sm
 
 Over the last 5 years the median (50th percetile) change is 25.15%.
 
-Over the last 10 years the median (50th percetile) change is 17.37%.
+Over the last 10 years the median (50th percetile) change is 17.23%.
 
 | Years | 25th percentile | 50th percentile | 75th percentile |
 |-------|-----:|-----:|-----:|
-| 1     | -17.24 | -3.69 | 18.79 |
-| 5     | -11.80 | 25.15 | 173.34 |
-| 10    | -9.50 | 17.37 | 72.62 |
+| 1     | -14.44 | -3.69 | 18.79 |
+| 5     | -10.94 | 25.15 | 173.34 |
+| 10    | -9.66 | 17.23 | 71.69 |
 
 
 
@@ -58,7 +58,7 @@ Over the last 10 years the median (50th percetile) change is 17.37%.
     
 
 
-> ℹ Given the relatively short history, the data suggests reasonable confidence using a baseline long term performance of 18.75% with some uncertainty or risk that TSLA may have bursts of extreme growth with periods of volatility for several years at a time. Note this does not take inflation into consideration.
+> ℹ Given the relatively short history, the data suggests reasonable confidence using a baseline long term performance 16% - 18% with some uncertainty or risk that TSLA may have bursts of extreme growth with periods of volatility for several years at a time. Note this does not take inflation into consideration.
 
 
     
