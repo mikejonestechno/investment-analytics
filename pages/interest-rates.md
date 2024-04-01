@@ -7,7 +7,7 @@ The Housing Loan Lending Rates are set by the Reserve Bank of Australia and publ
 
 Australian interest rates ramped up from 6% in 1970 to a peak 17% in 1990 before dropping sharply back down to 10% in 1992.
 
-Interest rates remained highly volatile but trended down to 5% in 2020 before spiking back over 8% in 2023.
+Interest rates remained reasonably volatile with some sharp spikes and sudden drops, but overall trended down to 5% in 2020, before spiking back over 8% in 2023.
 
 
     
