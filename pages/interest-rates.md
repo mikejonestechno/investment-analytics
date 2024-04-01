@@ -49,6 +49,6 @@ Over the last 30 years the median (50th percetile) change is 6.74%.
     
 
 
-The chart shows interst rates have trended down from 7% to below 6%.
+The chart shows interst rates have trended down from 7% to below 6% over the last 20 years.
 
-> ℹ The data suggests reasonable confidence using a baseline interest rates around 6% with some uncertainty or risk that interest rates could peak higher.
+> ℹ The data suggests reasonable confidence using baseline interest rates between 6% to 7% with reasonable uncertainty or risk that interest rates could peak higher.
