@@ -51,4 +51,4 @@ Over the last 30 years the median (50th percetile) change is 2.45%.
 
 The chart shows inflation stayed close to the RBA target inflation rate of 2 to 3 percent for over twenty five years.
 
-> ℹ The data suggests reasonable confidence using a baseline inflation of 2% to 2.5% with some uncertainty or risk that inflation could peak higher.
+> ℹ The data suggests high confidence using a baseline inflation of 2.5% with some uncertainty or risk that inflation could peak higher.
