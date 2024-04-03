@@ -65,6 +65,3 @@ Over the last 10 years the median (50th percetile) change is 17.23%.
 ![png](images/tsla-prices_15_0.png)
     
 
-
-    Stored 'df' (DataFrame)
-
