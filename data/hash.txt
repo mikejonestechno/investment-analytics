@@ -2,7 +2,8 @@
 2e70c3c8918b48469bb1fbe8abc7faad  data/g1-data.csv
 4b848da8e8a779cec3dc8ab5a971a2ae  data/inflation_percentiles.md
 376933a82086664518bf807dc61b653b  data/interest_rate_percentiles.md
-8221286fdcf7e876207b96c27dc1244d  data/spx_HistoricalData.csv
-d9638254a94ec656d6c779139d538b3d  data/tsla_HistoricalData.csv
+81a283046dc47ad1920f5376596df226  data/spx_HistoricalData.csv
+6b1f494d10399c8c03f4b2accd8e9c8f  data/tsla_HistoricalData.csv
 afe6474cc29cba71307e82729f1923b6  data/tsla_PriceTarget_InvestAnswers.md
+9f6bf0a94ce6f7590e4d8021607a4503  data/tsla_PriceTarget_InvestAnswers_2024.md
 423d268ff08e1bdebe891dca922aba41  data/tsla_PriceTargets.md
