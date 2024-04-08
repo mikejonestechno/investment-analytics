@@ -10,9 +10,11 @@ Feature: Load data
     When I call load_data
     Then a new file is not downloaded
 
-  Scenario: Publish date is first day of second month after most recent quarter end
+  Scenario: Publish date is first day of second month after most recent quarter end (case 1)
     When today is 2 Feb 2024
     Then last_publish date is 1 Feb 2024
+
+  Scenario: Publish date is first day of second month after most recent quarter end (case 2)
     When today is 31 Jan 2024
     Then last_publish date is 1 Nov 2023
 
