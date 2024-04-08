@@ -59,19 +59,30 @@ class BaseChart:
         elif self.chart_author_location == 'outside':
             plt.figtext(1.01, 0.15 + figtext_adjust, 'mikejonestechno', ha="right", fontsize=8, rotation=-270)
 
-        return plt, colors
+        return plt, colors 
+
+def human_format(num):
+    magnitude = 0
+    while abs(num) >= 1000:
+        magnitude += 1
+        num /= 1000.0
+    return f'{num:.0f}{["", "k", "m", "b", "t"][magnitude]}' 
 
 class LogChart(BaseChart):
-    def __init__(self, y_ticks=None, y_secondary=False, *args, **kwargs):
+    def __init__(self, y_ticks=None, human_format=False, y_secondary=False, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.y_ticks = np.array(y_ticks)
-        self.y_secondary = y_secondary
-
+        self.y_secondary = y_secondary    
+        self.human_format = human_format 
+    
     def base_chart(self, df: pd.DataFrame):
         plt, colors = super().base_chart(df)
 
         """ Logarithmic y-axis chart """
-        y_ticks_labels = np.array([str(f'{ytick:.0f}') for ytick in self.y_ticks])
+        if self.human_format:
+            y_ticks_labels = np.array([human_format(ytick) for ytick in self.y_ticks])
+        else:
+            y_ticks_labels = np.array([str(f'{ytick:.0f}') for ytick in self.y_ticks])
         bottom_limit = self.y_ticks[0]
         top_limit = self.y_ticks[-1]
         plt.yscale('log')
