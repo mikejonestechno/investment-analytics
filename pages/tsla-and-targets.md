@@ -29,9 +29,7 @@ The ongoing Ark Invest four year price targets may still seem ridiculous to many
 
 Exponential growth often requires a long time horizon. The S&P 500 has a consistent median annual growth rate of 12% and the exponential curve is clearly visible over a 50 year time horizon. Plotting the same [SPX Prices on a logarithmic y-axis scale](spx-prices.html) produces a straight line up and to the right. 
 
-<div style="text-align: center; margin:auto;"><a href="spx-prices.md"><img src="images/spx-prices_5_0.png" width="400"/> <img src="images/spx-prices_7_0.png" width="400"/></a></div>
-
-
+<a href="spx-prices.md" style="text-align: center; display: block"><img src="images/spx-prices_5_0.png" width="400"/> <img src="images/spx-prices_7_0.png" width="400"/></a>
 
 Similarly, plotting the [TSLA Prices on a logarithmic y-axis scale](tsla-prices.html) produces a step line up and to the right. 
 
@@ -41,15 +39,29 @@ When evaluating long term exponential growth, a logarithmic scale helps visualiz
 
 On a logarithmic y-axis scale the ARK invest four year forecasts appear to be a refined continuation of the existing long term trend.
 
-> ⚠ Disclaimer: _Not financial advice._ All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose, etc;
-do your own research.
-
 
     
-![png](images/tsla-and-targets_12_0.png)
+![png](images/tsla-and-targets_14_0.png)
     
 
 
 ### Disruptive Fundamentals
 
-Beware of the short-term noise of quarterly financials and day-trader 'expert' financial analysts; long term investors research disruptive technology and study the underlying fundamental business proposition.
+Beware of the short-term noise of quarterly financials and day-trader youtubers and 'expert' financial analysts; long term investors should research disruptive technology themselves and study the underlying fundamental business proposition.
+
+In 2022 Ark Invest clarified that their four year model for the 2026 price targets was 'methodologically conservative'. ARK Invest provided an extended eight year price target trajectory to 2030 with a note that forecasting for an eight year time horizon has an increased risk of potential errors. For example "vehicle form factors could change significantly relative to those in our current model, and some of the business opportunities we have not modeled, such as AI-as-a-service, could be more meaningful contributors to Tesla’s financials."
+
+> ⚠ Disclaimer: _Not financial advice._ All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose, etc;
+do your own research.
+
+
+    
+![png](images/tsla-and-targets_17_0.png)
+    
+
+
+
+    
+![png](images/tsla-and-targets_18_0.png)
+    
+
