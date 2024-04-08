@@ -8,7 +8,7 @@ class BaseChart:
     def __init__(self, 
                  chart_title='', 
                  chart_source='', 
-                 chart_author_location='right', 
+                 chart_author_location='inside', 
                  y_label='',
                  x_label='Date', 
                  x_ticks=5,
@@ -54,15 +54,18 @@ class BaseChart:
         if self.chart_source:
             plt.figtext(1, 0.04 - figtext_adjust, self.chart_source, ha="right", fontsize=8)
             plt.subplots_adjust(right=1)  # Reset right boundary of the subplots after adding figtext
-        if self.chart_author_location == 'right':
-            plt.figtext(1.01, 0.15 + figtext_adjust, 'mikejonestechno', ha="right", fontsize=8, rotation=-90)
+        if self.chart_author_location == 'inside':
+            plt.figtext(0.995, 0.132 + figtext_adjust, 'mikejonestechno', ha="right", fontsize=8, rotation=-270)
+        elif self.chart_author_location == 'outside':
+            plt.figtext(1.01, 0.15 + figtext_adjust, 'mikejonestechno', ha="right", fontsize=8, rotation=-270)
 
         return plt, colors
 
 class LogChart(BaseChart):
-    def __init__(self, y_ticks=None, *args, **kwargs):
+    def __init__(self, y_ticks=None, y_secondary=False, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.y_ticks = np.array(y_ticks)
+        self.y_secondary = y_secondary
 
     def base_chart(self, df: pd.DataFrame):
         plt, colors = super().base_chart(df)
@@ -74,6 +77,14 @@ class LogChart(BaseChart):
         plt.yscale('log')
         plt.ylim(bottom_limit, top_limit)
         plt.yticks(self.y_ticks, y_ticks_labels)
+
+        if self.y_secondary:
+            ax2 = plt.twinx()
+            ax2.set_yscale('log')
+            ax2.set_ylim(bottom_limit, top_limit)
+            ax2.set_yticks(self.y_ticks)
+            ax2.set_yticklabels(y_ticks_labels)
+            ax2.set_ylabel(self.y_label)
 
         return plt, colors
 
