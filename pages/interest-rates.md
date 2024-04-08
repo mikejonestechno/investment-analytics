@@ -35,9 +35,9 @@ Over the last 30 years the median (50th percetile) change is 6.74%.
 
 | Years | 25th percentile | 50th percentile | 75th percentile |
 |-------|-----:|-----:|-----:|
-| 1     | 8.46 | 8.52 | 8.77 |
+| 1     | 8.52 | 8.52 | 8.77 |
 | 10    | 4.80 | 5.28 | 5.81 |
-| 20    | 5.28 | 6.22 | 7.39 |
+| 20    | 5.28 | 6.22 | 7.43 |
 | 30    | 5.76 | 6.74 | 7.79 |
 
 
