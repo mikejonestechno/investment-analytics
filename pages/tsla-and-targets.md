@@ -55,19 +55,25 @@ In 2022 Ark Invest clarified that their four year model for the 2026 price targe
 
 ARK Invest provided an extended eight year price target trajectory to 2030 with a note that forecasting for an eight year time horizon has an increased risk of potential errors. For example "vehicle form factors could change significantly relative to those in our current model, and some of the business opportunities we have not modeled, such as AI-as-a-service, could be more meaningful contributors to Tesla’s financials."
 
-A few retail investors have also published long term price target trajectory with consistent trend up and to the right. There are many factors that are difficult to forecast, and other factors that are not yet known. Investors should consider a range of possible potential outcomes rather than attempting to forecast a single precise price target.
-
-> ⚠ Disclaimer: _Not financial advice._ All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose, etc;
-do your own research.
-
 
     
 ![png](images/tsla-and-targets_17_0.png)
     
 
 
+## Solving The Money Problem
+
+A few retail investors have also published a long term price target trajectory. There are many factors that are difficult to forecast, and other factors that are not yet known. Investors should consider a range of possible potential outcomes rather than attempting to forecast a single precise price target.
+
+Before ARK Invest's 2026 price targets were published, Steven Mark Ryan published a 10 year price target trajectory on [Solving the Money Problem](https://www.youtube.com/watch?v=W0OKbs_N51A) 21 March 2022. SMR has modelled a bear case with 5% probability, a base case with 60% probability, a bull case with 33% probability and a ridiculous hyper-bull case with only 2% probability. These models are regularly updated and available on a small subscriber fee. 
+
+The SMR 'weighted average price target' is plotted below (labelled 'SMR base case') along with price target trajectory from other sources.
+
+> ⚠ Disclaimer: _Not financial advice._ Price targets are a FORECAST of what a stock SHOULD be worth, not an estimate of what institutional investors believe or what the sotck WILL actually be worth, and each forecast is based on a range of assumptions used in that model. All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose, etc;
+do your own research.
+
 
     
-![png](images/tsla-and-targets_18_0.png)
+![png](images/tsla-and-targets_19_0.png)
     
 
