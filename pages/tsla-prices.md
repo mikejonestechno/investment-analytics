@@ -41,13 +41,13 @@ Calculating the 25th and 75th percentile over a multi-year time horizon helps sm
 
 Over the last 5 years the median (50th percetile) change is 25.15%.
 
-Over the last 10 years the median (50th percetile) change is 17.09%.
+Over the last 10 years the median (50th percetile) change is 16.41%.
 
 | Years | 25th percentile | 50th percentile | 75th percentile |
 |-------|-----:|-----:|-----:|
-| 1     | -13.49 | -3.69 | 18.79 |
-| 5     | -11.48 | 25.15 | 173.34 |
-| 10    | -9.80 | 17.09 | 71.25 |
+| 1     | -12.88 | -3.69 | 18.79 |
+| 5     | -12.14 | 25.15 | 173.34 |
+| 10    | -10.04 | 16.41 | 70.06 |
 
 
 
