@@ -136,7 +136,8 @@ class PercentileChart(StandardChart):
     def plot_percentiles(self, df: pd.DataFrame):
         plt, colors = self.base_chart(df)
 
-        plt.plot(df.index, df[self.data_column], label='YoY Annual Price Change', color=colors[self.color_index]['color'], alpha=0.1)
+        if self.data_column != '':
+            plt.plot(df.index, df[self.data_column], label='YoY Annual Price Change', color=colors[self.color_index]['color'], alpha=0.1)
 
         for i, percentile in enumerate(self.percentiles._fields):
             linestyle = '--' if i != 1 else '-'
