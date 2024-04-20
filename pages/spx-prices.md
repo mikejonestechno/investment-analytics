@@ -40,13 +40,14 @@ Calculating the 25th and 75th percentile over a multi-year time horizon helps sm
 
 
 
-Over the last 10 years the median (50th percetile) change is 12.34%.
+Over the last 5 years the median (50th percetile) change is 12.51%.
 
 Over the last 30 years the median (50th percetile) change is 11.75%.
 
 | Years | 25th percentile | 50th percentile | 75th percentile |
 |-------|-----:|-----:|-----:|
 | 1     | 10.20 | 15.68 | 21.71 |
+| 5     | 0.65 | 12.51 | 22.33 |
 | 10    | 2.67 | 12.34 | 17.46 |
 | 20    | 2.84 | 11.06 | 16.99 |
 | 30    | 1.36 | 11.75 | 19.83 |
@@ -66,4 +67,7 @@ Over the last 30 years the median (50th percetile) change is 11.75%.
     
 ![png](images/spx-prices_15_0.png)
     
+
+
+    Stored 'df_spx' (DataFrame)
 

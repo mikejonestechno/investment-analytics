@@ -1,6 +1,6 @@
 c7aae6aacb0ddb91d087ab934da556fa  data/f5-data.csv
 2e70c3c8918b48469bb1fbe8abc7faad  data/g1-data.csv
-4b848da8e8a779cec3dc8ab5a971a2ae  data/inflation_percentiles.md
+938bc3445fe92844049175f879332c30  data/inflation_percentiles.md
 5d736dd834433df159ed573b96c655c7  data/interest_rate_percentiles.md
 dc07d2fe69158daba61f9a7b022e0e38  data/spx_HistoricalData.csv
 b732e2243c47d4d8de9cd187c1ddc7ef  data/tsla_HistoricalData.csv

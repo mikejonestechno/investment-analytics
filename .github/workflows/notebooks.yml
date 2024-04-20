@@ -73,13 +73,22 @@ jobs:
         key: notebooks-data-${{ hashFiles('data/**') }}
         restore-keys: notebooks-data-
 
-    - name: Run Notebooks
+    - name: Run Standalone Notebooks
       # run standalone notebooks first (no hyphen in name), then *-prices notebooks, then *-and-* notebooks
       run: |
         set -e
-        echo "$(nproc) processors"
         find notebooks -name "*.ipynb" -not -name "*-*" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
+
+    - name: Run Investment Notebooks
+      # run standalone notebooks first (no hyphen in name), then *-prices notebooks, then *-and-* notebooks
+      run: |
+        set -e
         find notebooks -name "*-prices.ipynb" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
+          
+    - name: Run Comob Notebooks
+      # run standalone notebooks first (no hyphen in name), then *-prices notebooks, then *-and-* notebooks
+      run: |
+        set -e
         find notebooks -name "*-and-*.ipynb" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
 
     - name: Upload Pages

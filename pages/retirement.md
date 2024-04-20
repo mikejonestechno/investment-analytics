@@ -109,6 +109,7 @@ Here are the median (50th percentile) and lower and upper 25th percentiles over 
 | Years | Lower | Median | Upper |
 |-------|-----:|-----:|-----:|
 | 1     | 5.08 | 5.70 | 6.25 |
+| 5     | 1.53 | 3.25 | 5.55 |
 | 10    | 1.50 | 1.90 | 3.12 |
 | 20    | 1.77 | 2.40 | 3.15 |
 | 30    | 1.70 | 2.45 | 3.23 |
