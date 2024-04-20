@@ -109,6 +109,8 @@ def update_file(local_file, csv_url):
     urllib.request.urlretrieve(csv_url, temp_file) 
     if (not os.path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
         os.replace(temp_file, local_file)
+    else:
+        os.remove(temp_file)
 
 def get_quarter_publish_date(quarter):
     """
