@@ -17,8 +17,7 @@ plugins:
   
 header_pages:
   - retirement-planning.md
-  - inflation.md
-  - interest-rates.md
+  - inflation-and-interest-rates.md
 
 # kramdown adds support for markdown extensions like 'notice' blocks.
 kramdown:
