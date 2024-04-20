@@ -10,10 +10,10 @@ title: Notebook Test
 
 
 
-    Publish date: 2024-04-13 21:11:25
-    1713006685.400731
+    Publish date: 2024-04-13 23:32:53
+    1713015173.664147
     ../data/spx_HistoricalData.csv
-    1712489414.9395525
-    is_stale_file: True
-    1712489414.9395525
+    1713611640.5575867
+    is_stale_file: False
+    1713611640.5575867
 
