@@ -1,6 +1,6 @@
 ---
 layout: page
-title: S&P 500
+title: S&P 500 Index
 ---
 
 The S&P 500 Index from Standard & Poor's is a market-capitalization-weighted index tracking the 500 largest publicly traded companies in the US. 
