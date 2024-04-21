@@ -71,9 +71,9 @@ class Percentiles:
 Calculating the {self.percentiles[0]}th and {self.percentiles[2]}th percentile over a multi year time horizon helps smooth out the anomolies and visualize the {self.percentiles._fields[0]} and {self.percentiles._fields[2]} long term trends.
     """))
         
-    def display_percentile_summary(self,df):
+    def display_percentile_summary(self, df, metric_name='change'):
         display(Markdown(f"""
-Over the last {self.multi_years[0]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) change is { "{:,.2f}".format(df[f'rolling_{self.multi_years[0]}_years_{self.percentiles._fields[1]}'].iloc[-1])  }%.
+Over the last {self.multi_years[0]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { "{:,.2f}".format(df[f'rolling_{self.multi_years[0]}_years_{self.percentiles._fields[1]}'].iloc[-1])  }%.
 
-Over the last {self.multi_years[-1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) change is { "{:,.2f}".format(df[f'rolling_{self.multi_years[-1]}_years_{self.percentiles._fields[1]}'].iloc[-1])  }%.
+Over the last {self.multi_years[-1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { "{:,.2f}".format(df[f'rolling_{self.multi_years[-1]}_years_{self.percentiles._fields[1]}'].iloc[-1])  }%.
     """))
