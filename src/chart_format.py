@@ -125,6 +125,20 @@ class StandardChart(BaseChart):
 
         return plt, colors
 
+#    def add_horizontal_band(self, plt):
+#        # Add a horizontal band between y=2 and y=3
+#        plt.fill_between(df.index, 2, 3, color=colors[1]['color'], alpha=0.1)
+#        # Create a Patch for the legend
+#        target_range = mpatches.Patch(color=colors[1]['color'], alpha=0.1, label='Target Inflation Range')
+#        # Get the existing legend entries
+#        ax = plt.gca()
+#        handles, labels = ax.get_legend_handles_labels()
+#        # Add the patch to the existing handles
+#        handles.append(target_range)
+#        plt.legend(handles=handles)
+#        return plt
+
+
 class PercentileChart(StandardChart):
     def __init__(self, percentiles, multi_year, color_index, legend_location='best', *args, **kwargs):
         super().__init__(*args, **kwargs)

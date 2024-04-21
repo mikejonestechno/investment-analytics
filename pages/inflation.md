@@ -17,36 +17,27 @@ Inflation remained highly volatile but eventually stabilized through the 1990s, 
 
 
 
-Calculating the 25th and 75th percentile over a multi year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
+    Calculating the 25th and 75th percentile over a multi year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
+    
 
+
+
+    
+![png](images/inflation_10_0.png)
+    
+
+
+
+
+    Over the last 5 years the median (50th percetile) change is 5.40%.
+
+    Over the last 30 years the median (50th percetile) change is 2.10%.
+    
 
 
 
     
 ![png](images/inflation_12_0.png)
-    
-
-
-
-
-Over the last 5 years the median (50th percetile) change is 3.25%.
-
-Over the last 30 years the median (50th percetile) change is 2.45%.
-
-| Years | 25th percentile | 50th percentile | 75th percentile |
-|-------|-----:|-----:|-----:|
-| 1     | 5.08 | 5.70 | 6.25 |
-| 5     | 1.53 | 3.25 | 5.55 |
-| 10    | 1.50 | 1.90 | 3.12 |
-| 20    | 1.77 | 2.40 | 3.15 |
-| 30    | 1.70 | 2.45 | 3.23 |
-
-
-
-
-
-    
-![png](images/inflation_14_0.png)
     
 
 
