@@ -19,7 +19,7 @@ View all the charts in this data-analytics project at
 
 1. [Inflation and Interest Rates](https://mikejonestechno.github.io/investment-analytics/inflation-and-interest-rates.html) chart from Jupyter notebook. 
 
-<img src="https://mikejonestechno.github.io/investment-analytics/images/inflation-and-interest-rates_8_0.png" alt="Inflation and Interest Rates" width="200"/>
+<img src="https://mikejonestechno.github.io/investment-analytics/images/inflation-and-interest-rates_7_0.png" alt="Inflation and Interest Rates" width="200"/>
 
 2. [TSLA Prices](https://mikejonestechno.github.io/investment-analytics/tsla-and-targets.html) chart with ArkInvest four year targets from Jupyter notebook. 
 

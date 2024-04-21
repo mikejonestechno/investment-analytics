@@ -12,7 +12,7 @@ This project was created to provide some guidelines and forecasts for the follow
     - [Inflation](inflation.md)
     - [Interest Rates](interest-rates.md)
 
-- Investing
+- [Investing](investing-and-inflation.md)
     - [S&P 500 Index (SPX)](spx-prices.md)
     - [Tesla (TSLA)](tsla-prices.md)
         - [ARK Invest Price Targets](tsla-and-targets.md)
