@@ -29,9 +29,9 @@ Calculating the 25th and 75th percentile over a multi year time horizon helps sm
 
 
 
-Over the last 5 years the median (50th percetile) change is 5.40%.
+Over the last 5 years the median (50th percetile) inflation rate is 5.40%.
 
-Over the last 30 years the median (50th percetile) change is 2.10%.
+Over the last 30 years the median (50th percetile) inflation rate is 2.10%.
     
 
 
