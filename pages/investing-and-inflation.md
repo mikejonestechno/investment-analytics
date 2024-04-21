@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Investing
+title: Investing, Inflation and Interest Rates
 ---
 
 ## [S&P 500 Index](spx-prices.html)
@@ -9,7 +9,7 @@ The S&P 500 Index from Standard & Poor's is a market-capitalization-weighted ind
 
 The S&P 500 is widely considered one of the best gauges of overall stock market performance because of its depth and diversity, tracking the top performing companies by market capitalization.
 
-See [SPX 500 Index](spx-prices.html) for inflation charts, trends and analysis.
+See [SPX 500 Index](spx-prices.html) for price charts, trends and analysis.
 
 ## [Inflation](inflation.html)
 
@@ -19,7 +19,7 @@ See [inflation](inflation.html) for inflation charts, trends and analysis.
 
 While inflation may have a direct impact on company profitability and subsequently market prices, there is not a strong correlation between inflation and investment returns.
 
-The S&P 500 Index is reasonably volatility over a multi year time horizon regardless of inflation. 
+The S&P 500 Index is reasonably volatile over a multi year time horizon regardless of inflation. 
 
 
     
@@ -33,11 +33,11 @@ The Housing Loan Lending Rates are set by the Reserve Bank of Australia and publ
 
 See [interest rates](interest-rates.html) for interest rate charts, trends and analysis.
 
-While commercial borrowing interest rates may have a direct impact on company profitability and subsequently market prices, there is not a strong correlation between interest rates and investment returns.
+Although these charts plot the housing loan lending rate, the base interest rate has a similar pattern.
 
-The S&P 500 Index is reasonably volatility over a multi year time horizon regardless of interest rates.
+While base interest rates may have a direct impact on company profitability, the attactiveness of short term treasury bonds, and subsequently market prices, there is not a strong correlation between interest rates and investment returns.
 
-Although this chart plots the housing loan lending rate, the base rate for commercial borrowing has a similar pattern.
+The S&P 500 Index is reasonably volatile over a multi year time horizon regardless of interest rates.
 
 
     
@@ -47,9 +47,9 @@ Although this chart plots the housing loan lending rate, the base rate for comme
 
 ## General Investing Guidelines
 
-Plotting interest rate and investment YoY change may help provide general investing guidelines. 
+General investing guidelines only, personal financial situation should be considered with any financial decision. 
 
-When interest rates are higher than investement returns, it may mmake sense to invest in short term treasury bonds rather than make stock investments, particularly when interest rates are high and investment returns are low and uncertain; such as the period between 1975 and 1985. 
+When interest rates are higher than investement returns, it may make sense to invest in short term treasury bonds rather than make stock investments, particularly when interest rates are high and investment returns are low and uncertain; such as the period between 1975 and 1985. 
 
 In these conditions it makes sense for home owners to borrow on princpal and interest terms to pay down mortgage capital and interest on other loans as quickly as possible because the return on investments may not be sufficient to cover the interest repayments.
 
