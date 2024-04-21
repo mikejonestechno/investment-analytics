@@ -140,18 +140,19 @@ class StandardChart(BaseChart):
 
 
 class PercentileChart(StandardChart):
-    def __init__(self, percentiles, multi_year, color_index, legend_location='best', *args, **kwargs):
+    def __init__(self, percentiles, multi_year, color_index, legend_location='best', data_column_label='YoY Annual Price Change', *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.percentiles = percentiles
         self.multi_year = multi_year
         self.color_index = color_index
         self.legend_location = legend_location
+        self.data_column_label = data_column_label
 
     def plot_percentiles(self, df: pd.DataFrame):
         plt, colors = self.base_chart(df)
 
-        if self.data_column != '':
-            plt.plot(df.index, df[self.data_column], label='YoY Annual Price Change', color=colors[self.color_index]['color'], alpha=0.1)
+        if self.data_column_label != '':
+            plt.plot(df.index, df[self.data_column], label=self.data_column_label, color=colors[self.color_index]['color'], alpha=0.1)
 
         for i, percentile in enumerate(self.percentiles._fields):
             linestyle = '--' if i != 1 else '-'
