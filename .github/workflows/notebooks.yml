@@ -74,19 +74,19 @@ jobs:
         restore-keys: notebooks-data-
 
     - name: Run Standalone Notebooks
-      # run standalone notebooks first (no hyphen in name), then *-prices notebooks, then *-and-* notebooks
+      # run standalone notebooks first (no hyphen in name), then ! *-and- notebooks, then *-and-* notebooks
       run: |
         set -e
         find notebooks -name "*.ipynb" -not -name "*-*" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
 
     - name: Run Investment Notebooks
-      # run standalone notebooks first (no hyphen in name), then *-prices notebooks, then *-and-* notebooks
+      # run notebooks with hyphen but exclude combo *-and-* notebooks
       run: |
         set -e
-        find notebooks -name "*-prices.ipynb" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
+        find notebooks -name "*-*.ipynb" -not -name "*-and-*" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
           
-    - name: Run Comob Notebooks
-      # run standalone notebooks first (no hyphen in name), then *-prices notebooks, then *-and-* notebooks
+    - name: Run Combo Notebooks
+      # run combo *-and-* notebooks
       run: |
         set -e
         find notebooks -name "*-and-*.ipynb" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
