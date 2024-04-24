@@ -45,7 +45,7 @@ class Percentiles:
             df_tail = df.tail(rows)
             data = {}
             for percentile in  self.percentiles:
-                data[f"{percentile}th percentile"] = "{:.2f}".format(df_tail[self.data_column].quantile(percentile/100))
+                data[f"{percentile}th percentile"] = df_tail[self.data_column].quantile(percentile/100)
             df_temp = pd.DataFrame(data, index=[years])
             df_last_percentiles = pd.concat([df_last_percentiles, df_temp])
         df_last_percentiles.index.name = 'Years'
@@ -58,6 +58,8 @@ class Percentiles:
 #       f.close()
 
     def display_dataframe_table(self, df):
+        df.style.format(precision=2)
+        df.tail(10)
         markdown_table = df.to_markdown()
         display(Markdown(markdown_table))
 
