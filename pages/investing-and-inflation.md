@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Investing, Inflation and Interest Rates
+title: Investing
 ---
 
 ## [S&P 500 Index](spx-prices.html)
