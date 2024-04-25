@@ -5,4 +5,3 @@ source
 __pycache__/
 .coverage
 *.tmp
-pages/images/*.png
