@@ -33,21 +33,59 @@ For comparison, the high performance S&P 500 Index only shows 5x growth over a t
 
 
 
-Calculating the 25th and 75th percentile over a multi-year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
+Calculating the 25th and 75th percentile over a multi year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
+    
+
+
+
+    
+![png](images/tsla-prices_11_0.png)
+    
+
+
+
+
+Over the last 5 years the median (50th percetile) YoY change is 25.15%.
+
+Over the last 10 years the median (50th percetile) YoY change is 16.21%.
+    
 
 
 
 
 
-Over the last 5 years the median (50th percetile) change is 25.15%.
-
-Over the last 10 years the median (50th percetile) change is 16.41%.
-
-| Years | 25th percentile | 50th percentile | 75th percentile |
-|-------|-----:|-----:|-----:|
-| 1     | -12.88 | -3.69 | 18.79 |
-| 5     | -12.14 | 25.15 | 173.34 |
-| 10    | -10.04 | 16.41 | 70.06 |
+<style type="text/css">
+</style>
+<table id="T_83aba">
+  <thead>
+    <tr>
+      <th id="T_83aba_level0_col0" class="col_heading level0 col0" >Years</th>
+      <th id="T_83aba_level0_col1" class="col_heading level0 col1" >25th percentile</th>
+      <th id="T_83aba_level0_col2" class="col_heading level0 col2" >50th percentile</th>
+      <th id="T_83aba_level0_col3" class="col_heading level0 col3" >75th percentile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_83aba_row0_col0" class="data row0 col0" >1</td>
+      <td id="T_83aba_row0_col1" class="data row0 col1" >-12.56</td>
+      <td id="T_83aba_row0_col2" class="data row0 col2" >-3.67</td>
+      <td id="T_83aba_row0_col3" class="data row0 col3" >18.79</td>
+    </tr>
+    <tr>
+      <td id="T_83aba_row1_col0" class="data row1 col0" >5</td>
+      <td id="T_83aba_row1_col1" class="data row1 col1" >-12.15</td>
+      <td id="T_83aba_row1_col2" class="data row1 col2" >25.15</td>
+      <td id="T_83aba_row1_col3" class="data row1 col3" >173.34</td>
+    </tr>
+    <tr>
+      <td id="T_83aba_row2_col0" class="data row2 col0" >10</td>
+      <td id="T_83aba_row2_col1" class="data row2 col1" >-10.12</td>
+      <td id="T_83aba_row2_col2" class="data row2 col2" >16.21</td>
+      <td id="T_83aba_row2_col3" class="data row2 col3" >69.90</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -58,10 +96,8 @@ Over the last 10 years the median (50th percetile) change is 16.41%.
     
 
 
-> ℹ Given the relatively short history, the data suggests reasonable confidence using a baseline long term performance 16% - 18% with some uncertainty or risk that TSLA may have bursts of extreme growth with periods of volatility for several years at a time. Note this does not take inflation into consideration.
 
 
-    
-![png](images/tsla-prices_15_0.png)
-    
+> ℹ Given the relatively short history, the data suggests reasonable confidence using a baseline long term performance around 16% with uncertainty or risk that TSLA may have bursts of extreme growth with periods of volatility for several years at a time. Note this does not take inflation into consideration.
+
 

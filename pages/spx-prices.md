@@ -34,23 +34,71 @@ The logarithmic scale shows the S&P 500 has consistent multi-year periods of hig
 
 
 
-Calculating the 25th and 75th percentile over a multi-year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
+Calculating the 25th and 75th percentile over a multi year time horizon helps smooth out the anomolies and visualize the lower and upper long term trends.
+    
+
+
+
+    
+![png](images/spx-prices_11_0.png)
+    
+
+
+
+
+Over the last 5 years the median (50th percetile) YoY change is 12.62%.
+
+Over the last 30 years the median (50th percetile) YoY change is 11.75%.
+    
 
 
 
 
 
-Over the last 5 years the median (50th percetile) change is 12.51%.
-
-Over the last 30 years the median (50th percetile) change is 11.75%.
-
-| Years | 25th percentile | 50th percentile | 75th percentile |
-|-------|-----:|-----:|-----:|
-| 1     | 10.20 | 15.68 | 21.71 |
-| 5     | 0.65 | 12.51 | 22.33 |
-| 10    | 2.67 | 12.34 | 17.46 |
-| 20    | 2.84 | 11.06 | 16.99 |
-| 30    | 1.36 | 11.75 | 19.83 |
+<style type="text/css">
+</style>
+<table id="T_53c42">
+  <thead>
+    <tr>
+      <th id="T_53c42_level0_col0" class="col_heading level0 col0" >Years</th>
+      <th id="T_53c42_level0_col1" class="col_heading level0 col1" >25th percentile</th>
+      <th id="T_53c42_level0_col2" class="col_heading level0 col2" >50th percentile</th>
+      <th id="T_53c42_level0_col3" class="col_heading level0 col3" >75th percentile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_53c42_row0_col0" class="data row0 col0" >1</td>
+      <td id="T_53c42_row0_col1" class="data row0 col1" >11.34</td>
+      <td id="T_53c42_row0_col2" class="data row0 col2" >15.85</td>
+      <td id="T_53c42_row0_col3" class="data row0 col3" >21.86</td>
+    </tr>
+    <tr>
+      <td id="T_53c42_row1_col0" class="data row1 col0" >5</td>
+      <td id="T_53c42_row1_col1" class="data row1 col1" >0.65</td>
+      <td id="T_53c42_row1_col2" class="data row1 col2" >12.62</td>
+      <td id="T_53c42_row1_col3" class="data row1 col3" >22.48</td>
+    </tr>
+    <tr>
+      <td id="T_53c42_row2_col0" class="data row2 col0" >10</td>
+      <td id="T_53c42_row2_col1" class="data row2 col1" >2.67</td>
+      <td id="T_53c42_row2_col2" class="data row2 col2" >12.34</td>
+      <td id="T_53c42_row2_col3" class="data row2 col3" >17.46</td>
+    </tr>
+    <tr>
+      <td id="T_53c42_row3_col0" class="data row3 col0" >20</td>
+      <td id="T_53c42_row3_col1" class="data row3 col1" >2.84</td>
+      <td id="T_53c42_row3_col2" class="data row3 col2" >11.06</td>
+      <td id="T_53c42_row3_col3" class="data row3 col3" >16.99</td>
+    </tr>
+    <tr>
+      <td id="T_53c42_row4_col0" class="data row4 col0" >30</td>
+      <td id="T_53c42_row4_col1" class="data row4 col1" >1.37</td>
+      <td id="T_53c42_row4_col2" class="data row4 col2" >11.75</td>
+      <td id="T_53c42_row4_col3" class="data row4 col3" >19.83</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -61,13 +109,8 @@ Over the last 30 years the median (50th percetile) change is 11.75%.
     
 
 
-> ℹ Given the multi-decade history, the data suggests high confidence using a baseline stock market performance of 11.5% with some uncertainty or risk that stocks can go up or down for several years at a time. Note this does not take inflation into consideration.
 
 
-    
-![png](images/spx-prices_15_0.png)
-    
+> ℹ Given the multi-decade history, the data suggests high confidence using a baseline stock market performance of 12% with some uncertainty or risk that stocks can go up or down for several years at a time. Note this does not take inflation into consideration.
 
-
-    Stored 'df_spx' (DataFrame)
 
