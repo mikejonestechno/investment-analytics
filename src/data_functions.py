@@ -45,7 +45,7 @@ class Percentiles:
             df_tail = df.tail(rows)
             data = {}
             for percentile in  self.percentiles:
-                data[f"{percentile}th percentile"] = df_tail[self.data_column].quantile(percentile/100)
+                data[percentile] = df_tail[self.data_column].quantile(percentile/100)
             df_temp = pd.DataFrame(data, index=[years])
             df_last_percentiles = pd.concat([df_last_percentiles, df_temp])
         df_last_percentiles.index.name = 'Years'
@@ -58,10 +58,15 @@ class Percentiles:
 #       f.close()
 
     def display_dataframe_table(self, df):
-        df.style.format(precision=2)
-        df.tail(10)
-        markdown_table = df.to_markdown()
-        display(Markdown(markdown_table))
+        # all columns have numeric label, rename them to a string in fomat 'xxth percentile'
+        df_display = df.copy()
+        df_display.columns = [f'{percentile}th percentile' for percentile in self.percentiles]
+        df_display = df_display.reset_index()
+        df_display = df_display.rename(columns={'index': 'Years'})
+        format_dict = {'Years': '{0:.0f}'}
+        format_dict.update({col: '{0:.2f}' for col in df_display.columns if col != 'Years'})
+        df_display = df_display.style.hide(axis="index").format(format_dict)
+        return df_display
 
 
     """
@@ -73,9 +78,9 @@ Calculating the {self.percentiles[0]}th and {self.percentiles[2]}th percentile o
     """))
     def display_percentile_summary(self, df, metric_name='change'):
         display(Markdown(f"""
-Over the last {self.multi_years[1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { df.loc[self.multi_years[1], f"{self.percentiles[1]}th percentile"] }%.
+Over the last {self.multi_years[1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { df.loc[self.multi_years[1], self.percentiles[1]] }%.
 
-Over the last {self.multi_years[-1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { df.loc[self.multi_years[-1], f"{self.percentiles[1]}th percentile"] }%.
+Over the last {self.multi_years[-1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { df.loc[self.multi_years[-1], self.percentiles[1]] }%.
     """))
         
 """Over the last {self.multi_years[-1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { "{:,.2f}".format(df.loc[self.multi_years[-1], f"{self.percentiles[1]}th percentile"]) }%."""        
