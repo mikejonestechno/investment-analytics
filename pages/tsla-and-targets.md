@@ -69,8 +69,7 @@ Before ARK Invest's 2026 price targets were published, Steven Mark Ryan publishe
 
 The SMR 'weighted average price target' is plotted below (labelled 'SMR base case') along with price target trajectory from other sources.
 
-> ⚠ Disclaimer: _Not financial advice._ Price targets are a FORECAST of what a stock SHOULD be worth, not an estimate of what institutional investors believe or what the sotck WILL actually be worth, and each forecast is based on a range of assumptions used in that model. All content is for educational purposes only. No warranty or guarantee or forward looking statements of fit for purpose, etc;
-do your own research.
+> ⚠ Disclaimer: _Not financial advice._ Price targets are a FORECAST of what a stock SHOULD be worth, not an estimate of what institutional investors believe or what the sotck WILL actually be worth, and each forecast is based on a range of assumptions used in that model. All content is for educational purposes only. The 'cone of uncertainty' beceomes increasingly wider the further the forecasts project in to the future.
 
 
     

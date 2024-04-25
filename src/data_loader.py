@@ -9,12 +9,9 @@ import pandas as pd
 def load_data(csv_url, local_file, max_age_days, skip_rows=0):
     """
     Load data from a CSV file, refresh if older than max_age_days.
-    Do -1 so we count today as one of the days.
     """
-    max_age_days = max_age_days - 1
     publish_date = datetime.datetime.now() - datetime.timedelta(days=max_age_days)
     return load_csv_data(local_file, csv_url, publish_date, skip_rows)
-
 """
 If local_file is older than specifed date, then download to latest_file.
 

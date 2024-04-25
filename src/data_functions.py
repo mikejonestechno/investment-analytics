@@ -78,9 +78,9 @@ Calculating the {self.percentiles[0]}th and {self.percentiles[2]}th percentile o
     """))
     def display_percentile_summary(self, df, metric_name='change'):
         display(Markdown(f"""
-Over the last {self.multi_years[1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { df.loc[self.multi_years[1], self.percentiles[1]] }%.
+Over the last {self.multi_years[1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { "{:,.2f}".format(df.loc[self.multi_years[1], self.percentiles[1]]) }%.
 
-Over the last {self.multi_years[-1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { df.loc[self.multi_years[-1], self.percentiles[1]] }%.
+Over the last {self.multi_years[-1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { "{:,.2f}".format(df.loc[self.multi_years[-1], self.percentiles[1]]) }%.
     """))
         
 """Over the last {self.multi_years[-1]} years the {self.percentiles._fields[1]} ({self.percentiles[1]}th percetile) {metric_name} is { "{:,.2f}".format(df.loc[self.multi_years[-1], f"{self.percentiles[1]}th percentile"]) }%."""        
