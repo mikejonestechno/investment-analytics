@@ -65,17 +65,19 @@ jobs:
         pip install -r src/requirements.txt 
         python -m ipykernel install --user --name python3
         jupyter kernelspec list
+        cat data/hash.txt
 
     - name: Cache Data
       uses: actions/cache@v4
       with:
         path: data/**
-        key: notebooks-data-${{ hashFiles('data/**') }}
-        restore-keys: notebooks-data-
+        key: data-${{ hashFiles('data/**') }}
+        restore-keys: data-
 
     - name: Run Standalone Notebooks
       # run standalone notebooks first (no hyphen in name), then ! *-and- notebooks, then *-and-* notebooks
       run: |
+        ls -al ./data
         set -e
         find notebooks -name "*.ipynb" -not -name "*-*" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
 
