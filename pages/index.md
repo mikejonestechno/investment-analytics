@@ -12,6 +12,7 @@ This project was created to provide some guidelines and forecasts for the follow
     - [Inflation](inflation.md)
     - [Interest Rates](interest-rates.md)
 
+
 - [Investing](investing.md)
     - [S&P 500 Index (SPX)](spx.md)
     - [Tesla (TSLA)](tsla.md)

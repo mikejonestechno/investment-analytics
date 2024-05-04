@@ -1,5 +1,3 @@
-# Investing
-
 - [S&P 500 Index (SPX)](spx.md)
 - [Tesla (TSLA)](tsla.md)
     - [ARK Invest Price Targets](tsla-targets.md)
