@@ -2,3 +2,4 @@ images/*.png
 *.md
 !index.md
 !retirement-planning.md
+!investing.md
