@@ -66,7 +66,13 @@ def human_format(num):
     while abs(num) >= 1000:
         magnitude += 1
         num /= 1000.0
-    return f'{num:.0f}{["", "k", "m", "b", "t"][magnitude]}' 
+    
+    # if num modulus zero return integer
+    if num % 1 == 0:
+        formatted_number = f'{num:.0f}{["", "k", "m", "b", "t"][magnitude]}'
+    else:
+        formatted_number = f'{num:.1f}{["", "k", "m", "b", "t"][magnitude]}'         
+    return formatted_number
 
 class LogChart(BaseChart):
     def __init__(self, y_ticks=None, human_format=False, y_secondary=False, *args, **kwargs):
