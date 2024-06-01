@@ -65,6 +65,7 @@ jobs:
         pip install -r src/requirements.txt 
         python -m ipykernel install --user --name python3
         jupyter kernelspec list
+        ls -al ./data        
         cat data/hash.txt
 
     - name: Cache Data
@@ -78,6 +79,7 @@ jobs:
       # run standalone notebooks first (no hyphen in name), then ! *-and- notebooks, then *-and-* notebooks
       run: |
         ls -al ./data
+        cat data/hash.txt        
         set -e
         find notebooks -name "*.ipynb" -not -name "*-*" -print0 | xargs -0 -I % -P $(nproc) jupyter nbconvert --config notebooks/nbconvert_cfg.py --to markdown %
 
@@ -102,6 +104,7 @@ jobs:
     - name: Hash Data
       # Update hash of data files so we force new cache when data changes
       run: |
+        ls -al ./data
         set -e
         find data -type f \( -name "*.csv" -o -name "*.md" \) | sort -n | xargs md5sum > data/hash.txt
         cat data/hash.txt
