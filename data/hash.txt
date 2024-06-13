@@ -1,7 +1,7 @@
-7f55d3bf51dcd51058405d668540522d  data/f5-data.csv
+3212e8cc84ca0fcf0355dcbc884bb62b  data/f5-data.csv
 10584292d67a3d53d27e140742a8c406  data/g1-data.csv
-92d76565d68db71de5fd3a3adfb2f3fe  data/spx_HistoricalData.csv
-b599a03e583a0a370afa461c22b920d6  data/tsla_HistoricalData.csv
+ec4591be6de06b86fca3dd5ec9aca7a4  data/spx_HistoricalData.csv
+4e8a4b5509aa7581fa4a45825b5ca6e3  data/tsla_HistoricalData.csv
 afe6474cc29cba71307e82729f1923b6  data/tsla_PriceTarget_InvestAnswers.md
 9f6bf0a94ce6f7590e4d8021607a4503  data/tsla_PriceTarget_InvestAnswers_2024.md
 423d268ff08e1bdebe891dca922aba41  data/tsla_PriceTargets.md
