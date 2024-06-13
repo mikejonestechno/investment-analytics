@@ -72,7 +72,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: data/**
-        key: data-${{ hashFiles('data/**') }}
+        key: data-${{ hashFiles('data/hash.txt') }}
         restore-keys: data-
 
     - name: Run Standalone Notebooks
