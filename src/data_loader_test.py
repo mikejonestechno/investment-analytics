@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 import csv
 from pandas import Timestamp
 
@@ -67,7 +67,7 @@ def new_file_is_not_downloaded(call_get_csv_by_age):
 
 @when(parsers.re('today is (?P<date>.+)'), target_fixture="today")
 def today_is(date):
-    today = datetime.datetime.strptime(date, '%d %b %Y')
+    today = datetime.strptime(date, '%d %b %Y')
     return today
 
 @then(parsers.re('last_publish date is (?P<expected_date>.+)'))
@@ -86,7 +86,7 @@ def is_file_stale_returns_expected(expected, local_file_path, publish_date):
 def local_file_is_older_than_given_date(older):
     older = older == 'older'
     if older: # the file will be older than this date
-        publish_date = datetime.datetime(2040, 1, 1)
+        publish_date = datetime(2040, 1, 1)
     else: # the file will be newer than this date
-        publish_date = datetime.datetime(2020, 1, 1)
+        publish_date = datetime(2020, 1, 1)
     return publish_date

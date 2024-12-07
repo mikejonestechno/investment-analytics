@@ -1,5 +1,5 @@
-import os
-import datetime
+from os import path, replace, remove
+from datetime import datetime, timedelta
 
 import urllib.request
 import hashlib
@@ -18,7 +18,7 @@ def get_csv_by_age(local_file, csv_url, max_age_days, skip_rows=0):
     Returns:
         pandas.DataFrame: The loaded CSV data as a pandas DataFrame.
     """
-    publish_date = datetime.datetime.now() - datetime.timedelta(days=max_age_days)
+    publish_date = datetime.now() - timedelta(days=max_age_days)
     return get_csv_by_date(local_file, csv_url, publish_date, skip_rows)
 
 def get_csv_by_date(local_file, csv_url, publish_date, skip_rows=0):
@@ -49,7 +49,7 @@ def get_csv_data(local_file, csv_url, skip_rows=0):
     Returns:
         pandas.DataFrame: The loaded CSV data as a pandas DataFrame.
     """
-    if not os.path.exists(local_file):
+    if not path.exists(local_file):
         download_file(local_file, csv_url)
     return read_csv_file(local_file, skip_rows)
 
@@ -98,14 +98,11 @@ def is_file_stale(local_file, specified_date):
     Returns:
         bool: True if the file is stale, False otherwise.
     """
-    if not os.path.exists(local_file):
+    if not path.exists(local_file):
         return True
     if specified_date is None:
         raise ValueError('specified_date value is None')
-    return os.path.getmtime(local_file) < specified_date.timestamp()
-
-import urllib.request
-import os
+    return path.getmtime(local_file) < specified_date.timestamp()
 
 def download_file(local_file, csv_url):
     """
@@ -120,10 +117,10 @@ def download_file(local_file, csv_url):
     """    
     temp_file = local_file + '.tmp'
     urllib.request.urlretrieve(csv_url, temp_file) 
-    if (not os.path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
-        os.replace(temp_file, local_file)
+    if (not path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
+        replace(temp_file, local_file)
     else:
-        os.remove(temp_file)
+        remove(temp_file)
 
 def get_quarter_publish_date(quarter):
     """
