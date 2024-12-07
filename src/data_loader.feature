@@ -2,7 +2,7 @@ Feature: Load data
 
   Scenario: Download a new file
     Given the local file does not exist
-    When I call load_data
+    When I call get_csv_by_age
     Then a new file is downloaded
 
   Scenario: Publish date is first day of second month after most recent quarter end (case 1)
