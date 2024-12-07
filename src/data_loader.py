@@ -1,27 +1,27 @@
-import os
-import datetime
+from os import path, replace, remove
+from datetime import datetime, timedelta
 
 import urllib.request
 import hashlib
 
 import pandas as pd
 
-def load_data(csv_url, local_file, max_age_days, skip_rows=0):
+def get_csv_by_age(local_file, csv_url, max_age_days, skip_rows=0):
     """
-    Load data from a CSV file, refresh if older than max_age_days.
+    Loads CSV data from a local file or updates it from a given URL if the file is stale.
+
+    Args:
+        local_file (str): The path to the local CSV file.
+        csv_url (str): The URL of the CSV file to download if the local file is stale.
+        publish_date (str): The publish date of the CSV file.
+
+    Returns:
+        pandas.DataFrame: The loaded CSV data as a pandas DataFrame.
     """
-    publish_date = datetime.datetime.now() - datetime.timedelta(days=max_age_days)
-    return load_csv_data(local_file, csv_url, publish_date, skip_rows)
-"""
-If local_file is older than specifed date, then download to latest_file.
+    publish_date = datetime.now() - timedelta(days=max_age_days)
+    return get_csv_by_date(local_file, csv_url, publish_date, skip_rows)
 
-Sometimes the data is still old e.g. downloaded early before last publish date.
-So only replace the local_file if the latest_file actually has newer data.
-
-If latest_file hash is different to local_file then replace the local_file.
-"""
-
-def load_csv_data(local_file, csv_url, publish_date, skip_rows=0):
+def get_csv_by_date(local_file, csv_url, publish_date, skip_rows=0):
     """
     Loads CSV data from a local file or updates it from a given URL if the file is stale.
 
@@ -34,10 +34,26 @@ def load_csv_data(local_file, csv_url, publish_date, skip_rows=0):
         pandas.DataFrame: The loaded CSV data as a pandas DataFrame.
     """
     if is_file_stale(local_file, publish_date):
-        update_file(local_file, csv_url)
-    return load_csv_file(local_file, skip_rows)
+        download_file(local_file, csv_url)
+    return read_csv_file(local_file, skip_rows)
 
-def load_csv_file(local_file, skip_rows=0):
+
+def get_csv_data(local_file, csv_url, skip_rows=0):
+    """
+    Get CSV data from a local file or download it from a given URL if the file is missing.
+
+    Args:
+        local_file (str): The path to the local CSV file.
+        csv_url (str): The URL of the CSV file to download if the local file is stale.
+    
+    Returns:
+        pandas.DataFrame: The loaded CSV data as a pandas DataFrame.
+    """
+    if not path.exists(local_file):
+        download_file(local_file, csv_url)
+    return read_csv_file(local_file, skip_rows)
+
+def read_csv_file(local_file, skip_rows=0):
     """
     Load a CSV file into a pandas DataFrame.
 
@@ -82,16 +98,13 @@ def is_file_stale(local_file, specified_date):
     Returns:
         bool: True if the file is stale, False otherwise.
     """
-    if not os.path.exists(local_file):
+    if not path.exists(local_file):
         return True
     if specified_date is None:
         raise ValueError('specified_date value is None')
-    return os.path.getmtime(local_file) < specified_date.timestamp()
+    return path.getmtime(local_file) < specified_date.timestamp()
 
-import urllib.request
-import os
-
-def update_file(local_file, csv_url):
+def download_file(local_file, csv_url):
     """
     Downloads a CSV file from the given URL and updates the local file if the content has changed.
 
@@ -104,10 +117,10 @@ def update_file(local_file, csv_url):
     """    
     temp_file = local_file + '.tmp'
     urllib.request.urlretrieve(csv_url, temp_file) 
-    if (not os.path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
-        os.replace(temp_file, local_file)
+    if (not path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
+        replace(temp_file, local_file)
     else:
-        os.remove(temp_file)
+        remove(temp_file)
 
 def get_quarter_publish_date(quarter):
     """
