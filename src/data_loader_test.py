@@ -27,7 +27,7 @@ def local_file_path(tmp_path):
 def local_file(tmp_path):
     # create a CSV data stub
     csv_file = local_file_path(tmp_path)
-    mock_urlretrieve_csv_data_stub('', csv_file)
+    mock_urlretrieve_csv_data_stub(csv_file, '')
     return csv_file
 
 
