@@ -5,6 +5,8 @@ import urllib.request
 import hashlib
 
 import pandas as pd
+# %pip install yfinance
+import yfinance as yf
 
 def get_csv_by_age(local_file, csv_url, max_age_days, skip_rows=0):
     """
@@ -154,7 +156,40 @@ def get_last_publish_date(date=None):
         publish_date = get_quarter_publish_date(quarter - 1)
     return publish_date
 
-""" 
-NOTE that data may be published on the last or second last Wednesday before that month end
-so I could look to get new data between the early publish date and the last publish date.
-"""
+def get_exchange_historical_data(local_file, sx_symbol, from_date, to_date):
+    """
+    Get exchange data from a local file or download it if the file is missing.
+
+    Args:
+        local_file (str): The path to the local CSV file.
+        sx_symbol (str): The stock exchange symbol eg TSLA.
+    
+    Returns:
+        pandas.DataFrame: The loaded CSV data as a pandas DataFrame.
+    """
+    if not path.exists(local_file):
+        download_exchange_data(local_file, sx_symbol, from_date, to_date)
+    return read_csv_file(local_file, skip_rows=0)
+
+def download_exchange_data(local_file, sx_symbol, from_date, to_date):
+    """
+    Downloads exchange data and updates the local file if the content has changed.
+
+    Args:
+        local_file (str): The path to the local file.
+        sx_symbol (str): The stock exchange symbol eg TSLA.
+
+    Returns:
+        None
+    """    
+    temp_file = local_file + '.tmp'
+    ed = None
+    ed = yf.Ticker(sx_symbol).history(start=from_date, end=to_date)
+    if ed is not None:
+        ed.to_csv(temp_file)
+        if (not path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
+            replace(temp_file, local_file)
+        else:
+            remove(temp_file)
+    else:
+        raise ValueError(f"Failed to download data for symbol {sx_symbol} from {from_date} to {to_date}")
