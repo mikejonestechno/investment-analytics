@@ -12,10 +12,10 @@ This project was created to provide some guidelines and forecasts for the follow
     - [Inflation](inflation.md)
     - [Interest Rates](interest-rates.md)
 
-- 🚧 Investing
-    - 🚧 S&P 500 Index (SPX)
-    - 🚧 Tesla (TSLA)
-        - 🚧 ARK Invest Price Targets
+- [Investing](investing.md)
+    - [S&P 500 Index (SPX)](spx.md)
+    - [Tesla (TSLA)](tsla.md)
+        - [ARK Invest Price Targets](tsla-targets.md)
 
 ## Made in Australia
 

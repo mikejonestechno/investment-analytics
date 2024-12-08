@@ -1,5 +1,16 @@
 0fe32cee7701eab2014ecb28a7e397ac  data/f5-data.csv
 f88bef9053d01c129268cad9a6641d1e  data/g1-data.csv
+e7b504ecad284cc23fbb27fbf5f2d2eb  data/spx_2024Data.csv
+907e04e7053b30feeaf73032d1741a1c  data/spx_HistoricalData_1940.csv
+16fa747c7d1f89e49cb41bdf94f0b3bf  data/spx_HistoricalData_1950.csv
+b4fce87a91d38d2e74cd08428030561c  data/spx_HistoricalData_1960.csv
+b6d4f9002a796ae82c059bc830c8d0db  data/spx_HistoricalData_1970.csv
+99d73f8526a789bac5b8c97b13792a50  data/spx_HistoricalData_1980.csv
+b86fb182da64348839ed091d3ca2f44a  data/spx_HistoricalData_1990.csv
+aba820eafed2faf8673eb3cbc47c734d  data/spx_HistoricalData_2000.csv
+96e5330200e3ce9ac2777b90ef25f5f4  data/spx_HistoricalData_2010.csv
+b031c8c9617a3f51c32fd6bd42d09458  data/spx_HistoricalData_2023.csv
+fdbbc5a77cfa707300b05984dea0d6a5  data/tsla_2024Data.csv
 b554c70125e7953640d24d360385a4af  data/tsla_HistoricalData.csv
 afe6474cc29cba71307e82729f1923b6  data/tsla_PriceTarget_InvestAnswers.md
 9f6bf0a94ce6f7590e4d8021607a4503  data/tsla_PriceTarget_InvestAnswers_2024.md
