@@ -66,7 +66,10 @@ def read_csv_file(local_file, skip_rows=0):
     Returns:
     pandas.DataFrame: The loaded CSV data as a DataFrame.
     """
-    return pd.read_csv(local_file, encoding='cp1252', skiprows=skip_rows)
+    df_csv = pd.read_csv(local_file, encoding='cp1252', skiprows=skip_rows)
+    # drop empty rows at end of dataframe
+    df_csv = df_csv.dropna(how='all')
+    return df_csv
 
 def is_file_cache_stale(local_file):
     """
