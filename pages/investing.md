@@ -1,8 +1,9 @@
-- [S&P 500 Index (SPX)](spx.md)
-- [Tesla (TSLA)](tsla.md)
-    - [ARK Invest Price Targets](tsla-targets.md)
+---
+layout: page
+title: Investing
+---
 
-## S&P 500 Index (SPX)
+## [S&P 500 Index (SPX)](spx.md)
 
 The [S&P 500 Index](spx.md) from Standard & Poor's is a market-capitalization-weighted index tracking the 500 largest publicly traded companies in the US.
 
@@ -10,7 +11,7 @@ The S&P 500 is widely considered one of the best gauges of overall stock market 
 
 See [S&P 500 Index](spx.md) for price charts, trends and analysis.
 
-## Tesla (TSLA)
+## [Tesla (TSLA)](tsla.md)
 
 The [mission of Tesla](https://web.archive.org/web/20160730145205/https://www.tesla.com/blog/mission-tesla) has been clear from day one: to accelerate the advent of sustainable transport by bringing compelling mass market electric cars to market as soon as possible. In advancing it's mission Tesla has reluctantly expanded to building components (and refining materials) themselves where global supply chains could not guarantee the success of this mission.
 
