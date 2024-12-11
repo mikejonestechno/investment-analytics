@@ -198,7 +198,7 @@ def download_exchange_data(local_file, sx_symbol, from_date, to_date):
         raise ValueError(f"Failed to download data for symbol {sx_symbol} from {from_date} to {to_date}")
 
 def get_exchange_data(local_file, sx_symbol, from_date, to_date, max_age_days=7):
-    stale_date = datetime.strptime(to_date, '%Y-%m-%d') - timedelta(days=max_age_days)    
+    stale_date = datetime.now() - timedelta(days=max_age_days)   
     if is_file_stale(local_file, stale_date):
         download_exchange_data(local_file, sx_symbol, from_date, to_date)
     return read_csv_file(local_file, skip_rows=0)    
