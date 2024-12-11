@@ -23,7 +23,7 @@ View all the charts in this data-analytics project at
 
 2. [TSLA Prices](https://mikejonestechno.github.io/investment-analytics/tsla-and-targets.html) chart with ArkInvest four year targets from Jupyter notebook. 
 
-<img src="https://mikejonestechno.github.io/investment-analytics/images/tsla-and-targets_10_0.png" alt="ArkInvest TSLA Price Targets" width="200"/>
+<img src="https://mikejonestechno.github.io/investment-analytics/images/tsla-targets_10_0.png" alt="ArkInvest TSLA Price Targets" width="200"/>
 
 View all the charts in this data-analytics project at 
 [https://mikejonestechno.github.io/investment-analytics/](https://mikejonestechno.github.io/investment-analytics/)
