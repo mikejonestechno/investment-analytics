@@ -28,7 +28,6 @@ class BaseChart:
 
     def base_chart(self, df: pd.DataFrame):
         plt.figure(figsize=(10, 6))
-        plt.rcParams['figure.autolayout'] = True
         plt.title(self.chart_title)
 
         colors = list(plt.rcParams['axes.prop_cycle'])
