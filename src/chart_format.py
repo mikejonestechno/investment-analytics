@@ -26,8 +26,9 @@ class BaseChart:
         self.data_column = data_column
 
     def base_chart(self, df: pd.DataFrame):
-
-        plt.figure(figsize=(10, 6))
+        px = 1/plt.rcParams['figure.dpi']  # pixel in inches https://matplotlib.org/stable/gallery/subplots_axes_and_figures/figure_size_units.html
+        #plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(1024*px, 640*px))
         plt.title(self.chart_title)
 
         colors = list(plt.rcParams['axes.prop_cycle'])
