@@ -14,4 +14,4 @@ b031c8c9617a3f51c32fd6bd42d09458  data/spx_HistoricalData_2023.csv
 b554c70125e7953640d24d360385a4af  data/tsla_HistoricalData.csv
 afe6474cc29cba71307e82729f1923b6  data/tsla_PriceTarget_InvestAnswers.md
 9f6bf0a94ce6f7590e4d8021607a4503  data/tsla_PriceTarget_InvestAnswers_2024.md
-a81d5b0ead637592dddbe441d8a2e521  data/tsla_PriceTargets.md
+6a3f818f14d32ba8de41566db0d7edfe  data/tsla_PriceTargets.md
