@@ -11,10 +11,10 @@ name: Notebook Pages
 
 on:
   schedule:
-    # Runs every thursday after extended hours
+    # Runs every day after normal trading hours 9.30am - 4pm EST; 4pm = 9pm UTC = 8am AEST next day
     # entended hours 4am-8pm EST; 8pm = 1am UTC next day = 12pm AEST next day
-    #- cron:  '0 1 * * 5'
-    - cron:  '0 1 * * *'
+    #- cron:  '0 1 * * 5' # extended hours every Thursday
+    - cron:  '50 21 * * *' # normal hours every day
 
   # Have to run notebooks on main branch to refresh cache data
   push:
