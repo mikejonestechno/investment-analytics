@@ -26,7 +26,6 @@ class BaseChart:
         self.data_column = data_column
 
     def base_chart(self, df: pd.DataFrame):
-
         plt.figure(figsize=(10, 6))
         plt.title(self.chart_title)
 
