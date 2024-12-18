@@ -1,6 +1,7 @@
+1a4f2f6e46e811ac2963056559338c2a  data/asfa-retirement-standard.md
 0fe32cee7701eab2014ecb28a7e397ac  data/f5-data.csv
 f88bef9053d01c129268cad9a6641d1e  data/g1-data.csv
-267cc4a33e9f0d515af8c13034175164  data/spx_2024Data.csv
+143969c3424a611f3af2941a600d9bc8  data/spx_2024Data.csv
 907e04e7053b30feeaf73032d1741a1c  data/spx_HistoricalData_1940.csv
 16fa747c7d1f89e49cb41bdf94f0b3bf  data/spx_HistoricalData_1950.csv
 b4fce87a91d38d2e74cd08428030561c  data/spx_HistoricalData_1960.csv
@@ -10,8 +11,8 @@ b86fb182da64348839ed091d3ca2f44a  data/spx_HistoricalData_1990.csv
 aba820eafed2faf8673eb3cbc47c734d  data/spx_HistoricalData_2000.csv
 96e5330200e3ce9ac2777b90ef25f5f4  data/spx_HistoricalData_2010.csv
 b031c8c9617a3f51c32fd6bd42d09458  data/spx_HistoricalData_2023.csv
-6ee15e352309cbc6ac91c67ef5cb6e56  data/tsla_2024Data.csv
+2b82954185e91d92c3882342cb1b817d  data/tsla_2024Data.csv
 b554c70125e7953640d24d360385a4af  data/tsla_HistoricalData.csv
 afe6474cc29cba71307e82729f1923b6  data/tsla_PriceTarget_InvestAnswers.md
 9f6bf0a94ce6f7590e4d8021607a4503  data/tsla_PriceTarget_InvestAnswers_2024.md
-6a3f818f14d32ba8de41566db0d7edfe  data/tsla_PriceTargets.md
+a81d5b0ead637592dddbe441d8a2e521  data/tsla_PriceTargets.md
