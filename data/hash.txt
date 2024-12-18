@@ -1,3 +1,4 @@
+1a4f2f6e46e811ac2963056559338c2a  data/asfa-retirement-standard.md
 0fe32cee7701eab2014ecb28a7e397ac  data/f5-data.csv
 f88bef9053d01c129268cad9a6641d1e  data/g1-data.csv
 e7b504ecad284cc23fbb27fbf5f2d2eb  data/spx_2024Data.csv
