@@ -73,7 +73,6 @@ jobs:
       with:
         path: data/**
         key: data-${{ hashFiles('data/hash.txt') }}
-        restore-keys: data-
 
     - name: Run Standalone Notebooks
       # run standalone notebooks first (no hyphen in name), then ! *-and- notebooks, then *-and-* notebooks
