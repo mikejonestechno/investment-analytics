@@ -27,7 +27,7 @@ See [Tesla (TSLA)](tsla.md) for price charts, trends and analysis.
 
 On 7 August 2018 Musks' infamous "funding secured" tweet considered a potential buy back at $420 per share. Given TSLA was trading around $240 a share, that may have seemed a reasonably strong 2x return on investment.
 
-Two weeks later on 22 August 2018, Ark Invest CEO Cathy Woods published a blog titled "Dear Elon: An Open Letter Against Taking Tesla Private" in which Cathy explained the enormous disruptive growth potential over a long term (five year) time horizon.
+Two weeks later on 22 August 2018, Ark Invest CEO Cathy Woods published a blog titled "[Dear Elon: An Open Letter Against Taking Tesla Private](https://ark-invest.com/articles/analyst-research/tesla-private/)" in which Cathy explained the enormous disruptive growth potential over a long term (five year) time horizon.
 
 Tesla remained a public company and ARK Invest continued to publish research on disruptive innovation - including four year price targets for Tesla.
 
