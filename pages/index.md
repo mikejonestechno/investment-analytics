@@ -1,12 +1,13 @@
 This project was created to provide some guidelines and forecasts for the following questions:
 
-- How much do I need to retire? 
-- How much will inflation or interest rates affect my retirement portfolio, both before and during retirement? 
-- How much do I need in my investment portfolio today in order to have accrued enough to retire in the future? 
+- How much do I need to retire?
+- How much will inflation or interest rates affect my retirement portfolio, both before and during retirement?
+- How much do I need in my superannuation / investment portfolio today in order for a comfortable retirement in the future?
 
 ## Content
 
 - [Retirement Planning](retirement-planning.md)
+    - [Retirement Expenses](retirement-expenses.md)
 
 - [Inflation and Interest Rates](inflation-and-interest-rates.md)
     - [Inflation](inflation.md)
