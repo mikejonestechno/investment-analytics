@@ -3,8 +3,6 @@ layout: page
 title: Retirement Planning
 ---
 
-# Retirement Planning
-
 This project was created to provide some guidelines and forecasts for the following questions:
 
 - How much do I need to retire?
