@@ -6,12 +6,14 @@ description: An experimental project for investment and retirement data analytic
 
 #theme: jekyll-theme-primer
 #theme: minima
-remote_theme: jekyll/minima
+# release 2.5.2
+remote_theme: jekyll/minima@c6e74bbfe7a0d0ae8c806cb38b012d01b25b1f7d
 
 plugins:
   - jekyll-seo-tag
   # minima theme was designed with jekyll-feed to create rss feed of blog posts
   #- jekyll-feed
+  - jekyll-remote-theme
   # NOTE: add custom _includes/footer.html to remove the rss 'subscribe' link
   - jekyll-redirect-from
   
