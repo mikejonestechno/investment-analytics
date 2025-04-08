@@ -4,9 +4,10 @@ description: An experimental project for investment and retirement data analytic
 # author:
 #   name: mikejonestechno
 
-# c6e74bbfe7a0d0ae8c806cb38b012d01b25b1f7d release 2.5.2 (does not support skin: dark)
-# 1e8a445e8fd7280d0fd9d448c0f71c93a2565837 28 Feb 2025 (before 'improve navigation styling and experience')
-remote_theme: jekyll/minima@1e8a445e8fd7280d0fd9d448c0f71c93a2565837
+# c6e74bbfe7a0d0ae8c806cb38b012d01b25b1f7d 06 Sep 2024 release 2.5.2 (does not support skin: dark)
+# d7122a0c3e8a61c0e13de37a72c7d8c7b5f3886f 27 Sep 2024 before 'clipping responsive social SVG icons'
+# 1e8a445e8fd7280d0fd9d448c0f71c93a2565837 28 Feb 2025 before 'improve navigation styling and experience' (social icons missing)
+remote_theme: jekyll/minima@d7122a0c3e8a61c0e13de37a72c7d8c7b5f3886f
 
 plugins:
   - jekyll-seo-tag
