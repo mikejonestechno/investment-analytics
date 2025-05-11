@@ -15,11 +15,11 @@ The Association of Superannuation Funds of Australia Limited (ASFA) is the large
 
 ASFA have published a "retirement standard" of living expenses that lists how much money the average Australian individual or couple spends each year in retirement. Their latest figures are based on [previous 2018 research data](https://www.superannuation.asn.au/wp-content/uploads/2023/09/2018-ASFA-Retirement-Standard-Budgets-Review.pdf) (subsequently adjusted for inflation each quarter). 
 
+- [Retirement Expenses adjusted for inflation](retirement-expenses.md)
+
 - [ASFA Retirement Standard (superannuation.asn.au)](https://www.superannuation.asn.au/resources/retirement-standard#DetailedBreakdowns)
 
 - [Retirement Planner Calculator - estimate your retirement income (moneysmart.gov.au)](https://moneysmart.gov.au/retirement-income/retirement-planner)
-
-- [Retirement Expenses adjusted for inflation](retirement-expenses.md)
 
 ## Superannuation Investments
 
