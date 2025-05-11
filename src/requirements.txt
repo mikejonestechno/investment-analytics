@@ -13,4 +13,4 @@ nbconvert ~= 7.7
 ipykernel ~= 6.25
 tabulate ~= 0.9
 
-yfinance ~= 0.2
+yfinance ~= 0.2.59
