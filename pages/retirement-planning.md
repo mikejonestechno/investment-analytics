@@ -21,13 +21,15 @@ ASFA have published a "retirement standard" of living expenses that lists how mu
 
 - [Retirement Planner Calculator - estimate your retirement income (moneysmart.gov.au)](https://moneysmart.gov.au/retirement-income/retirement-planner)
 
-## Superannuation Investments
+## Superannuation Investment Portfolio
 
-Given the multi-decade history, the [S&P 500 Index data](spx.md) suggests high confidence using a baseline stock market performance of 11% with some uncertainty or risk that stocks can go up or down for several years at a time. **Many superannuation 'growth' funds significantly underperform this simple baseline.**
+Superannuation funds must be sufficient enough and provide sufficient returns to cover retirement expenses over an extended period of retirement.
+
+Given the multi-decade history, the [S&P 500 Index data](spx.md) suggests high confidence using a baseline stock market performance of 12% with some uncertainty or risk that stocks can go up or down for several years at a time. **Many superannuation 'growth' funds significantly underperform this simple baseline.**
 
 Any superannuation 'growth' fund that does not _at least match_ the S&P 500 returns should be considered a terrible poor performance, and extremely mis-managed.
 
->Why invest in superannuation fund managers that cannot outperform a monkey that simply 'dollar cost average' into the S&P 500 baseline?
+> If your superannuation fund performance does not _at least match_ 12% you may want to consider a Self Managed Super Fund and simply 'dollar cost average' into an Exchange Traded Fund paired with the S&P 500 baseline.
 
 ## Retirement Lifestyles
 
