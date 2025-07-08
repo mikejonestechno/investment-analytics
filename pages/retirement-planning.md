@@ -9,33 +9,37 @@ This project was created to provide some guidelines and forecasts for the follow
 - How much will inflation or interest rates affect my retirement portfolio, both before and during retirement?
 - How much do I need in my superannuation / investment portfolio today in order for a comfortable retirement in the future?
 
-## Retirement Expenses
+## Retirement Income / Expenses
 
 The Association of Superannuation Funds of Australia Limited (ASFA) is the largest policy, research and advocacy body for the Australian superannuation (pension) industry; a non-profit advisor to the Australian government.
 
-ASFA have published a "retirement standard" of living expenses that lists how much money the average Australian individual or couple spends each year in retirement. Their latest figures are based on [previous 2018 research data](https://www.superannuation.asn.au/wp-content/uploads/2023/09/2018-ASFA-Retirement-Standard-Budgets-Review.pdf) (subsequently adjusted for inflation each quarter). 
+ASFA have published a "[retirement standard](retirement-expenses.md)" of living expenses that lists how much money the average Australian individual or couple spends each year in retirement. Their latest figures are based on [previous 2018 research data](https://www.superannuation.asn.au/wp-content/uploads/2023/09/2018-ASFA-Retirement-Standard-Budgets-Review.pdf) (subsequently adjusted for inflation each quarter). 
 
-- [Retirement Expenses adjusted for inflation](retirement-expenses.md)
+- [ASFA Retirement Expenses accuracy and assumptions](retirement-expenses.md)
 
-- [ASFA Retirement Standard (superannuation.asn.au)](https://www.superannuation.asn.au/resources/retirement-standard#DetailedBreakdowns)
+- [ASFA Retirement Standard (see superannuation.asn.au)](https://www.superannuation.asn.au/resources/retirement-standard#DetailedBreakdowns)
 
-- [Retirement Planner Calculator - estimate your retirement income (moneysmart.gov.au)](https://moneysmart.gov.au/retirement-income/retirement-planner)
+- [Retirement Planner / Income Calculator (see moneysmart.gov.au)](https://moneysmart.gov.au/retirement-income/retirement-planner)
 
 ## Superannuation Investments
 
-Given the multi-decade history, the [S&P 500 Index data](spx.md) suggests high confidence using a baseline stock market performance of 11% with some uncertainty or risk that stocks can go up or down for several years at a time. **Many superannuation 'growth' funds significantly underperform this simple baseline.**
+Superannuation funds must be sufficient enough and provide sufficient returns to cover retirement expenses over an extended period of retirement. The higher the fund performance (above inflation) the more money available to fund retirement expenses.
 
-Any superannuation 'growth' fund that does not _at least match_ the S&P 500 returns should be considered a terrible poor performance, and extremely mis-managed.
+The [S&P 500 Index data](spx.md) show a consistent stock market performance of 11% - 12% over many decades (excluding dividends and stock buybacks). 
 
->Why invest in superannuation fund managers that cannot outperform a monkey that simply 'dollar cost average' into the S&P 500 baseline?
+**Many superannuation 'growth' funds significantly underperform this baseline.** 
+
+> You might want to consider alternative funds (or even a self-managed super fund) if your current superannuation fund manager cannot outperform a simple 'dollar cost average' into the S&P 500 baseline.
 
 ## Retirement Lifestyles
 
-The ASFA "comfortable" retirement should be used as minimum baseline. Its reasonably "good" but is not luxurious.
+The ASFA retirement standard models expenses for a "comfortable" and a "modest" lifestyle. 
 
-The "modest" retirement is a borderline survival level, with basic and limited expenses, cheap old car, and a _"need to keep close watch on utility costs and make sacrifices"_.
+A "comfortable" retirement should be used as minimum baseline. Its reasonably "good" but is not luxurious.
 
-I extended the model with additional levels factored at 200%, 300% and 500% of the "modest" lifestyle.
+The "modest" retirement is a borderline survival level, with basic and limited expenses, cheap old car, and importantly _"a need to keep close watch on utility costs and make sacrifices"_.
+
+I have extended the model with additional levels factored at 200%, 300% and 500% of the "modest" lifestyle.
 
 | Couple  | Modest  | Comfortable | Four Star | Luxury   | Opulent  |
 |---------|--------:|------------:|----------:|---------:|---------:|
@@ -45,4 +49,4 @@ I extended the model with additional levels factored at 200%, 300% and 500% of t
 
 "Luxury" lifestyle could include for example, economy upgrade to business class, the "opulent" lifestyle is first class.
 
-The models _assume you own your own home_ so take any additional mortgage expenses into account.
+The models _assume you own your own home_ because home ownership affects the government Age Pension entitlements. Take any additional mortgage or rental expenses into account.
