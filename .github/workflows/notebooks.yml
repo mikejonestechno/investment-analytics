@@ -98,7 +98,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: pages
-        path: pages
+        path: artifacts
 
     - name: Hash Data
       # Update hash of data files so we force new cache when data changes

@@ -46,10 +46,11 @@ jobs:
             echo "run_id=$run_id" >> $GITHUB_ENV
           fi
       - name: Download Pages
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           run-id: ${{ env.run_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: pages
 
       - name: Setup Pages
         uses: actions/configure-pages@v4      
