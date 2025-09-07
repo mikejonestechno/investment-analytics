@@ -7,10 +7,10 @@ on:
     workflows: ["Notebook Pages"]
     types: [completed]
     branches: ["main"]
-  #push:
-  #  branches: ["main"]
-  #  paths:
-  #    - 'pages/**'
+  push:
+    branches: ["main"]
+    paths:
+      - 'pages/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
