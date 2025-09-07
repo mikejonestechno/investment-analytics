@@ -36,6 +36,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Get latest run id
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -n "${{ github.event.workflow_run.id }}" ]; then
             echo "run_id=${{ github.event.workflow_run.id }}" >> $GITHUB_ENV
