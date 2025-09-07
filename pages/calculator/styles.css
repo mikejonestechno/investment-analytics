@@ -50,12 +50,11 @@ canvas {
     height: auto;
     display: block;
     margin: 0 auto;
-    background-color: #fff;
 }
 
 .chart-container {
-    margin-top: 20px;
-    height: 800px;
+    background-color: #fff;
+    padding: 20px;
 }
 
 .expense-buttons {
