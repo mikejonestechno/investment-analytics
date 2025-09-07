@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Plan Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Retirement Plan Calculator</h1>
+        <p>How much will I need to retire?</p>
+        <form id="calculator-form">
+            <div class="input-pair">
+                <label for="inflation-rate">Inflation Rate (%) <span class="tooltip">ℹ
+                    <span class="tooltiptext">Inflation rate between 0.00 and 20.00.</span>
+                </span></label>
+                <input type="number" id="inflation-rate" value="2.5" required>
+            </div>
+            <div class="input-pair">
+                <label for="fund-growth-rate">Fund Growth Rate (%) <span class="tooltip">ℹ
+                    <span class="tooltiptext">Fund growth rate between 0.00 and 100.00.</span>
+                </span></label>
+                <input type="number" id="fund-growth-rate" value="7" required>
+            </div>
+            <div class="input-pair">
+                <label for="age-at-retirement">Age at Retirement <span class="tooltip">ℹ
+                    <span class="tooltiptext">Age at retirement must be an integer between 20 and 85.</span>
+                </span></label>
+                <input type="number" id="age-at-retirement" value="65" required>
+            </div>
+            <div class="input-pair">
+                <label for="age-at-expiration">Age at Fund Expiration <span class="tooltip">ℹ
+                    <span class="tooltiptext">Age at fund expiration must be an integer between 65 and 100.</span>
+                </span></label>
+                <input type="number" id="age-at-expiration" value="92" required>
+            </div>
+            <div class="full-width">
+                <label for="annual-expenses">Annual Retirement Expenses ($)<span class="tooltip">ℹ
+                    <span class="tooltiptext">Select a lifestyle button or enter a custom amount.</span>
+                </span></label>
+                <div class="expense-buttons">
+                    <button type="button" onclick="document.getElementById('annual-expenses').value = 50000; calculateRetirement();">Modest $50k</button>
+                    <button type="button" onclick="document.getElementById('annual-expenses').value = 75000; calculateRetirement();">Comfortable $75k</button>
+                    <button type="button" onclick="document.getElementById('annual-expenses').value = 100000; calculateRetirement();">Four Star $100k</button>
+                    <button type="button" onclick="document.getElementById('annual-expenses').value = 150000; calculateRetirement();">Luxury $150k</button>
+                    <button type="button" onclick="document.getElementById('annual-expenses').value = 250000; calculateRetirement();">Opulent $250k</button>
+                </div>
+                <input type="number" id="annual-expenses" value="75000" required>
+            </div>
+            <div class="full-width">
+                <button type="button" id="resetButton">Reset to defaults</button>
+            </div>
+        </form>
+
+        <p id="required-investment">Estimated Investment Required at Retirement: $0</p>
+
+        <canvas id="retirement-chart" width="800" height="400"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
