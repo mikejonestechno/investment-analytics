@@ -59,7 +59,7 @@ function calculateRetirement() {
     const requiredInitialInvestment = balance;
     
     // Display the required initial investment as integer with thousands separator
-    document.getElementById('required-investment').textContent = `Required Initial Investment: $${Math.round(requiredInitialInvestment).toLocaleString()}`;
+    document.getElementById('required-investment').textContent = `$${Math.round(requiredInitialInvestment).toLocaleString()}`;
     
     // Now simulate forward to plot the chart
     const balances = [];

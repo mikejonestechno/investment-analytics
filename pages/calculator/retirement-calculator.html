@@ -16,13 +16,13 @@ include_stylesheets:
             <label for="inflation-rate">Inflation Rate (%) <span class="tooltip">ℹ
                 <span class="tooltiptext">Inflation rate between 0.00 and 20.00.</span>
             </span></label>
-            <input type="number" id="inflation-rate" value="2.5" required>
+            <input type="number" id="inflation-rate" value="2.75" required>
         </div>
         <div class="input-pair">
             <label for="fund-growth-rate">Fund Growth Rate (%) <span class="tooltip">ℹ
                 <span class="tooltiptext">Fund growth rate between 0.00 and 100.00.</span>
             </span></label>
-            <input type="number" id="fund-growth-rate" value="7" required>
+            <input type="number" id="fund-growth-rate" value="8" required>
         </div>
         <div class="input-pair">
             <label for="age-at-retirement">Age at Retirement <span class="tooltip">ℹ
@@ -54,8 +54,10 @@ include_stylesheets:
         </div>
     </form>
 
-    <p id="required-investment">Estimated Investment Required at Retirement: $0</p>
+    <p>Estimated Investment Required at Retirement: <span id="required-investment">$0</span></p>
     <div class="chart-container">
-        <canvas id="retirement-chart" width="800" height="400"></canvas>
+        <canvas id="retirement-chart" width="100%" height="400"></canvas>
     </div>
+    <h3><a href="/investment-analytics/inflation.html">Inflation Rate</a></h3>
+    <p>Inflation has remained within the Reserve Bank of Australia's target inflation rate of 2 to 3 percent for over twenty five years.</p>
 </div>
