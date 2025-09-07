@@ -15,11 +15,13 @@ The Association of Superannuation Funds of Australia Limited (ASFA) is the large
 
 ASFA have published a "[retirement standard](retirement-expenses.md)" of living expenses that lists how much money the average Australian individual or couple spends each year in retirement. Their latest figures are based on [previous 2018 research data](https://www.superannuation.asn.au/wp-content/uploads/2023/09/2018-ASFA-Retirement-Standard-Budgets-Review.pdf) (subsequently adjusted for inflation each quarter). 
 
-- [ASFA Retirement Expenses accuracy and assumptions](retirement-expenses.md)
+- [Retirement Expenses accuracy and assumptions](retirement-expenses.md)
 
-- [ASFA Retirement Standard (see superannuation.asn.au)](https://www.superannuation.asn.au/resources/retirement-standard#DetailedBreakdowns)
+- [ASFA Retirement Standard (https://superannuation.asn.au)](https://www.superannuation.asn.au/resources/retirement-standard#DetailedBreakdowns)
 
-- [Retirement Planner / Income Calculator (see moneysmart.gov.au)](https://moneysmart.gov.au/retirement-income/retirement-planner)
+- [Retirement Planner / Income Calculator (https://moneysmart.gov.au)](https://moneysmart.gov.au/retirement-income/retirement-planner)
+
+- [Simplified Retirement Planning Calculator](calculator/retirement-calculator.html) how much do I need to retire
 
 ## Superannuation Investments
 
@@ -50,3 +52,7 @@ I have extended the model with additional levels factored at 200%, 300% and 500%
 "Luxury" lifestyle could include for example, economy upgrade to business class, the "opulent" lifestyle is first class.
 
 The models _assume you own your own home_ because home ownership affects the government Age Pension entitlements. Take any additional mortgage or rental expenses into account.
+
+## [Retirement Planning Calculator](calculator/retirement-calculator.html)
+ 
+This simplified [Retirement Planning Calculator](calculator/retirement-calculator.html) shows how much you need in an investment fund for the different retirement lifestyles. The calculator excludes the government Age Pension.

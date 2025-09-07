@@ -42,7 +42,6 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 canvas {
@@ -54,6 +53,7 @@ canvas {
 
 .chart-container {
     background-color: #fff;
+    margin: 20px auto;
     padding: 20px;
 }
 
