@@ -1,6 +1,7 @@
 title: Investment Analytics
 description: An experimental project for investment and retirement data analytics.
-baseurl: ""
+# baseurl: ""
+
 # Author will be used in meta tags and page footers
 # author:
 #   name: mikejonestechno
