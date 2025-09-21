@@ -26,22 +26,44 @@ input {
 button {
     display: block;
     width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    padding: 8px;
+    background-color: #d3d3d3;
+    color: #333;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
+#calculateButton, #resetButton {
+    display: inline-block;
+    width: 30%;
+    margin: 0 40px;
+}
+
+.expense-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.expense-buttons button {
+    flex: 1;
+    min-width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.smaller {
+    font-size: 0.9em;
+    font-weight: normal;
 }
 
 #required-investment {
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
 }
 
 canvas {
@@ -55,24 +77,6 @@ canvas {
     background-color: #fff;
     margin: 20px auto;
     padding: 20px;
-}
-
-.expense-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.expense-buttons button {
-    flex: 1;
-    min-width: 100px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
 }
 
 .expense-buttons button:nth-child(1) {
@@ -95,24 +99,12 @@ canvas {
     background-color: #670093; /* Darker darkviolet */
 }
 
-.expense-buttons button:hover {
+button:hover {
     opacity: 0.6;
 }
 
-#calculateButton {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
-#calculateButton:hover {
-    background-color: #45a049;
+.full-width:has(#calculateButton) {
+    text-align: center;
 }
 
 /* Tooltip styles */
@@ -125,8 +117,8 @@ canvas {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 400px;
-    background-color: #333;
-    color: #fff;
+    background-color: #89b2d3;
+    color: #000;
     text-align: center;
     border-radius: 6px;
     padding: 5px;
@@ -142,18 +134,4 @@ canvas {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-}
-
-/* Reset button styling */
-#resetButton {
-    background-color: #d3d3d3;
-    color: #333;
-    border: 1px solid #ccc;
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-}
-
-#resetButton:hover {
-    background-color: #c0c0c0;
 }

@@ -7,6 +7,8 @@ function calculateRetirement() {
     document.getElementById('fund-growth-rate').style.backgroundColor = '';
     document.getElementById('age-at-retirement').style.backgroundColor = '';
     document.getElementById('age-at-expiration').style.backgroundColor = '';
+    document.getElementById('age-at-reduced-mobility').style.backgroundColor = '';
+    document.getElementById('reduced-mobility-expenses').style.backgroundColor = '';
 
     let inflationRateValue = parseFloat(document.getElementById('inflation-rate').value);
     let growthRateValue = parseFloat(document.getElementById('fund-growth-rate').value);
@@ -48,13 +50,31 @@ function calculateRetirement() {
         return;
     }
     
+    let reducedMobilityAgeValue = document.getElementById('age-at-reduced-mobility').value;
+    const reducedMobilityAge = parseInt(reducedMobilityAgeValue);
+    if (isNaN(reducedMobilityAge) || reducedMobilityAge < 50 || reducedMobilityAge > 100 || parseFloat(reducedMobilityAgeValue) !== reducedMobilityAge) {
+        document.getElementById('age-at-reduced-mobility').style.backgroundColor = '#ffcccc';
+        return;
+    }
+    
+    let reducedMobilityExpensesValue = document.getElementById('reduced-mobility-expenses').value;
+    const reducedMobilityExpenses = parseInt(reducedMobilityExpensesValue);
+    if (isNaN(reducedMobilityExpenses) || reducedMobilityExpenses < -100 || reducedMobilityExpenses > 100 || parseFloat(reducedMobilityExpensesValue) !== reducedMobilityExpenses) {
+        document.getElementById('reduced-mobility-expenses').style.backgroundColor = '#ffcccc';
+        return;
+    }
+    
+    const reducedMobilityExpensesPercent = reducedMobilityExpenses / 100;
+    
     const years = ageAtExpiration - ageAtRetirement;
     const r = 1 + growthRate - inflationRate;
     
     // Calculate required initial investment by working backwards
     let balance = 0; // Balance at expiration
-    for (let year = years; year > 0; year--) {
-        balance = (balance + annualExpenses) / r;
+    for (let yearFromRetirement = years - 1; yearFromRetirement >= 0; yearFromRetirement--) {
+        const currentAge = ageAtRetirement + yearFromRetirement;
+        const expensesForYear = (currentAge >= reducedMobilityAge) ? annualExpenses * (1 + reducedMobilityExpensesPercent) : annualExpenses;
+        balance = (balance + expensesForYear) / r;
     }
     const requiredInitialInvestment = balance;
     
@@ -65,14 +85,17 @@ function calculateRetirement() {
     const balances = [];
     const labels = [];
     let currentBalance = requiredInitialInvestment;
+    let currentAge = ageAtRetirement;
 
     for (let year = 0; year <= years; year++) {
         balances.push(currentBalance.toFixed(2));
-        labels.push(ageAtRetirement + year);
+        labels.push(currentAge);
         // Apply growth and subtract expenses for the next year
         if (year < years) {
-            currentBalance = currentBalance * r - annualExpenses;
+            const expensesThisYear = (currentAge >= reducedMobilityAge) ? annualExpenses * (1 + reducedMobilityExpensesPercent) : annualExpenses;
+            currentBalance = currentBalance * r - expensesThisYear;
             if (currentBalance < 0) currentBalance = 0; // Prevent negative balance
+            currentAge++;
         }
     }
 
@@ -183,18 +206,25 @@ function resetToDefaults() {
     document.getElementById('fund-growth-rate').value = '7';
     document.getElementById('age-at-retirement').value = '65';
     document.getElementById('age-at-expiration').value = '92';
+    document.getElementById('age-at-reduced-mobility').value = '85';
+    document.getElementById('reduced-mobility-expenses').value = '-7';
     document.getElementById('annual-expenses').value = '75000';
     calculateRetirement();
 }
 
 document.getElementById('resetButton').addEventListener('click', resetToDefaults);
 
+// Add event listener for calculate button
+document.getElementById('calculateButton').addEventListener('click', calculateRetirement);
+
 // Calculate and generate chart on page load
 window.addEventListener('load', calculateRetirement);
 
-// Trigger calculation on input changes
-document.getElementById('inflation-rate').addEventListener('input', calculateRetirement);
-document.getElementById('fund-growth-rate').addEventListener('input', calculateRetirement);
-document.getElementById('age-at-retirement').addEventListener('input', calculateRetirement);
-document.getElementById('age-at-expiration').addEventListener('input', calculateRetirement);
-document.getElementById('annual-expenses').addEventListener('input', calculateRetirement);
+// Trigger calculation on field focus changes
+document.getElementById('inflation-rate').addEventListener('blur', calculateRetirement);
+document.getElementById('fund-growth-rate').addEventListener('blur', calculateRetirement);
+document.getElementById('age-at-retirement').addEventListener('blur', calculateRetirement);
+document.getElementById('age-at-expiration').addEventListener('blur', calculateRetirement);
+document.getElementById('age-at-reduced-mobility').addEventListener('blur', calculateRetirement);
+document.getElementById('reduced-mobility-expenses').addEventListener('blur', calculateRetirement);
+document.getElementById('annual-expenses').addEventListener('blur', calculateRetirement);
