@@ -21,10 +21,10 @@ class Percentiles:
         self.window_periods = [self.periods_per_year * years for years in self.multi_years]
 
     # rolling window centered on current period - for charting
-    def add_percentiles(self, df, column, window, prefix):
+    def add_percentiles(self, df, column, window, prefix, center=False):
         """Calculate and add percentiles to the DataFrame for a given window size."""
         for percentile_name, percentile in zip(self.percentiles._fields, self.percentiles):
-            df[f'{prefix}_{percentile_name}'] = df[column].rolling(window=window, min_periods=1, center=True).quantile(percentile/100)
+            df[f'{prefix}_{percentile_name}'] = df[column].rolling(window=window, min_periods=1, center=center).quantile(percentile/100)
         return df
 
     def calculate_percentiles(self, df):
