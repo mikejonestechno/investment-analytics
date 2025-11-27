@@ -1,0 +1,91 @@
+---
+layout: default
+title: Retirement Plan Calculator
+include_scripts:
+  - https://cdn.jsdelivr.net/npm/chart.js
+  - script.js
+include_stylesheets:
+  - styles.css
+---
+
+<div class="container">
+    <h1>Retirement Plan Calculator</h1>
+    <p>How much will I need to retire?</p>
+    <form id="calculator-form">
+        <div class="input-pair">
+            <label for="inflation-rate">Inflation Rate (%) <span class="tooltip">ℹ
+                <span class="tooltiptext">Inflation rate between 0.00 and 20.00.</span>
+            </span></label>
+            <input type="number" id="inflation-rate" value="2.75" required>
+        </div>
+        <div class="input-pair">
+            <label for="fund-growth-rate">Fund Net Growth Rate (%) <span class="tooltip">ℹ
+                <span class="tooltiptext">Fund growth rate between 0.00 and 100.00.</span>
+            </span></label>
+            <input type="number" id="fund-growth-rate" value="10" required>
+        </div>
+        <div class="input-pair">
+            <label for="age-at-retirement">Age at Retirement <span class="tooltip">ℹ
+                <span class="tooltiptext">Age at retirement must be an integer between 20 and 85.</span>
+            </span></label>
+            <input type="number" id="age-at-retirement" value="65" required>
+        </div>
+        <div class="input-pair">
+            <label for="age-at-expiration">Age at Fund Expiration <span class="tooltip">ℹ
+                <span class="tooltiptext">Age at fund expiration must be an integer between 65 and 100.</span>
+            </span></label>
+            <input type="number" id="age-at-expiration" value="92" required>
+        </div>
+        <div class="input-pair">
+            <label for="age-at-reduced-mobility">Age at Reduced Mobility <span class="tooltip">ℹ
+                <span class="tooltiptext">Age at reduced mobility must be an integer between 50 and 100.</span>
+            </span></label>
+            <input type="number" id="age-at-reduced-mobility" value="85" required>
+        </div>
+        <div class="input-pair">
+            <label for="reduced-mobility-expenses">Reduced Mobility Expenses (%) <span class="tooltip">ℹ
+                <span class="tooltiptext">Reduced mobility expenses must be an integer between -100 and 100.</span>
+            </span></label>
+            <input type="number" id="reduced-mobility-expenses" value="-7" required>
+        </div>
+        <div class="full-width">
+            <label for="annual-expenses">Annual Retirement Expenses ($)<span class="tooltip">ℹ
+                <span class="tooltiptext">Select a lifestyle button or enter a custom amount.</span>
+            </span></label>
+            <div class="expense-buttons">
+                <button type="button" onclick="document.getElementById('annual-expenses').value = 50000; calculateRetirement();">Modest $50k<div class="smaller">$4,150/month</div></button>
+                <button type="button" onclick="document.getElementById('annual-expenses').value = 75000; calculateRetirement();">Comfortable $75k<div class="smaller">$6,250/month</div></button>
+                <button type="button" onclick="document.getElementById('annual-expenses').value = 100000; calculateRetirement();">Four Star $100k<div class="smaller">$8,300/month</div></button>
+                <button type="button" onclick="document.getElementById('annual-expenses').value = 150000; calculateRetirement();">Luxury $150k<div class="smaller">$12,500/month</div></button>
+                <button type="button" onclick="document.getElementById('annual-expenses').value = 250000; calculateRetirement();">Opulent $250k<div class="smaller">$20,800/month</div></button>
+            </div>
+            <input type="number" id="annual-expenses" value="75000" required>
+        </div>
+        <div class="full-width">
+            <button type="button" id="calculateButton">Calculate</button>
+            <button type="button" id="resetButton">Reset to defaults</button>
+        </div>
+    </form>
+
+    <p>Estimated Investment Required at Retirement: <span id="required-investment">$0</span></p>
+    <div class="chart-container">
+        <canvas id="retirement-chart" width="980" height="400"></canvas>
+    </div>
+    <h2>Assumptions and Limitations of Simplified Model</h2>
+    <ul>
+        <li>Model excludes government or state Age Pension because tax concessions require personalized inputs and a more complex tax model.</li>
+        <li>Fund Net Growth Rate assumes any investment returns, dividends or capital gains are directly reinvested in the year the gain was made.</li>
+        <li>Model excludes any additional or ongoing income or investment sources.</li>
+        <li>Consistent average inflation and fund growth throughout the investment and retirement period.</li>
+        <li>Reduced mobility later in life will slightly reduce annual living expenses.</li>
+    </ul>    
+    <dl>
+        <dt><a href="/investment-analytics/inflation.html">Inflation Rate</a></dt>
+        <dd>Inflation has remained within the Reserve Bank of Australia's target inflation rate of 2 to 3 percent for over twenty five years.</dd>
+        <dt><a href="/investment-analytics/inflation.html">Fund Net Growth Rate</a></dt>
+        <dd>The net growth of funds including dividends and capital gains less fees and taxes. As a baseline comparison the S&P 500 Index has an average growth of ~12% per year excluding fees and taxes.
+            Assume a 50% capital gains tax * 34.5% marginal tax rate = Net growth rate ~ 10%</dd>
+        <dt><a href="/investment-analytics/retirement-expenses.html">Reduced Mobility Expenses</a></dt>
+        <dd>The Association of Superannuation Funds of Australia Limited (ASFA) estimate expenses for retirees aged 85 and over are approx 7% lower than those aged 65, because over 85 years any increased medical expenses are offset by significant reduction in travel and leisure expenses.
+    </dl>
+</div>

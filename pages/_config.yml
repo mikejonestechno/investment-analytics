@@ -1,5 +1,7 @@
 title: Investment Analytics
 description: An experimental project for investment and retirement data analytics.
+# baseurl: ""
+
 # Author will be used in meta tags and page footers
 # author:
 #   name: mikejonestechno
@@ -28,9 +30,8 @@ kramdown:
 
 content:
   footer: |
-    ⚠ **Disclaimer**: _Not financial advice_. All content is for educational purposes only. 
-    No warranty or guarantee or forward looking statements of fit for purpose, etc;     
-    do your own research.
+    ⚠ **Disclaimer:** _Not financial advice_. All content is for educational purposes only. 
+    No warranty or guarantee or forward looking statements of fit for purpose, etc; **do your own research.**
 
 minima:
   skin: dark
