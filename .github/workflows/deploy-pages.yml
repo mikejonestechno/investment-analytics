@@ -7,10 +7,10 @@ on:
     workflows: ["Notebook Pages"]
     types: [completed]
     branches: ["main"]
-  #push:
-  #  branches: ["main"]
-  #  paths:
-  #    - 'pages/**'
+  push:
+    branches: ["main"]
+    paths:
+      - 'pages/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,15 +31,26 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Get latest run id
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "${{ github.event.workflow_run.id }}" ]; then
+            echo "run_id=${{ github.event.workflow_run.id }}" >> $GITHUB_ENV
+          else
+            run_id=$(gh run list --workflow="Notebook Pages" --status=success --limit=1 --json databaseId --jq '.[0].databaseId')
+            echo "run_id=$run_id" >> $GITHUB_ENV
+          fi
       - name: Download Pages
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
-          run-id: ${{ github.event.workflow_run.id }}
+          run-id: ${{ env.run_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: pages
 
       - name: Setup Pages
         uses: actions/configure-pages@v4      

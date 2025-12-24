@@ -8,3 +8,5 @@ __pycache__/
 *portfolio*.*
 *.ipynbz
 test.ipynb
+_site
+.jekyll-cache
