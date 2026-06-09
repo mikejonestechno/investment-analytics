@@ -17,6 +17,7 @@ This project was created to provide some guidelines and forecasts for the follow
     - [S&P 500 Index (SPX)](spx.md)
     - [Tesla (TSLA)](tsla.md)
         - [ARK Invest Price Targets](tsla-targets.md)
+    - [SpaceX (SPCX)](spcx.md)
 
 ## Made in Australia
 
