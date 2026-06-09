@@ -32,3 +32,9 @@ Two weeks later on 22 August 2018, Ark Invest CEO Cathy Woods published a blog t
 Tesla remained a public company and ARK Invest continued to publish research on disruptive innovation - including four year price targets for Tesla.
 
 See [ARK Invest Price Targets](tsla-targets.md) including forecast trajectories from popular retail stock holders.
+
+## [SpaceX (SPCX)](spcx.md)
+
+The SpaceX IPO was the largest IPO in history. The company mission is ridiculously ambitious. Strap in.
+
+> "Our mission is to build the systems and technologies necessary to make life multiplanetary, to understand the true nature of the universe, and to extend the light of consciousness to the stars."
