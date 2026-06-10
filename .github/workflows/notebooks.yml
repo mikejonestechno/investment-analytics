@@ -11,10 +11,10 @@ name: Notebook Pages
 
 on:
   schedule:
-    # Runs every day after normal trading hours 9.30am - 4pm EST; 4pm = 9pm UTC = 8am AEST next day
-    # entended hours 4am-8pm EST; 8pm = 1am UTC next day = 12pm AEST next day
-    #- cron:  '0 1 * * 5' # extended hours every Thursday
-    - cron:  '50 21 * * *' # normal hours every day
+    # Runs every day after normal trading hours 9.30am - 4pm EST; 4pm = 9pm UTC
+    # Extended hours 4am-8pm EST; 8pm = 1am UTC next day
+    # Data extracts from NASDAQ contain timestamps at midnight EST = 5am UTC
+    - cron:  '15 6 * * *' # normal hours every day
 
   # Have to run notebooks on main branch to refresh cache data
   push:
@@ -45,8 +45,8 @@ permissions:
 jobs:
   run-notebooks:
     runs-on: ubuntu-latest
-    env: # timestamp matching for AU data files
-      TZ: 'Australia/Sydney'      
+    env: # timestamp matching for data files
+      TZ: 'UTC'                   
 
     steps:
     - name: Checkout

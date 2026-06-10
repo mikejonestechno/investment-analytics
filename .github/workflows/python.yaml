@@ -17,8 +17,8 @@ jobs:
     permissions: # for publishing test results
       checks: write
       pull-requests: write
-    env: # timestamp matching for AU data files
-      TZ: 'Australia/Sydney'      
+    env: # timestamp matching for data files
+      TZ: 'UTC'                   
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
