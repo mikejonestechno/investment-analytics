@@ -5,7 +5,7 @@
 	"runArgs": ["--name", "investment-analytics"],
 	// set environment variable for timezone
 	"remoteEnv": {
-		"TZ": "Australia/Sydney"
+		"TZ": "UTC"
 	},
 	"build": { 
 		"context": "..",
