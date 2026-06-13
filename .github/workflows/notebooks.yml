@@ -14,7 +14,7 @@ on:
     # Runs every day after normal trading hours 9.30am - 4pm EST; 4pm = 9pm UTC
     # Extended hours 4am-8pm EST; 8pm = 1am UTC next day
     # Data extracts from NASDAQ contain timestamps at midnight EST = 5am UTC
-    - cron:  '15 6 * * *' # normal hours every day
+    - cron:  '15 0 * * *' # normal hours every day
 
   # Have to run notebooks on main branch to refresh cache data
   push:
