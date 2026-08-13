@@ -2,22 +2,24 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/anaconda
 {
 	"name": "investment-analytics",
-	"runArgs": ["--name", "investment-analytics"],
+	"runArgs": [
+		"--name",
+		"investment-analytics"
+	],
 	// set environment variable for timezone
 	"remoteEnv": {
 		"TZ": "UTC"
 	},
-	"build": { 
+	"build": {
 		"context": "..",
 		"dockerfile": "Dockerfile"
 	},
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
-			"version": "latest"
+			"version": "22"
 		}
 	},
-
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -30,13 +32,12 @@
 			]
 		}
 	},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [4000],
-
+	"forwardPorts": [
+		4000
+	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip install -r src/requirements.txt",
-
 	// Use 'postStartCommand' to run commands after the container starts.
 	"postStartCommand": "cd /workspaces/investment-analytics/pages && nohup jekyll serve > /dev/null 2>&1 &"
 }
