@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/anaconda:1-3
+FROM mcr.microsoft.com/devcontainers/anaconda:1.2.9-3
 
 # Copy environment.yml (if found) to a temp location so we update the environment. Also
 # copy "noop.txt" so the COPY instruction does not fail if no environment.yml exists.
@@ -14,7 +14,10 @@ FROM mcr.microsoft.com/devcontainers/anaconda:1-3
 #    && pipx reinstall-all
 
 # [Optional] Uncomment this section to install additional OS packages.
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+# Remove the base image's stale yarn apt source first - its signing key can no longer
+# be verified (NO_PUBKEY 62D54FD4003F6525), which breaks apt-get update entirely.
+RUN rm -f /etc/apt/sources.list.d/yarn.list \
+    && apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends ruby-full build-essential \
-    && gem install jekyll bundler jekyll-seo-tag jekyll-remote-theme jekyll-redirect-from jekyll-feed \
+    && gem install jekyll:4.4.1 bundler jekyll-seo-tag:2.8.0 jekyll-remote-theme:0.4.3 jekyll-redirect-from:0.16.0 jekyll-feed:0.17.0 \
     && rm -rf /var/lib/apt/lists/*
