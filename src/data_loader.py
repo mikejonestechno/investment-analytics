@@ -181,13 +181,18 @@ def download_exchange_data(local_file, sx_symbol, from_date, to_date):
     Args:
         local_file (str): The path to the local file.
         sx_symbol (str): The stock exchange symbol eg TSLA.
+        from_date (str): First date to download, 'YYYY-MM-DD' (inclusive).
+        to_date (str): Last date to download, 'YYYY-MM-DD' (inclusive).
 
     Returns:
         None
     """    
     temp_file = local_file + '.tmp'
     ed = None
-    ed = yf.Ticker(sx_symbol).history(start=from_date, end=to_date)
+    # yfinance treats 'end' as exclusive, so add one day to include to_date itself
+    # (otherwise a 'YYYY-12-31' to_date drops the last trading day of the year).
+    end_date = (pd.Timestamp(to_date) + pd.Timedelta(days=1)).strftime('%Y-%m-%d')
+    ed = yf.Ticker(sx_symbol).history(start=from_date, end=end_date)
     if ed is not None:
         ed.to_csv(temp_file)
         if (not path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
