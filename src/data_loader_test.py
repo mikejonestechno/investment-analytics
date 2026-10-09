@@ -90,3 +90,30 @@ def local_file_is_older_than_given_date(older):
     else: # the file will be newer than this date
         publish_date = datetime(2020, 1, 1)
     return publish_date
+
+
+def _mock_history(mocker, df):
+    return mocker.patch('data_loader.yf.Ticker', return_value=mocker.Mock(history=mocker.Mock(return_value=df)))
+
+def test_empty_download_for_finished_range_raises(mocker, tmp_path):
+    # yfinance returns an empty DataFrame (it does not raise) when a download fails
+    import pandas as pd
+    from data_loader import download_exchange_data
+    _mock_history(mocker, pd.DataFrame(columns=['Open', 'High', 'Low', 'Close', 'Volume']))
+    local_file = tmp_path / 'tsla_2024.csv'
+
+    with pytest.raises(ValueError):
+        download_exchange_data(str(local_file), 'TSLA', '2024-01-01', '2024-12-31')
+    assert not local_file.exists()
+
+def test_empty_download_for_open_range_keeps_existing_file(mocker, tmp_path):
+    import pandas as pd
+    from data_loader import download_exchange_data
+    _mock_history(mocker, pd.DataFrame(columns=['Open', 'High', 'Low', 'Close', 'Volume']))
+    local_file = tmp_path / 'tsla_current.csv'
+    local_file.write_text('Date,Close\n2099-01-02,1.0\n')
+    year = pd.Timestamp.now().year
+
+    download_exchange_data(str(local_file), 'TSLA', f'{year}-01-01', f'{year}-12-31')
+
+    assert local_file.read_text() == 'Date,Close\n2099-01-02,1.0\n'

@@ -188,14 +188,19 @@ def download_exchange_data(local_file, sx_symbol, from_date, to_date):
     temp_file = local_file + '.tmp'
     ed = None
     ed = yf.Ticker(sx_symbol).history(start=from_date, end=to_date)
-    if ed is not None:
-        ed.to_csv(temp_file)
-        if (not path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
-            replace(temp_file, local_file)
-        else:
-            remove(temp_file)
+    # yfinance does not raise when a download fails; it returns an empty DataFrame.
+    if ed is None or ed.empty:
+        if pd.Timestamp(to_date) < pd.Timestamp.now().normalize():
+            # A finished date range always has trading days, so no rows means the download failed.
+            raise ValueError(f"Failed to download data for symbol {sx_symbol} from {from_date} to {to_date}")
+        if path.exists(local_file):
+            # The range is still open (eg early January): keep the last good download.
+            return
+    ed.to_csv(temp_file)
+    if (not path.exists(local_file)) or (get_file_hash(temp_file) != get_file_hash(local_file)):
+        replace(temp_file, local_file)
     else:
-        raise ValueError(f"Failed to download data for symbol {sx_symbol} from {from_date} to {to_date}")
+        remove(temp_file)
 
 def get_exchange_data(local_file, sx_symbol, from_date, to_date, max_age_days=0):
     stale_date = datetime.now() - timedelta(days=max_age_days)   
