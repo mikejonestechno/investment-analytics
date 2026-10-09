@@ -71,6 +71,40 @@ def read_csv_file(local_file, skip_rows=0):
     df_csv = df_csv.dropna(how='all')
     return df_csv
 
+# RBA statistical tables have changed the 'Series ID' date column format over time:
+# 'Jan-1959' (month only, to 2023), '31/01/1959' (2024-25) and '31-Jan-1959' (F5 from 2026).
+RBA_DATE_FORMATS = ['%d/%m/%Y', '%d-%b-%Y']
+RBA_MONTH_FORMATS = ['%b-%Y']
+
+def parse_rba_dates(dates):
+    """
+    Parse RBA statistical table 'Series ID' dates into Timestamps.
+
+    Each known format is tried explicitly (no format inference or dayfirst guessing).
+    Month-only dates such as 'Jan-1959' are returned as the month end date.
+
+    Args:
+        dates (pandas.Series): The date strings from the 'Series ID' column.
+
+    Returns:
+        pandas.Series: The parsed dates as datetime64 values.
+
+    Raises:
+        ValueError: If any date does not match a known RBA date format.
+    """
+    dates = pd.Series(dates)
+    text = dates.astype(str).str.strip()
+    parsed = pd.Series(pd.NaT, index=dates.index, dtype='datetime64[ns]')
+    for date_format in RBA_DATE_FORMATS:
+        parsed = parsed.fillna(pd.to_datetime(text, format=date_format, errors='coerce'))
+    for month_format in RBA_MONTH_FORMATS:
+        parsed = parsed.fillna(pd.to_datetime(text, format=month_format, errors='coerce') + pd.offsets.MonthEnd(0))
+    unparsed = text[parsed.isna()]
+    if not unparsed.empty:
+        raise ValueError(f'Unrecognised RBA date format {unparsed.iloc[0]!r} '
+                         f'({len(unparsed)} unparsed), expected one of {RBA_DATE_FORMATS + RBA_MONTH_FORMATS}')
+    return parsed
+
 def is_file_cache_stale(local_file):
     """
     TODO: is local_file hash different to the cached file hash.txt?
