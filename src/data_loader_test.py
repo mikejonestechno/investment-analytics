@@ -90,3 +90,17 @@ def local_file_is_older_than_given_date(older):
     else: # the file will be newer than this date
         publish_date = datetime(2020, 1, 1)
     return publish_date
+
+
+def test_download_exchange_data_includes_to_date(mocker, tmp_path):
+    # yfinance 'end' is exclusive; the loader must request the day after to_date
+    import pandas as pd
+    from data_loader import download_exchange_data
+    history = mocker.Mock(return_value=pd.DataFrame({'Close': [1.0]}, index=pd.to_datetime(['2024-12-31'])))
+    mock_ticker = mocker.patch('data_loader.yf.Ticker', return_value=mocker.Mock(history=history))
+    local_file = str(tmp_path / 'tsla_2024.csv')
+
+    download_exchange_data(local_file, 'TSLA', '2024-01-01', '2024-12-31')
+
+    mock_ticker.assert_called_once_with('TSLA')
+    history.assert_called_once_with(start='2024-01-01', end='2025-01-01')
