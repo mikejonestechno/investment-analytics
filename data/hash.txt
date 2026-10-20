@@ -28,4 +28,4 @@ cb8828953a83d49a5e650ecc4363dbdf  data/tsla_HistoricalData_2025.csv
 492b14b5f19f8a237e0769603e294d7f  data/tsla_PriceTarget_CernBasher.md
 afe6474cc29cba71307e82729f1923b6  data/tsla_PriceTarget_InvestAnswers.md
 9f6bf0a94ce6f7590e4d8021607a4503  data/tsla_PriceTarget_InvestAnswers_2024.md
-4170daeb361bfc6d14126a99638a9c71  data/tsla_PriceTargets.md
+93b7bdfc13d995c8c89b2c86322fadf4  data/tsla_PriceTargets.md
